@@ -28,3 +28,17 @@ python research/accessibility/verify_coverage.py --w3c-json D:/projects/research
 The validator checks exact IDs, levels, short names, anchors, duplicates, and totals: 31 A, 24 AA, and 31 AAA. It also checks the snapshot's SHA-256 and compares all retained metadata when the snapshot is supplied. W3C's JSON can change; a later download with a different hash must be reviewed rather than treated as the same snapshot.
 
 This verification proves coverage of the criterion index and matching metadata. It does not prove that each paraphrase is complete, that any criterion applies to a particular site, or that a site conforms. Review the original W3C text and applicable exceptions, and validate test procedures before using the checklist for research.
+
+## Action checklist crosswalk
+
+`build_action_checklist.py` stores the research-authored action catalog and generates `master-action-checklist.md` and `action-checklist.json`. Its stable IDs identify actions within a version. The action list uses the dated WCAG 2.2 Recommendation for criterion links.
+
+From the repository root, run:
+
+```powershell
+python research/accessibility/build_action_checklist.py --check
+```
+
+The check verifies IDs, labels, methods, source keys, known criterion references, and at least one WCAG-derived action for each of the 55 A and AA criteria. It also verifies that both generated files match the source catalog. The crosswalk provides traceability only. It does not prove that an action covers every condition of its criterion or that the suggested review methods are complete. A subject-matter expert still needs to review the content before the list is used as a research instrument.
+
+On 2026-10-29, version 0.1.0 contained 188 actions: 81 WCAG-derived outcomes, 81 guidance items, and 26 research-process items. Its references covered all 55 target criterion IDs. Negative checks rejected a duplicate action ID, an unknown criterion, an omitted target criterion, an invalid method, and a missing guidance source. These checks validate structure, not the substantive accuracy of the checklist.

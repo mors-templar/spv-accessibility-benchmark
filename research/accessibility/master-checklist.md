@@ -1,5 +1,7 @@
 # Master accessibility checklist for web projects
 
+For practical actions and component-specific guidance, see the [master action checklist](master-action-checklist.md).
+
 **Version:** 0.1, 2026-10-29. **Status:** research draft for review, not a validated audit or a conformance claim. The suggested study target is WCAG 2.2 Level AA: all 31 Level A and 24 Level AA criteria, subject to their applicability and exceptions. The 31 Level AAA criteria are included separately as an extended reference.
 
 The criterion identifiers and names below are from the [W3C WCAG 2.2 Recommendation](https://www.w3.org/TR/2024/REC-WCAG22-20241212/). The check descriptions are our brief, non-normative summaries. Use the linked W3C criterion, definitions, exceptions, and conformance rules when making a determination. The [W3C Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) and [Understanding documents](https://www.w3.org/WAI/WCAG22/Understanding/) provide further guidance.
