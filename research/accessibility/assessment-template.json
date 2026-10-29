@@ -1,0 +1,523 @@
+{
+  "record_status": "template_not_a_run",
+  "assessment_target": "WCAG 2.2 A and AA criteria; conformance not established",
+  "task_id": null,
+  "run_id": null,
+  "model_runner": null,
+  "condition": null,
+  "reviewer": null,
+  "assessment_date": null,
+  "environment": {
+    "browser": null,
+    "viewport": null,
+    "assistive_technology": null,
+    "playwright_version": null,
+    "axe_core_version": null,
+    "rules_configuration": null
+  },
+  "status_values": [
+    "pass",
+    "fail",
+    "not_applicable",
+    "unassessable",
+    "not_tested"
+  ],
+  "guidance": "Record page and interaction-state evidence in state_results. Do not mark an aggregate pass before all applicable scoped instances are reviewed. Missing required features are functional failures; dependent accessibility observations may be unassessable.",
+  "criteria": [
+    {
+      "criterion": "1.1.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.2.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.2.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.2.3",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.2.4",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.2.5",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.3.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.3.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.3.3",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.3.4",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.3.5",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.3",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.4",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.5",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.10",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.11",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.12",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "1.4.13",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.1.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.1.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.1.4",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.2.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.2.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.3.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.3",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.4",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.5",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.6",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.7",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.4.11",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.3",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.4",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.7",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.1.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.1.2",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.2.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.2.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.2.3",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.2.4",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.2.6",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.1",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.3",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.4",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.7",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "3.3.8",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "4.1.2",
+      "level": "A",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    },
+    {
+      "criterion": "4.1.3",
+      "level": "AA",
+      "applicability": "undetermined",
+      "status": "not_tested",
+      "state_results": [],
+      "evidence": [],
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "source_url": "https://www.w3.org/WAI/WCAG22/wcag.json",
+  "normative_standard": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+  "retrieved": "2026-10-29",
+  "source_sha256": "3a034865a879a7d874b60ff2aec7f430cf37bc1597a1e00985680fd80ef5cf75",
+  "attribution": "W3C WCAG 2.2. Criterion metadata is unchanged from the W3C serialization; checklist descriptions are separate research annotations.",
+  "criteria": [
+    {
+      "number": "1.1.1",
+      "name": "Non-text Content",
+      "level": "A",
+      "anchor": "non-text-content",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.1",
+      "name": "Audio-only and Video-only (Prerecorded)",
+      "level": "A",
+      "anchor": "audio-only-and-video-only-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.2",
+      "name": "Captions (Prerecorded)",
+      "level": "A",
+      "anchor": "captions-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.3",
+      "name": "Audio Description or Media Alternative (Prerecorded)",
+      "level": "A",
+      "anchor": "audio-description-or-media-alternative-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.4",
+      "name": "Captions (Live)",
+      "level": "AA",
+      "anchor": "captions-live",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.5",
+      "name": "Audio Description (Prerecorded)",
+      "level": "AA",
+      "anchor": "audio-description-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.6",
+      "name": "Sign Language (Prerecorded)",
+      "level": "AAA",
+      "anchor": "sign-language-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.7",
+      "name": "Extended Audio Description (Prerecorded)",
+      "level": "AAA",
+      "anchor": "extended-audio-description-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.8",
+      "name": "Media Alternative (Prerecorded)",
+      "level": "AAA",
+      "anchor": "media-alternative-prerecorded",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.2.9",
+      "name": "Audio-only (Live)",
+      "level": "AAA",
+      "anchor": "audio-only-live",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.1",
+      "name": "Info and Relationships",
+      "level": "A",
+      "anchor": "info-and-relationships",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.2",
+      "name": "Meaningful Sequence",
+      "level": "A",
+      "anchor": "meaningful-sequence",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.3",
+      "name": "Sensory Characteristics",
+      "level": "A",
+      "anchor": "sensory-characteristics",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.4",
+      "name": "Orientation",
+      "level": "AA",
+      "anchor": "orientation",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.5",
+      "name": "Identify Input Purpose",
+      "level": "AA",
+      "anchor": "identify-input-purpose",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.3.6",
+      "name": "Identify Purpose",
+      "level": "AAA",
+      "anchor": "identify-purpose",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.1",
+      "name": "Use of Color",
+      "level": "A",
+      "anchor": "use-of-color",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.2",
+      "name": "Audio Control",
+      "level": "A",
+      "anchor": "audio-control",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.3",
+      "name": "Contrast (Minimum)",
+      "level": "AA",
+      "anchor": "contrast-minimum",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.4",
+      "name": "Resize Text",
+      "level": "AA",
+      "anchor": "resize-text",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.5",
+      "name": "Images of Text",
+      "level": "AA",
+      "anchor": "images-of-text",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.6",
+      "name": "Contrast (Enhanced)",
+      "level": "AAA",
+      "anchor": "contrast-enhanced",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.7",
+      "name": "Low or No Background Audio",
+      "level": "AAA",
+      "anchor": "low-or-no-background-audio",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.8",
+      "name": "Visual Presentation",
+      "level": "AAA",
+      "anchor": "visual-presentation",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.9",
+      "name": "Images of Text (No Exception)",
+      "level": "AAA",
+      "anchor": "images-of-text-no-exception",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.10",
+      "name": "Reflow",
+      "level": "AA",
+      "anchor": "reflow",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.11",
+      "name": "Non-text Contrast",
+      "level": "AA",
+      "anchor": "non-text-contrast",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.12",
+      "name": "Text Spacing",
+      "level": "AA",
+      "anchor": "text-spacing",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "1.4.13",
+      "name": "Content on Hover or Focus",
+      "level": "AA",
+      "anchor": "content-on-hover-or-focus",
+      "principle": "Perceivable"
+    },
+    {
+      "number": "2.1.1",
+      "name": "Keyboard",
+      "level": "A",
+      "anchor": "keyboard",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.1.2",
+      "name": "No Keyboard Trap",
+      "level": "A",
+      "anchor": "no-keyboard-trap",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.1.3",
+      "name": "Keyboard (No Exception)",
+      "level": "AAA",
+      "anchor": "keyboard-no-exception",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.1.4",
+      "name": "Character Key Shortcuts",
+      "level": "A",
+      "anchor": "character-key-shortcuts",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.1",
+      "name": "Timing Adjustable",
+      "level": "A",
+      "anchor": "timing-adjustable",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.2",
+      "name": "Pause, Stop, Hide",
+      "level": "A",
+      "anchor": "pause-stop-hide",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.3",
+      "name": "No Timing",
+      "level": "AAA",
+      "anchor": "no-timing",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.4",
+      "name": "Interruptions",
+      "level": "AAA",
+      "anchor": "interruptions",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.5",
+      "name": "Re-authenticating",
+      "level": "AAA",
+      "anchor": "re-authenticating",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.2.6",
+      "name": "Timeouts",
+      "level": "AAA",
+      "anchor": "timeouts",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.3.1",
+      "name": "Three Flashes or Below Threshold",
+      "level": "A",
+      "anchor": "three-flashes-or-below-threshold",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.3.2",
+      "name": "Three Flashes",
+      "level": "AAA",
+      "anchor": "three-flashes",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.3.3",
+      "name": "Animation from Interactions",
+      "level": "AAA",
+      "anchor": "animation-from-interactions",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.1",
+      "name": "Bypass Blocks",
+      "level": "A",
+      "anchor": "bypass-blocks",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.2",
+      "name": "Page Titled",
+      "level": "A",
+      "anchor": "page-titled",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.3",
+      "name": "Focus Order",
+      "level": "A",
+      "anchor": "focus-order",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.4",
+      "name": "Link Purpose (In Context)",
+      "level": "A",
+      "anchor": "link-purpose-in-context",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.5",
+      "name": "Multiple Ways",
+      "level": "AA",
+      "anchor": "multiple-ways",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.6",
+      "name": "Headings and Labels",
+      "level": "AA",
+      "anchor": "headings-and-labels",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.7",
+      "name": "Focus Visible",
+      "level": "AA",
+      "anchor": "focus-visible",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.8",
+      "name": "Location",
+      "level": "AAA",
+      "anchor": "location",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.9",
+      "name": "Link Purpose (Link Only)",
+      "level": "AAA",
+      "anchor": "link-purpose-link-only",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.10",
+      "name": "Section Headings",
+      "level": "AAA",
+      "anchor": "section-headings",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.11",
+      "name": "Focus Not Obscured (Minimum)",
+      "level": "AA",
+      "anchor": "focus-not-obscured-minimum",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.12",
+      "name": "Focus Not Obscured (Enhanced)",
+      "level": "AAA",
+      "anchor": "focus-not-obscured-enhanced",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.4.13",
+      "name": "Focus Appearance",
+      "level": "AAA",
+      "anchor": "focus-appearance",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.1",
+      "name": "Pointer Gestures",
+      "level": "A",
+      "anchor": "pointer-gestures",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.2",
+      "name": "Pointer Cancellation",
+      "level": "A",
+      "anchor": "pointer-cancellation",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.3",
+      "name": "Label in Name",
+      "level": "A",
+      "anchor": "label-in-name",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.4",
+      "name": "Motion Actuation",
+      "level": "A",
+      "anchor": "motion-actuation",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.5",
+      "name": "Target Size (Enhanced)",
+      "level": "AAA",
+      "anchor": "target-size-enhanced",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.6",
+      "name": "Concurrent Input Mechanisms",
+      "level": "AAA",
+      "anchor": "concurrent-input-mechanisms",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.7",
+      "name": "Dragging Movements",
+      "level": "AA",
+      "anchor": "dragging-movements",
+      "principle": "Operable"
+    },
+    {
+      "number": "2.5.8",
+      "name": "Target Size (Minimum)",
+      "level": "AA",
+      "anchor": "target-size-minimum",
+      "principle": "Operable"
+    },
+    {
+      "number": "3.1.1",
+      "name": "Language of Page",
+      "level": "A",
+      "anchor": "language-of-page",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.1.2",
+      "name": "Language of Parts",
+      "level": "AA",
+      "anchor": "language-of-parts",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.1.3",
+      "name": "Unusual Words",
+      "level": "AAA",
+      "anchor": "unusual-words",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.1.4",
+      "name": "Abbreviations",
+      "level": "AAA",
+      "anchor": "abbreviations",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.1.5",
+      "name": "Reading Level",
+      "level": "AAA",
+      "anchor": "reading-level",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.1.6",
+      "name": "Pronunciation",
+      "level": "AAA",
+      "anchor": "pronunciation",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.1",
+      "name": "On Focus",
+      "level": "A",
+      "anchor": "on-focus",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.2",
+      "name": "On Input",
+      "level": "A",
+      "anchor": "on-input",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.3",
+      "name": "Consistent Navigation",
+      "level": "AA",
+      "anchor": "consistent-navigation",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.4",
+      "name": "Consistent Identification",
+      "level": "AA",
+      "anchor": "consistent-identification",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.5",
+      "name": "Change on Request",
+      "level": "AAA",
+      "anchor": "change-on-request",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.2.6",
+      "name": "Consistent Help",
+      "level": "A",
+      "anchor": "consistent-help",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.1",
+      "name": "Error Identification",
+      "level": "A",
+      "anchor": "error-identification",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.2",
+      "name": "Labels or Instructions",
+      "level": "A",
+      "anchor": "labels-or-instructions",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.3",
+      "name": "Error Suggestion",
+      "level": "AA",
+      "anchor": "error-suggestion",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.4",
+      "name": "Error Prevention (Legal, Financial, Data)",
+      "level": "AA",
+      "anchor": "error-prevention-legal-financial-data",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.5",
+      "name": "Help",
+      "level": "AAA",
+      "anchor": "help",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.6",
+      "name": "Error Prevention (All)",
+      "level": "AAA",
+      "anchor": "error-prevention-all",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.7",
+      "name": "Redundant Entry",
+      "level": "A",
+      "anchor": "redundant-entry",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.8",
+      "name": "Accessible Authentication (Minimum)",
+      "level": "AA",
+      "anchor": "accessible-authentication-minimum",
+      "principle": "Understandable"
+    },
+    {
+      "number": "3.3.9",
+      "name": "Accessible Authentication (Enhanced)",
+      "level": "AAA",
+      "anchor": "accessible-authentication-enhanced",
+      "principle": "Understandable"
+    },
+    {
+      "number": "4.1.2",
+      "name": "Name, Role, Value",
+      "level": "A",
+      "anchor": "name-role-value",
+      "principle": "Robust"
+    },
+    {
+      "number": "4.1.3",
+      "name": "Status Messages",
+      "level": "AA",
+      "anchor": "status-messages",
+      "principle": "Robust"
+    }
+  ]
+}
