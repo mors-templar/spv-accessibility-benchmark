@@ -8,6 +8,7 @@ This repository contains a static research index and five task pages. The site i
 - `docs/tasks/`: individual task pages.
 - `docs/methodology.html`: the proposed evaluation approach.
 - `research/study-working-decisions.md`: detailed research decisions and questions for further discussion. This is outside the public Pages source.
+- `research/execution-plan.md`: the proposed phases, run procedure, evaluation, and reporting plan. This is outside the public Pages source.
 - `data/tasks.json`: public-safe task summaries and current status labels.
 - `tools/build_site.py`: regenerates the static pages from the summaries.
 
