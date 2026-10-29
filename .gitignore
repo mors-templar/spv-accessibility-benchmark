@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+local/
+private/
+raw-data/
+node_modules/
+__pycache__/
+*.py[cod]
+*.log

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "ARENA_01_SERVICES",
+    "number": "01",
+    "slug": "01-services",
+    "title": "Services landing page",
+    "category": "Business website",
+    "summary": "A service provider's landing page with navigation, applications presented in tabs, and frequently asked questions.",
+    "scope": "The request calls for HTML. An order form is mentioned but not supplied.",
+    "possible_checks": [
+      "Inspect page structure, headings, link names, and readable contrast.",
+      "Exercise the tabbed content with a keyboard and inspect its names and state.",
+      "Record the behavior of the requested order-form action."
+    ],
+    "status": "Not run"
+  },
+  {
+    "id": "ARENA_02_CONSULTING",
+    "number": "02",
+    "slug": "02-consulting",
+    "title": "Consulting landing page",
+    "category": "Business website",
+    "summary": "A consulting page with responsive design, animated elements, and a named web stack.",
+    "scope": "The original request explicitly mentions accessible contrast and semantic HTML.",
+    "possible_checks": [
+      "Inspect contrast, headings, landmarks, and the names of interactive controls.",
+      "Review navigation and calls to action using a keyboard.",
+      "Review motion and content visibility, including a reduced-motion setting."
+    ],
+    "status": "Not run"
+  },
+  {
+    "id": "ARENA_03_CINEMA",
+    "number": "03",
+    "slug": "03-cinema",
+    "title": "Cinema booking",
+    "category": "Booking website",
+    "summary": "Film listings with screening options, showtimes, and a ticket-selection journey.",
+    "scope": "The request includes ticket confirmation and regional choices; film data is not supplied.",
+    "possible_checks": [
+      "Check film discovery and screening selection before judging accessibility.",
+      "Review labels, keyboard use, focus, and the state of selection controls.",
+      "Inspect any required feedback or confirmation that the site provides."
+    ],
+    "status": "Not run"
+  },
+  {
+    "id": "ARENA_04_DASHBOARD",
+    "number": "04",
+    "slug": "04-dashboard",
+    "title": "Task dashboard",
+    "category": "Interactive application",
+    "summary": "A task management dashboard with a board, filters, charts, and editing actions.",
+    "scope": "The request has a broad feature set and names several libraries.",
+    "possible_checks": [
+      "Check task creation, editing, and filtering before judging accessibility.",
+      "Review keyboard operation and non-dragging alternatives where needed.",
+      "Inspect chart alternatives and the names and states of controls."
+    ],
+    "status": "Not run"
+  },
+  {
+    "id": "ARENA_05_PORTFOLIO",
+    "number": "05",
+    "slug": "05-portfolio",
+    "title": "Personal portfolio",
+    "category": "Personal website",
+    "summary": "A personal portfolio with a featured project, project navigation, and an about section.",
+    "scope": "This short request leaves most implementation details to the model.",
+    "possible_checks": [
+      "Review heading hierarchy, landmarks, reading order, and link names.",
+      "Navigate the site with a keyboard and inspect visible focus.",
+      "Review alternatives for informative images if images are included."
+    ],
+    "status": "Not run"
+  }
+]

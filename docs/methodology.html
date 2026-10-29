@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The proposed method for evaluating generated websites.">
+  <title>Methodology | AI accessibility study</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span aria-hidden="true">SPV</span>Accessibility study</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#tasks">Tasks</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="index.html#status">Study status</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Methodology</p>
+      <p class="eyebrow">Working proposal</p>
+      <h1>How the study is being designed.</h1>
+      <p class="lede">The goal is to compare generated websites using the same tasks and clearly defined accessibility checks.</p>
+      <div class="notice"><p><strong>Not yet finalized:</strong> Conditions, run counts, measurements, and analysis will be reviewed before the study begins.</p></div>
+      <h2>Generate separate websites</h2>
+      <p>The proposed comparison includes a baseline, a simple accessibility checklist, prompt guidance, a skill, a validation agent, and a combined configuration. The same task request would be used for every condition.</p>
+      <h2>Evaluate behavior and accessibility</h2>
+      <p>Proposed checks include task functionality, browser-based tests, and human review of keyboard use, focus, labels, and content. The exact checks depend on the task and the controls created.</p>
+      <p>Automated checks detect some accessibility issues; they cannot establish complete accessibility or WCAG conformance. The <a href="https://www.w3.org/WAI/test-evaluate/tools/selecting/">W3C</a> and <a href="https://playwright.dev/docs/accessibility-testing">Playwright</a> describe these limitations.</p>
+      <h2>Keep the evidence separate</h2>
+      <p>Each attempted run should retain its configuration, generated artifact, test outcomes, and applicable limitations. Failed or incomplete runs should remain visible.</p>
+      <h2>Research foundations</h2>
+      <ul>
+        <li><a href="https://doi.org/10.1145/3706598.3713335">CodeA11y, CHI 2025</a>: accessibility assistance for developers using AI coding tools.</li>
+        <li><a href="https://doi.org/10.1145/3449287">Cognitive forcing functions, CSCW 2021</a>: an experiment on human decisions with AI assistance.</li>
+        <li><a href="https://aclanthology.org/2025.findings-acl.1036/">ProjectEval, ACL Findings 2025</a>: project-level evaluation using simulated interactions.</li>
+      </ul>
+      <p>These studies inform the design. They do not establish the outcome of this study.</p>
+    </div></main>
+  <footer><div class="wrap">AI website accessibility study &middot; Research in preparation</div></footer>
+</body>
+</html>
