@@ -58,6 +58,22 @@ class ReviewServerTests(unittest.TestCase):
             urllib.request.urlopen(base + "/AGENTS.md", timeout=5)
         self.assertEqual(error.exception.code, 404)
 
+    @unittest.skipUnless(os.environ.get("SPV_RUN_LOOPBACK_TESTS") == "1", "loopback test is opt-in")
+    def test_hub_does_not_serve_private_mapping(self):
+        server.HubHandler.content = b"synthetic hub"
+        httpd = http.server.ThreadingHTTPServer(("127.0.0.1", 0), server.HubHandler)
+        thread = threading.Thread(target=httpd.serve_forever, daemon=True)
+        thread.start()
+        self.addCleanup(thread.join, timeout=5)
+        self.addCleanup(httpd.server_close)
+        self.addCleanup(httpd.shutdown)
+        base = f"http://127.0.0.1:{httpd.server_port}"
+        with urllib.request.urlopen(base + "/", timeout=5) as response:
+            self.assertEqual(response.read(), b"synthetic hub")
+        with self.assertRaises(urllib.error.HTTPError) as error:
+            urllib.request.urlopen(base + "/private-mapping.json", timeout=5)
+        self.assertEqual(error.exception.code, 404)
+
 
 if __name__ == "__main__":
     unittest.main()

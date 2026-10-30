@@ -71,6 +71,8 @@ It verifies copied file hashes and keeps the run-to-case mapping in a separate l
 It excludes project instructions, plans, self-reports, `.git`, and `node_modules`.
 If an excluded file is needed by the site, record the affected review as unassessable.
 Pages without an `index.html` need a separate, documented build procedure.
+Pages with uncompiled JSX or TypeScript entry points also need a suitable build or runtime.
+The automated preflight does not treat a blank rendered page as an accessibility pass.
 
 Run `serve_review_cases.py` to open a loopback-only review index.
 Each case uses a separate local origin so root-relative assets can load.

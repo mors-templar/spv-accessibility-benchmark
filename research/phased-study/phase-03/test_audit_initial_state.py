@@ -44,6 +44,14 @@ class ArtifactSelectionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unassessable"):
             audit.checked_index(self.run)
 
+    def test_identifies_uncompiled_jsx_entry(self):
+        self.index.write_text('<script type="module" src="/src/main.JSX?version=1"></script>', encoding="utf-8")
+        self.assertTrue(audit.needs_build(self.index))
+
+    def test_plain_javascript_entry_is_not_automatically_classified_as_build_required(self):
+        self.index.write_text('<script src="app.js"></script>', encoding="utf-8")
+        self.assertFalse(audit.needs_build(self.index))
+
 
 if __name__ == "__main__":
     unittest.main()

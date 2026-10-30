@@ -46,23 +46,29 @@ def main():
         run_dir = development.RUNS / item["run_id"]
         if item["status"] != "turn_completed_unassessed":
             row["status"] = "not_assessed_generation_incomplete"
-        elif not (run_dir / "workspace/index.html").is_file():
-            row["status"] = "not_assessed_no_static_index"
         else:
             try:
-                record, _ = audit.checked_index(run_dir)
+                record = audit.checked_workspace(run_dir)
                 if record["run_id"] != item["run_id"] or record["task_id"] != item["task_id"] or record["condition"] != item["condition"]:
                     raise ValueError("The run record does not match the schedule.")
-                process = subprocess.run([sys.executable, str(audit.__file__), "--run-id", item["run_id"]],
-                                         capture_output=True, text=True, timeout=150, check=False)
-                row["status"] = "completed" if process.returncode == 0 else "audit_failed"
-                if process.returncode == 0:
-                    report = json.loads((run_dir / "initial-axe-report.json").read_text(encoding="utf-8"))
-                    row["summary"] = report["summary"]
-                    row["browser_version"] = report["browser_version"]
-                    row["axe_engine"] = report["axe_engine"]
-                    row["blocked_requests"] = len(report["blocked_requests"])
-                    row["report"] = str(run_dir / "initial-axe-report.json")
+                if not (run_dir / "workspace/index.html").is_file():
+                    row["status"] = "not_assessed_no_static_index"
+                elif audit.needs_build(run_dir / "workspace/index.html"):
+                    row["status"] = "not_assessed_source_requires_build"
+                else:
+                    process = subprocess.run([sys.executable, str(audit.__file__), "--run-id", item["run_id"]],
+                                             capture_output=True, text=True, timeout=240, check=False)
+                    metadata_path = run_dir / "initial-axe-metadata.json"
+                    metadata = json.loads(metadata_path.read_text(encoding="utf-8")) if metadata_path.is_file() else {}
+                    row["status"] = metadata.get("status", "audit_failed")
+                    if process.returncode == 0:
+                        report = json.loads((run_dir / "initial-axe-report.json").read_text(encoding="utf-8"))
+                        row["summary"] = report["summary"]
+                        row["browser_version"] = report["browser_version"]
+                        row["axe_engine"] = report["axe_engine"]
+                        row["blocked_requests"] = len(report["blocked_requests"])
+                        row["render_preflight"] = metadata.get("render_preflight")
+                        row["report"] = str(run_dir / "initial-axe-report.json")
             except (OSError, ValueError, KeyError, json.JSONDecodeError, subprocess.TimeoutExpired) as exc:
                 row["status"] = "audit_failed"
                 row["error_type"] = type(exc).__name__

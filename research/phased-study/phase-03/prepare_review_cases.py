@@ -82,12 +82,18 @@ def main():
         run_dir = development.RUNS / item["run_id"]
         if item["status"] != "turn_completed_unassessed":
             case["status"] = "generation_incomplete"
-        elif not (run_dir / "workspace/index.html").is_file():
-            case["status"] = "no_static_index"
         else:
             try:
-                case.update(copy_site(run_dir, REVIEW_ROOT / "cases" / case["case_id"] / "site"))
-                case["status"] = "ready_static_copy"
+                record = audit.checked_workspace(run_dir)
+                if any(record.get(key) != item[key] for key in ("run_id", "task_id", "condition")):
+                    raise ValueError("The run record does not match the schedule.")
+                if not (run_dir / "workspace/index.html").is_file():
+                    case["status"] = "no_static_index"
+                elif audit.needs_build(run_dir / "workspace/index.html"):
+                    case["status"] = "source_requires_build"
+                else:
+                    case.update(copy_site(run_dir, REVIEW_ROOT / "cases" / case["case_id"] / "site"))
+                    case["status"] = "ready_static_copy"
             except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
                 case["status"] = "copy_failed"
                 case["error_type"] = type(exc).__name__

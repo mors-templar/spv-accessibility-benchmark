@@ -38,6 +38,9 @@ The installed pilot uses Playwright 1.62.1, its axe adapter 4.10.2, and axe-core
 The pilot records the browser version, blocked requests, raw rule results, and affected nodes.
 It blocks non-target origins and requests other than GET and HEAD.
 Record a missing or failed page as unassessable for this scan.
+For later batch scans, first reject obvious uncompiled JSX or TypeScript entry points.
+A browser preflight also records pages with no visible text as unassessable.
+Visible text does not establish that the complete application works.
 
 This scan covers only one rendered state.
 It does not assess keyboard journeys, screen readers, task completion, or WCAG conformance.
