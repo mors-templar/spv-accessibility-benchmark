@@ -5,6 +5,7 @@ import argparse
 import collections
 import json
 import re
+from pathlib import Path
 
 import prepare_trial as trial
 import run_codex_development as development
@@ -21,6 +22,16 @@ STATUS = re.compile(
     r"^(?:\*\*|__)?(researcher responsibility|not applicable|not_applicable|unassessed|observed|pass|fail)"
     r"(?:\*\*|__)?(?=\s|[—–:;,.]|$)", re.IGNORECASE,
 )
+
+
+def approved_checklist(record):
+    approval_bytes = (development.REPOSITORY / trial.PHASE2 / "checklist-approval.json").read_bytes()
+    approval = json.loads(approval_bytes)
+    if approval.get("decision") != "approved_by_researcher" or approval.get("checklist_version") != "0.2.0":
+        raise ValueError("The checklist approval record is not valid for this parser.")
+    if record.get("condition") in {"D", "P"} and record.get("input_metadata", {}).get("approval_record_sha256") != trial.sha256(approval_bytes):
+        raise ValueError("The checklist approval record differs from the generation record.")
+    return trial.checked_record(development.REPOSITORY, approval["files"], "research/accessibility/action-checklist.json")
 
 
 def parse_claims(report, items):
@@ -83,13 +94,13 @@ def main():
     output = run_dir / "model-claim-coverage.json"
     if output.exists():
         raise FileExistsError("The claim coverage record already exists.")
-    approval = json.loads((development.REPOSITORY / trial.PHASE2 / "checklist-approval.json").read_text(encoding="utf-8"))
-    checklist = trial.checked_record(development.REPOSITORY, approval["files"], "research/accessibility/action-checklist.json")
+    checklist = approved_checklist(record)
     items = json.loads(checklist)["items"]
     result = {
         "run_id": args.run_id,
         "condition": record["condition"],
         "purpose": "descriptive_parser_coverage_not_claim_accuracy",
+        "parser_sha256": trial.sha256(Path(__file__).read_bytes()),
         "checklist_json_sha256": trial.sha256(checklist),
         "report_present": report.is_file(),
         "limitations": [

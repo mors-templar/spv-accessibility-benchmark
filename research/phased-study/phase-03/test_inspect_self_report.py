@@ -46,6 +46,11 @@ class SelfReportParserTests(unittest.TestCase):
         result = claims.parse_claims("| ACT-001 | passionate | text |", self.items)
         self.assertEqual(result["unrecognized_status_ids"], ["ACT-001"])
 
+    def test_rejects_a_different_approval_record(self):
+        record = {"condition": "D", "input_metadata": {"approval_record_sha256": "0" * 64}}
+        with self.assertRaisesRegex(ValueError, "differs"):
+            claims.approved_checklist(record)
+
 
 if __name__ == "__main__":
     unittest.main()
