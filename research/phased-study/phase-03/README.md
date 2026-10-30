@@ -1,6 +1,6 @@
 # Phase 3: prepare the first comparison
 
-**Status:** Offline preparation. The benchmark has not run.
+**Status:** Exploratory development. The final benchmark has not run.
 The selected checklist is version 0.2.0.
 The intervention instructions remain candidate wording.
 
@@ -36,12 +36,14 @@ python research/phased-study/phase-03/prepare_trial.py `
 ```
 
 Replace the placeholder hash before running the command.
-Do not use the selected Arena tasks with a hosted model until the source terms are clarified.
+The researcher chose to proceed with the selected prompts despite uncertainty about the agreement.
+The agreement does not explicitly discuss hosted inference of individual prompts.
+See the [dataset-use note](arena-dataset-use.md).
 This utility does not resolve rights or connect to any model.
 
 ## Before the comparison runs
 
-1. Resolve the Arena dataset terms for the intended hosted providers and publication.
+1. Record the dataset terms, the researcher's decision, and any later clarification.
 2. Review and freeze the candidate instructions for the development comparison.
 3. Specify the required journeys, fixture rules, and evaluation states for each task.
 4. Identify the exact model-runner configurations and their effective instructions.
@@ -51,7 +53,10 @@ This utility does not resolve rights or connect to any model.
 
 The earlier protocol gives a proposed full-batch design.
 Development outputs remain exploratory if the team changes packages after inspecting them.
-The Phase 3 utility does not start a run or install an intervention.
+The input checker does not start a run or install an intervention.
+The separate development runner can submit one attempt to the Codex CLI.
+See the [development run record](development-run-plan.md).
+The [initial observations](initial-development-results.md) cover one task and one automated page state.
 
 ## Check the utility
 

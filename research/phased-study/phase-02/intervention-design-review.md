@@ -3,7 +3,7 @@
 **Status:** Candidate wording for discussion, 30 October 2026.
 The researcher approved checklist version 0.2.0.
 The intervention wording and study conditions have not been approved or frozen.
-No benchmark has run.
+The final benchmark has not run. Exploratory Phase 3 generation has started.
 
 ## 1. The baseline and shared checklist
 

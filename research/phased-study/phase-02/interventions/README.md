@@ -36,7 +36,8 @@ The instruction and checklist files must each end with one newline.
 The original task bytes are inserted without any edit.
 The placeholder names above are not literal text sent to a model.
 Record the original task hash and assembled-message hash for each future run.
-Do not send the source tasks to a hosted model until the rights question is resolved.
+The researcher chose to use the source tasks despite uncertainty about hosted-model submission.
+See the [dataset-use note](../../phase-03/arena-dataset-use.md).
 
 All five checklist-based arms receive the same D user message.
 P, S, A, and X add their respective runner or host components.
