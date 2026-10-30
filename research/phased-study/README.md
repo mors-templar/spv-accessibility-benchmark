@@ -8,7 +8,7 @@ They do not change the selected task texts.
 | --- | --- | --- |
 | 1 | Establish the five selected requests and the study plan. | The requests are selected. Baseline outputs do not yet exist. |
 | 2 | Review the checklist and draft the exact intervention wording. | Checklist 0.2.0 approved by researcher. Intervention wording is under review. |
-| 3 | Produce baseline and prompt-guidance development runs. | After Phase 2 decisions, compare B, D, and P using the same task text. |
+| 3 | Produce baseline and prompt-guidance development runs. | Offline input preparation has started. No model runs have occurred. |
 | 4 | Build and assess the skill package. | Compare S with B and D; record actual skill and tool activation. |
 | 5 | Build and assess the reviewer agent and host gate. | Compare A with B and D; record decisions, retries, and blocks. |
 | 6 | Combine prompt guidance, skill, and reviewer. | Compare X with B and D; preserve the exact package and its extra work. |
@@ -66,3 +66,5 @@ The earlier PDF contains checklist version 0.1.0.
 The researcher approved the current Phase 2 checklist, version 0.2.0.
 Independent expert review of its content remains open.
 The original Arena agreement requires clarification before hosted submission or release of its source text.
+
+[Phase 3 preparation](phase-03/README.md) describes the B, D, and P comparison and its offline input checker.
