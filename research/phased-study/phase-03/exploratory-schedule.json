@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "purpose": "exploratory_development_not_final_benchmark",
+  "created_after_first_task_pilot": true,
+  "schedule_seed": 314159,
+  "schedule_generator": "Python 3.13.9 random.Random(seed).shuffle over task-major B,D,P pairs",
+  "runner_sha256": "dee5366f4025ff68101e56431427e8d5fbd8103e741d3ed2b8e8822dc7921aad",
+  "candidate_manifest_sha256": "6634ad1bacfb7a61e1996f8c6df6d203fc74cfd4c671be0ba4965cf448567019",
+  "task_manifest_sha256": "5fc6c0651ebedd971d4bedea30a4d33852e328575c43f9a714b102ef90496023",
+  "timeout_seconds": 1200,
+  "attempts": [
+    {"run_id": "batch01", "task_id": "ARENA_03_CINEMA", "condition": "B"},
+    {"run_id": "batch02", "task_id": "ARENA_01_SERVICES", "condition": "P"},
+    {"run_id": "batch03", "task_id": "ARENA_05_PORTFOLIO", "condition": "P"},
+    {"run_id": "batch04", "task_id": "ARENA_01_SERVICES", "condition": "B"},
+    {"run_id": "batch05", "task_id": "ARENA_02_CONSULTING", "condition": "P"},
+    {"run_id": "batch06", "task_id": "ARENA_04_DASHBOARD", "condition": "D"},
+    {"run_id": "batch07", "task_id": "ARENA_03_CINEMA", "condition": "D"},
+    {"run_id": "batch08", "task_id": "ARENA_03_CINEMA", "condition": "P"},
+    {"run_id": "batch09", "task_id": "ARENA_05_PORTFOLIO", "condition": "B"},
+    {"run_id": "batch10", "task_id": "ARENA_04_DASHBOARD", "condition": "B"},
+    {"run_id": "batch11", "task_id": "ARENA_04_DASHBOARD", "condition": "P"},
+    {"run_id": "batch12", "task_id": "ARENA_01_SERVICES", "condition": "D"},
+    {"run_id": "batch13", "task_id": "ARENA_05_PORTFOLIO", "condition": "D"},
+    {"run_id": "batch14", "task_id": "ARENA_02_CONSULTING", "condition": "D"},
+    {"run_id": "batch15", "task_id": "ARENA_02_CONSULTING", "condition": "B"}
+  ]
+}

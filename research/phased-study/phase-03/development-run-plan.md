@@ -51,3 +51,24 @@ The five requests were chosen purposively and do not represent all websites.
 
 Store attempts under ignored `local/phase-03-development/`.
 Do not publish raw prompts, logs, or generated artifacts without a separate release review.
+
+## Follow-up exploratory batch
+
+After inspecting the pilot, the team prepared a new development batch.
+It schedules all five tasks once in each of B, D, and P.
+The [schedule](exploratory-schedule.json) fixes 15 attempts in a reproducible shuffled order.
+The ordering seed is 314159. The seed does not control model output randomness.
+
+The updated runner uses a narrower filesystem profile for model commands.
+It permits writes inside the active workspace and reads from named runtime directories.
+It denies general filesystem reads outside those roots.
+Synthetic probes confirmed one outside-file denial, workspace writes, and project guidance loading.
+The probes do not prove that every possible access path is isolated.
+The runner requests that native subagents be disabled in all three conditions.
+Native model instructions and other host capabilities remain only partly observable.
+
+The updated runner differs from the first pilot runner.
+Keep the first pilot and this batch separate when comparing outputs.
+This batch is exploratory because its task contracts and independent evaluator are not frozen.
+The selected requests and earlier pilot results were already known to the team.
+Do not present it as a preregistered or untouched final evaluation.

@@ -45,6 +45,12 @@ class DevelopmentRunnerTests(unittest.TestCase):
         self.assertEqual(captured, [self.task])
         self.assertEqual(record["status"], "turn_completed_unassessed")
         self.assertEqual(record["events"]["thread_id"], "synthetic")
+        self.assertIn("other root denied", record["requested_sandbox"])
+        self.assertEqual(record["requested_subagents"], "disabled")
+        self.assertIn("agents.enabled=false", record["cli_flags"])
+        self.assertEqual(record["runner_sha256"], trial.sha256(Path(runner.__file__).read_bytes()))
+        self.assertTrue(any('permissions.benchmark.filesystem=' in flag and '\":root\"=\"deny\"' in flag
+                            for flag in record["cli_flags"]))
         self.assertEqual(record["final_workspace"]["files"][0]["path"], "index.html")
         self.assertFalse((self.runs / "run1/workspace/AGENTS.md").exists())
         self.assertNotIn(self.task.decode("utf-8"), json.dumps(record))

@@ -6,9 +6,11 @@ import datetime
 import hashlib
 import json
 import os
+import platform
 import re
 import shutil
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -30,6 +32,19 @@ def now_utc():
 
 def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def isolation_config():
+    """Restrict model commands to the workspace and required runtime directories."""
+    runtime = Path.home() / ".cache/codex-runtimes/codex-primary-runtime/dependencies"
+    node = shutil.which("node")
+    if not runtime.is_dir() or not node:
+        raise ValueError("The bundled Codex runtime or Node executable is unavailable.")
+    roots = list(dict.fromkeys([str(runtime.resolve()), str(Path(node).resolve().parent),
+                                str(Path(sys.executable).resolve().parent)]))
+    entries = ['":root"="deny"', '":minimal"="read"']
+    entries.extend(json.dumps(root) + '="read"' for root in roots)
+    return "{ " + ", ".join(entries) + " }", roots
 
 
 def read_task(task_id):
@@ -99,6 +114,7 @@ def run_attempt(run_root, run_id, task_id, task, expected_hash, condition, asset
     if timeout_seconds <= 0:
         raise ValueError("Timeout must be positive.")
     message, input_metadata = trial.prepare(task, expected_hash, condition, assets)
+    filesystem, runtime_roots = isolation_config()
     run_root.mkdir(parents=True, exist_ok=True)
     run_dir = run_root / run_id
     run_dir.mkdir(exist_ok=False)
@@ -110,11 +126,15 @@ def run_attempt(run_root, run_id, task_id, task, expected_hash, condition, asset
     initial_files = artifact_manifest(workspace)
     command = [
         str(codex), "exec", "--json", "--ephemeral", "--ignore-user-config",
-        "--enable", "prefer_mxc", "--skip-git-repo-check", "--sandbox", "workspace-write",
+        "--enable", "prefer_mxc", "--disable", "multi_agent", "--skip-git-repo-check",
+        "-c", 'default_permissions="benchmark"',
+        "-c", "agents.enabled=false",
+        "-c", 'permissions.benchmark.extends=":workspace"',
+        "-c", "permissions.benchmark.filesystem=" + filesystem,
         "--model", DEFAULT_MODEL, "-c", "model_reasoning_effort=high", "-C", str(workspace), "-",
     ]
     record = {
-        "record_version": "0.1.0",
+        "record_version": "0.2.0",
         "purpose": "exploratory_development_not_final_benchmark",
         "run_id": run_id,
         "task_id": task_id,
@@ -125,7 +145,12 @@ def run_attempt(run_root, run_id, task_id, task, expected_hash, condition, asset
         "input_metadata": input_metadata,
         "requested_model": DEFAULT_MODEL,
         "requested_reasoning_effort": "high",
-        "requested_sandbox": "workspace-write",
+        "requested_subagents": "disabled",
+        "requested_sandbox": "benchmark profile: workspace write, minimal and runtime read, other root denied",
+        "requested_runtime_read_roots": runtime_roots,
+        "runner_sha256": trial.sha256(Path(__file__).read_bytes()),
+        "python_version": platform.python_version(),
+        "operating_system": platform.platform(),
         "effective_hidden_instructions": "unknown",
         "effective_server_message_bytes": "not_observed",
         "cli_flags": command[1:-1],
