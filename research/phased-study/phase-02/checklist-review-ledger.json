@@ -1,0 +1,4169 @@
+{
+  "schema_version": "1.0.0",
+  "checklist_version": "0.2.0",
+  "status": "expert_review_pending",
+  "note": "The 81 R items received an AI technical screening. Independent expert review is pending for every item.",
+  "items": [
+    {
+      "item_id": "ACT-001",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "97eecc8106b09b8382202cba806f3d9c8cfd62e05ad3a27eeb56aafe607ea010",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-002",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "39b2ad3d2c9b512f4b8ad48fe929744290bddd35a5bd7340d7e8cdba9bfe122d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-003",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "9d128fde9bfc47ef011214b4a233fb89afd589464b877b731eaad09d9c9bd88e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-004",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "6f7b3f20a4e6c6d1195ff0fb8056968e1891c8b8ccb81c11b3fe3ad41ef857de",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-005",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "50a9b456b0d84a4f8dff63211e798df5b839d2b133d23e95c63a78ed94bb2a73",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-006",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "70c9c9dc1095bbc829fbb2cb785b4b86e60eb976368efe84b47aa8ae3adbc7b8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-007",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "6bfe121f711a588305105e23ebf66dfeb115f50fd40d45a080f7db39bd6852d9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-008",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "a7146034106c8be5f23e996008313dcee8858d950b2c6483e21fedf7ded7e0ac",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-009",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "db043cd18bf8b53700389042535efeddcf993f894b7211e613700c1acc8549c2",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-010",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "8a136cc449d9adbc5df21b5031b1744204451b58e7ae8e768cfa5814dc6d04b8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-011",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.2"
+      ],
+      "action_sha256": "5b6469f842a5f61a47d292d3d25cc685428091dbe619e1405ec3f5141385ce97",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#page-titled"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-012",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.1.1"
+      ],
+      "action_sha256": "5ffcc6037adf0dff56b7f4ad4a9110690a58bbb753087e31491b955c03add0e3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#language-of-page"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-013",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.1.2"
+      ],
+      "action_sha256": "16f46a90cda7abcbce1f8772d478c20b0526ce8f52046b7bfa4f224c1f1e8ff8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#language-of-parts"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-014",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "11311b4cb1ed734b30e1d9970bbec22fb89d3566f937e20d31b60b4369581941",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-015",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.6"
+      ],
+      "action_sha256": "7f60cbf67968757866fbf4164da1d84a41f2df0aff70e5213d3d95df3b48b3ac",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.6",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#headings-and-labels"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-016",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.2"
+      ],
+      "action_sha256": "d955c9db1609150c13ce724ca5fa935f7be5b411c27fe621de8b601a1ed5252a",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#meaningful-sequence"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-017",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "c2970c7616d62101c2da3963554e20177583377415e1ef471f7f7ad09312cf17",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-018",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "6dd348cdec4ce593596e648d80f82794ac6bb74edd0b430927c5dfdeb7469d27",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-019",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.1"
+      ],
+      "action_sha256": "13293eba7b0599806c08616c49ed87e30be7a0005baf5870962cb4ae63f8f4c3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#bypass-blocks"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-020",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.5"
+      ],
+      "action_sha256": "da45ab15ee1f2f785ce7306fa0f286a2aa9e43ae6b537fd7a812cc9bc9526ac0",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.5",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#multiple-ways"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-021",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.2.3"
+      ],
+      "action_sha256": "eb0e222d66c829859fcd162d53f23b07082e6e3e7d083aba55636330eb26e129",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.2.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#consistent-navigation"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-022",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.2.4"
+      ],
+      "action_sha256": "712c2e2b8cb88df392f17d3c258ce1e9c052ddcd792d541bf77b16cd6f25797c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.2.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#consistent-identification"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-023",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.2.6"
+      ],
+      "action_sha256": "5e54fdc9d66f8d7e07d3e4fbb49d5ee93eb4a7450071503499e600fa926326b9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.2.6",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#consistent-help"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-024",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "5387c74252186c6d2d022cc0abcca5f1871a9f8824a89bca7000d7de8ec6d31c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-025",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.1"
+      ],
+      "action_sha256": "b0fc676d314d819373e0dbb8bd8feca46b2143e1358cad5385ed8a25ec7cd9ca",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#bypass-blocks"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-026",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "a3a1b37dc7c32dbd889652e31c2ac3b548b5a3400721980f1f77ec9bd8f2e6bc",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-027",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "30dcd5b26a3ee2e282d910515688b3c32c817ec93a46fc115797ce00abca56cc",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-028",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "5806ffeef863181fa152a26bd1cd3ec29ba470b468141fcf35cfa7ff7e67bcbf",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-029",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "1193a4e9b2f983c9ec00b3ae393c9da330b3230476d2904c1d34a8b09af96125",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-030",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "e06bed06ae6af14bab79f932fa3ba2c56ffb31e7ccb74c56a494750b84da68cc",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-031",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "31b11090acd8c7adafdac812201da633eeb6cc7e69aff445c2820b92b2315101",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-032",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.4"
+      ],
+      "action_sha256": "101b7ed6e918c938503b240f2d903bb3e9767862835186e6e2576a682fba877b",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#link-purpose-in-context"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-033",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.3"
+      ],
+      "action_sha256": "9688994e28a7cb5bbaaac5eb58587756d1c2ba18a73ca3613769ace894baf19d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#sensory-characteristics"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-034",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "action_sha256": "11d0de4d23cc48c8493220e7418c0b65b1521accd61245fe5fa4469934c7a58d",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#use-of-color"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-035",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.5"
+      ],
+      "action_sha256": "6ab4163b62bc62cb80f34837dae0c083b134d514724a81713c00ad1eb67a19b3",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.5",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#images-of-text"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-036",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.3"
+      ],
+      "action_sha256": "3a683d1f8641b4fdd57313b8ddbe48aaae621350fa7b7dd2aa107c16babdab52",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#label-in-name"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-037",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "c47d382333edf7c11b9b24806b957ed243b7f65066c7b98461367eb8f518b022",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C images tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/images/"
+      }
+    },
+    {
+      "item_id": "ACT-038",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "cbe294fb94e944ebf331076b2f9f431626140187ba73b08d37e8a1051ffbecd9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C images tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/images/"
+      }
+    },
+    {
+      "item_id": "ACT-039",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.1.1",
+        "1.3.1"
+      ],
+      "action_sha256": "e14615482663fb3db46281bab0c8232909dbecd913448bfca464218f2cabf5fc",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        },
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C images tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/images/"
+      }
+    },
+    {
+      "item_id": "ACT-040",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "a95766e7336f0e4fff4f745c3fdac8f808ff34e98a3557f086cc981b2606340d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-041",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.1.1",
+        "2.4.4"
+      ],
+      "action_sha256": "1e5af658d99ee827ce92ce56b1c05a64d2137d3488014b12dbad9bad73ae5b2b",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        },
+        {
+          "id": "2.4.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#link-purpose-in-context"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C images tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/images/"
+      }
+    },
+    {
+      "item_id": "ACT-042",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "action_sha256": "e27ffd6a9a2fad69b88278dbdf55a1a5fc7a0dc6d755cdc8955b3e6410a419df",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-043",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "action_sha256": "f9df7bfb72d8c23fe14bc39ca2da0ad5d2f4bf035575ee8fc1335826249fbc6b",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-044",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.11"
+      ],
+      "action_sha256": "acce2c6341bced0368204655fd4a57915113fe25709aa0fcb0e51b2a9b2a2446",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-045",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.11"
+      ],
+      "action_sha256": "80f0bd3cc82ba992fe052a11f9782cd1f4133c90890ecead8aecab641755bb1e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-046",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.4"
+      ],
+      "action_sha256": "df8e157d157d4b5a12d499417d9015dd326ab124df3d7965c6cb142442a0fd7a",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#resize-text"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-047",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.10"
+      ],
+      "action_sha256": "eb5aa48aee0ea5e1f6025038740a23c46f9dcca18aa80f5c9f9b9d82b55c2176",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.10",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#reflow"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-048",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.10"
+      ],
+      "action_sha256": "f146acb291b08e6490a329fefd932dad1edde2bd4e4d2f64e2edef6104a04174",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.10",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#reflow"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-049",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.12"
+      ],
+      "action_sha256": "97ad938d9f4135e9cccaf5978f844d5112024e3ae967e7af091c1e1ce4189750",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.12",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#text-spacing"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-050",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.4"
+      ],
+      "action_sha256": "c764a4c859661d18e97d123d225e331b155caa1195bfef0598ee2f3c02dddc46",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#orientation"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-051",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "action_sha256": "4403066304cad10fd1dabcc1ed9757215497c09786aad79c7f0ce4e1e960491c",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.13",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#content-on-hover-or-focus"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-052",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "action_sha256": "d7113a5da419d2132428119213e77b4e2cf94266f914e034bd07d34d7442b702",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.13",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#content-on-hover-or-focus"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-053",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "action_sha256": "567203c0afae7c4654752674688abb8c3e10dac7dd121fe3aa9e5b5f8b393d24",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.13",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#content-on-hover-or-focus"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-054",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "action_sha256": "47cbdc80c3707d0866d367b4784db774d626c4aaab19e54870e8c5f62d58ba65",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-055",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "action_sha256": "c246cc399cafb2aecd3c658dd52529f33ed977306a727c04981f50b257e71936",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.4.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#use-of-color"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-056",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.3.3"
+      ],
+      "action_sha256": "76fa7726156b046177bc77187cd49666fb01468426830066bd5cbdeaa5553eac",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#animation-from-interactions"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C reduced-motion technique",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/css/C39"
+      }
+    },
+    {
+      "item_id": "ACT-057",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.4.4",
+        "1.4.10",
+        "1.4.12"
+      ],
+      "action_sha256": "994c30106ec12a1e8aabf841ba163e1db3483f439619ceaea6baa0dd38fb7070",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.4.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#resize-text"
+        },
+        {
+          "id": "1.4.10",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#reflow"
+        },
+        {
+          "id": "1.4.12",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#text-spacing"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-058",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.7",
+        "1.4.11"
+      ],
+      "action_sha256": "2a60b26732da9882f0a4b668250961dcdf3dfd231ee1cd397f9af45205645f26",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-visible"
+        },
+        {
+          "id": "1.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-059",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.4.3",
+        "1.4.11"
+      ],
+      "action_sha256": "aac0142dda87f1d0171fa5671ff4d78f8a5cfa893a88e2be0fb6972df0da7afa",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum"
+        },
+        {
+          "id": "1.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-060",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "3fd8ba7a1322565c679e7b9f5a771f894576bfd8bdf58eae0dffc2410cb79b40",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-061",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "f22bca26dce2d48a2c781d5360448b4fad9f2d03de2fdd6bca8b3414bb56b988",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-062",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.1.2"
+      ],
+      "action_sha256": "07744523b07197b19652b5ec63d1fb77215ab2201e9e0ecb023066d7c9dec481",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-063",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.1.2"
+      ],
+      "action_sha256": "a77d9fe177eaa60f51ddcccf0d7430d4e21d46a9a111449e958acf2f89c3f305",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-064",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "10a5ce59806a8c128a0ed51f641dc990bd8bfc18fee769078d6a85b4f5c433bf",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-065",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.7"
+      ],
+      "action_sha256": "9649909a46f5b0b4830e974dbbd50a0c1701ff8c9c8bfcccea40828155ddf8da",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-visible"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-066",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.4.11"
+      ],
+      "action_sha256": "f314ae327daf810ad223854a984e1d0f751379a8bf8b6600236101b865b5549e",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-not-obscured-minimum"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-067",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.1.4"
+      ],
+      "action_sha256": "df49838c3c0970f245a8b203187e2d567be2c1b7b8fb143e6675625d073c506c",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.1.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#character-key-shortcuts"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-068",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.1"
+      ],
+      "action_sha256": "e5706bde2c3bcddbc61b9e8514de2fc47fb1d2593cf54165d9b8881f1f841d20",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pointer-gestures"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-069",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.7"
+      ],
+      "action_sha256": "850548d299d9eb573d8a4b341d8951ca8a2004c029ff56d08cb4638cb089a3d0",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#dragging-movements"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-070",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.2"
+      ],
+      "action_sha256": "cb5755e06922ba823dd244b7f6bfdd8863e7e6791d1904f420b1ada45a325fbc",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pointer-cancellation"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-071",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.4"
+      ],
+      "action_sha256": "d72050d209760d30f40304f90f8eaa05625619a977d28542cdb3c34c39bf63c0",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#motion-actuation"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-072",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.4"
+      ],
+      "action_sha256": "edc7cd155f65500933381a9707b2c9abf9e46fca62921e4ae38f8d4d236a2df1",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#motion-actuation"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-073",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.5.8"
+      ],
+      "action_sha256": "812e3167212ce85ed38aebe06992966e93e2451854f2150c028cdc39036cff49",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.5.8",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#target-size-minimum"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-074",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.2.1"
+      ],
+      "action_sha256": "060ebf451afc2bc6c2e10aa3dc181779fdd2579218d67df46de7038f65835d80",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#on-focus"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-075",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.2.2"
+      ],
+      "action_sha256": "0bcf53fe95644aaf7425d341f9d820444b99f8198edca6302e0f58eab6c49eba",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#on-input"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-076",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "1cadbb43d4441ad798df82b893363973e06c6b85e57da20680eb77dfb69d81aa",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-077",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "2.5.7"
+      ],
+      "action_sha256": "cdb0121618a72f7f61cbcd234e0ad1e281412e7008b1982a05ff51cc5ea1e6e7",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "2.5.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#dragging-movements"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-078",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.11"
+      ],
+      "action_sha256": "7d0fff0d43956600827db04bdbd614c06fd02832962072ddef1866d477d9abf9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.11",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-not-obscured-minimum"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-079",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "3f6466c8db1f70368ae7c99e31ede4a7d620ee8a01472474d91403b2148640ab",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-080",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "be85f4d926619834d5250e274874b203cba7e36e93872cdc71863f0ef29933fa",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-081",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.7"
+      ],
+      "action_sha256": "b7d43f3efd5dc87234f321f1470fc6a1997e8a5fb6dca56e9ba247e9b4874b15",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-visible"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-082",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "action_sha256": "1f5a2b6638ef8ac98a23bc42d67f1c1e55b6ead9e4883a98003cb5fd70866ea8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#labels-or-instructions"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-083",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "7603b6c252fa01808790d8808a6af5cbfabb59970c4e1dd39960d2f6b7c09f3d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-084",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.5"
+      ],
+      "action_sha256": "318677108f72abdce3ba1386759436e7eb9f40e3b391e64759ea72e4429d49f2",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.5",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#identify-input-purpose"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-085",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.1"
+      ],
+      "action_sha256": "472b5f5805dcff1c92e81555bf95b072b58933be1a37cb94151e529e9e7157d2",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-identification"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-086",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.3"
+      ],
+      "action_sha256": "bf2efee410505b654f2b49b5d3023bd895d34c0ee1f045474405403ee120a67e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-suggestion"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-087",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.4"
+      ],
+      "action_sha256": "508d6c97ae377f0a96c3ab072b638cc0d45450eab996de8a403ade0d5ac3b8d1",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-prevention-legal-financial-data"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-088",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.7"
+      ],
+      "action_sha256": "0cf0c8217a71305cf3ca1a729d8bfcf24d368aa368daa7e554d48f4cb6111e2b",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#redundant-entry"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-089",
+      "basis": "R",
+      "wcag_criteria": [
+        "3.3.8"
+      ],
+      "action_sha256": "96b2397bdad4d3591933a9417f3d97ed4d7f901996df690dddc39e133afa8d60",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "3.3.8",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#accessible-authentication-minimum"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-090",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "b7d763c610ca956ffbc959c29d4aea2c4a5de5628f234eb4b50eee8fae8e448b",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-091",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "0bb45cab1bfee1a700c567fc3b456e8d594263af022def63c3e14a9fbd1b3bb2",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-092",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "action_sha256": "d9dfc2c5e1cfc37d56157ca75f0bba5757059c674afc69df396c623f172ccf9c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#labels-or-instructions"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-093",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "action_sha256": "a0d9b346890ea5bd68914d81e742176bf98a1d183e3cd86bb98ed8c7107b46ae",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#labels-or-instructions"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-094",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1",
+        "3.3.1"
+      ],
+      "action_sha256": "0de94f2035b38044c1d92b03346635d296d72031e3d7bada5f82573431fd98e7",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        },
+        {
+          "id": "3.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-identification"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-095",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "action_sha256": "6958ebfc5e26ce8b8422de4ff261ac44cb25854e70708782adac72e7707cd1a2",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-identification"
+        },
+        {
+          "id": "3.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-suggestion"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-096",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.8"
+      ],
+      "action_sha256": "7a24ee8e928be79fe0b29dc2a29ba6b4b242e2577b53d26b7d67bf174df62157",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.8",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#accessible-authentication-minimum"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-097",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.3"
+      ],
+      "action_sha256": "f9f4be76b93469803d34efa0fab8d8f814c2bfcb15f2ead3502a5ae3f268db39",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-suggestion"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-098",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.4"
+      ],
+      "action_sha256": "5283c8f9c86d2b7555976ec2dc6ff14ccaa17d2d56f4f771a1126b48a4ce7358",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-prevention-legal-financial-data"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-099",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "bb22529393c86c085bb03a22d816a0c7308f70c14b03723f1ebc1e28e97fc8f5",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-100",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.5"
+      ],
+      "action_sha256": "0aa911d21b856c95f0f3a1a5e61d3f64f2aa9eb56de9d2aa1b204a1d58c1ad8a",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.5",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#identify-input-purpose"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-101",
+      "basis": "G",
+      "wcag_criteria": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "action_sha256": "076b64c6f1d33ce2ce18d1d47b1c2fbe731f7b0a0ff3771cd7bc1c8d86f0cd7f",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "3.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-identification"
+        },
+        {
+          "id": "3.3.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-suggestion"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C forms tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/forms/"
+      }
+    },
+    {
+      "item_id": "ACT-102",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "dcd3da88119c567993991c775173fd96e9d54648220b306baff6d9d46fa129ae",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-103",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "a996c045f2312703c5f765004e6569b00666ea1e6d2d253934384c7f7f3d9ff3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-104",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "0fe7e9373f6dfa581845642cda3a304beeb4b238a81f19e68e5431714d6d9257",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-105",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "8e4963f8cbedc744bdd52588cdb355144f626bac1af133cffbdab8d960323c09",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-106",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "12631c9865fc6a10b1f982f29d4ed49b6cc3bd08a8dcd081335dbc71355c29f7",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-107",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "981cd8ef6cab8d337d09ac09195bbb8880f2ffe58b2e904447c236d44a2d4f58",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-108",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "73819488eb1a10909dbea52d2cf60bcf5d4910d5a58cc7b8697f690ebf027d80",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-109",
+      "basis": "G",
+      "wcag_criteria": [],
+      "action_sha256": "b32b5015908afceb5dcafdb08dc5f42b6f16429ca8f89c8a02c22d2f28686255",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-110",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "51d937c6b3db8f364d605b8dca7d6986155568f2baf6691ed43390debd24b5ad",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-111",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "2294ebdc238f9b3aab9c35972024db7d72cd6310fedbf3443dd01cbb2039a30c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-112",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "8f1a4e1bc58a218024b4551f3bc0c61944c46133bb1b4f895e0a9a992bc27be0",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-113",
+      "basis": "R",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "242a560d11af298d36d63ffab1e5552457746c06d6a9ddf94a34230473d00ee0",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-114",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "d8b93243f527c2095e80e288ef2a25ab58f23d3efcf1e79fbce56ddf633df0e8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-115",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "01fefb43c5f1c0ffe290ef518059c4342d6a53bbbdab43214636f35ba9ed3a42",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-116",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "69bfa22f624958b2e95bf38b8ce9704dfd7fba1cd663b3365a5be79ddfa66b2d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-117",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "057e3c592912f517db464b3c596412dec96da22db20c809946dc2fc416e02a15",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-118",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "4fdc00e7f6fafbecd9934804fe9feef821aa2022a737c1fd581e6246415521bf",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-119",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "998d41f8115d8c6a5877cc12de05793574754997bb5cad9362efc7527fdaec5e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-120",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3",
+        "4.1.2"
+      ],
+      "action_sha256": "2b2481ee71d565a566dd2d440fcdbccc2012d204164ecc1517bfd978a46c8183",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-121",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "60da0c63eb6a49fdcbda58be5d5b143951eb06670c07284de7322088db1501d3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-122",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "8628b13342e34066ca8a3129999ae0f86c467d30651775231ee23b30b627f666",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-123",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "d57ff1345acd8abf3ec4518464f7aae0ed33d72b12166953014b9edf7cc0c92f",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-124",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "5785e12a7f28ca0cd1210e7f96a4c8fff20ae2fe7cbfd8076ac4f3958524c0d5",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-125",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.2",
+        "2.4.3"
+      ],
+      "action_sha256": "cc0080362039d31aca1a9357619a3d5343914a7636062776618acb34eba94a35",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap"
+        },
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-126",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "action_sha256": "6d50410b20834200254fec9f2b840d9fd6652ca90f715ff903848caaa860cd33",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "2.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-127",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "9852529b123c9e763afe44161a2ecb18557d77f003b3be499a65a9c1083f6793",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-128",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "c91aeae7877cfff2508f425e8368cf40ab0ce3d83d98ac44b4a80fd4f125b1a3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-129",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "5b7a9bad32817b3eb03e3cd23cdfe41e09506943422a3ee7a03b1e0bb06afad9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C modal dialog pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+      }
+    },
+    {
+      "item_id": "ACT-130",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "e0177ca8bf76efcf42fb9535facedb2e8e7aefe34b24f4d82fa831a0d2fa2ecd",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C menu and menubar pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/"
+      }
+    },
+    {
+      "item_id": "ACT-131",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "6214a6376a634dc008f4bc6b08d4dd2253b467256d84eb56db621eb2bc52db47",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C menu and menubar pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/"
+      }
+    },
+    {
+      "item_id": "ACT-132",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "action_sha256": "88a3d21d08c61b5c992f17ab2a50dd002d9dcfb50fa5c36eafd6c97f6d1e7b1e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tabs pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/"
+      }
+    },
+    {
+      "item_id": "ACT-133",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "0333eda7f3b733a962f9ac1ab29eebd218d2330eeb87dd16e1eafcb3f3e70ff8",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tabs pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/"
+      }
+    },
+    {
+      "item_id": "ACT-134",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "7206d14ceec7f61a13dc5162d180f248a802da9a72a7ce238e65ac5ef0d6952e",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C accordion pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/"
+      }
+    },
+    {
+      "item_id": "ACT-135",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "0c95d45c96386d4d28c407b0481c62cb93be80d9fc3b8f6d049529a167a9999d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C accordion pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/"
+      }
+    },
+    {
+      "item_id": "ACT-136",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "0ed69e15997dcc2c950cce2bd0dfd8e2367ab4c4a0ce84e4eb6b15bc7aef8a66",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C carousel pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/"
+      }
+    },
+    {
+      "item_id": "ACT-137",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "action_sha256": "7d9485378a92308b749567a8c21232b2562560c5d81a26be80ba4ea3fac7ab58",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pause-stop-hide"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C carousel pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/"
+      }
+    },
+    {
+      "item_id": "ACT-138",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "action_sha256": "99f309f2f810573c09e1974168e149030a7759040fcc0d44ca0e413a1786d4cf",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C ARIA Authoring Practices Guide",
+        "url": "https://www.w3.org/WAI/ARIA/apg/"
+      }
+    },
+    {
+      "item_id": "ACT-139",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "dfebc518e1d13a053752cb8e382fc436cb9f483045187ab41841b21c91324f1d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C combobox pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+      }
+    },
+    {
+      "item_id": "ACT-140",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "action_sha256": "78818065db6cc2e070e5549fd1c774115958b922de139d49a3120f9cd7ba4e20",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C combobox pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+      }
+    },
+    {
+      "item_id": "ACT-141",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "568af237d1c1b2d6b0cc657fff57b56fe0fc03c5810742315498274dc7227fbc",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C combobox pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+      }
+    },
+    {
+      "item_id": "ACT-142",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "f38c6561c7762660dc7d3ddb842f1002cfcfe21ca1ecd57ae0caebf901a6ea16",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C combobox pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+      }
+    },
+    {
+      "item_id": "ACT-143",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "fdc426cabd75fb8007d891b46ac001454b39965cd98d448edf4699a056c19063",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C combobox pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+      }
+    },
+    {
+      "item_id": "ACT-144",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "fefbaa50b3152a476c689df9b5f3c72e0a88516d931b749793c102ef79f783d3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C slider pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/"
+      }
+    },
+    {
+      "item_id": "ACT-145",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "action_sha256": "e29f7e832cbb237da53bf98da4191b61edcd2d6b9dc11bf75c979f34f8ea994a",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C slider pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/"
+      }
+    },
+    {
+      "item_id": "ACT-146",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.5.7"
+      ],
+      "action_sha256": "cab2cfeecff6ef4a140bf4f4fbaf808e55be7915061e79de2bc811e5d9719f9f",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.5.7",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#dragging-movements"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C slider pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/"
+      }
+    },
+    {
+      "item_id": "ACT-147",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "5e81e7ce27fd4dbe2842e79ad46534babe5d5f2144530b808540af261a0d8761",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C slider pattern",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/"
+      }
+    },
+    {
+      "item_id": "ACT-148",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "b81ccfa875994cc1ab4904df18181cf7ab943bd9ec6be4bedc4bd54571a8c865",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-149",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "action_sha256": "e771510a596a0ae58af00f07ef705970ec1c5c97f61f081a65530c5f66d38f76",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-150",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "action_sha256": "1dca50ab8f76d0bddb5f28f7d07f73e1e8adb0d10b54bcdb282884651256bb57",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#use-of-color"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-151",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "94b43a480f0fe7f396f2f4984df03de7b533cfe08d59c32889659b566d05fa89",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tables tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/tables/"
+      }
+    },
+    {
+      "item_id": "ACT-152",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "action_sha256": "b3f283f6647a0de7f29bca8e95040fe760368c77dc74c79032a7fb3559f288d9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tables tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/tables/"
+      }
+    },
+    {
+      "item_id": "ACT-153",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "action_sha256": "8f24e31639a42426e21642c51bc5cf63469444d5eb6d56b3d689f4bcf5ccd8ca",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C sortable table example",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/table/examples/sortable-table/"
+      }
+    },
+    {
+      "item_id": "ACT-154",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "323798371e2c671a725e95e41b0b109a7ba5e0750c6f9854798a05dffba85e89",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tables tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/tables/"
+      }
+    },
+    {
+      "item_id": "ACT-155",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "action_sha256": "f6eba4959a4e1108879b5314cc0774a4121670d277b9ea8ed3b45c5654887dc5",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C WCAG techniques",
+        "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+      }
+    },
+    {
+      "item_id": "ACT-156",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.3.2",
+        "2.4.3"
+      ],
+      "action_sha256": "0c3496f7102af827c4efa5fbefae47e0f4a495babd7643f6ef81ab3f4159d465",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.3.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#meaningful-sequence"
+        },
+        {
+          "id": "2.4.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C tables tutorial",
+        "url": "https://www.w3.org/WAI/tutorials/tables/"
+      }
+    },
+    {
+      "item_id": "ACT-157",
+      "basis": "G",
+      "wcag_criteria": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "action_sha256": "1afda93904db5526adecafea941dc12857eb961e924963fbcf67c6c047db78f3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        },
+        {
+          "id": "4.1.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C sortable table example",
+        "url": "https://www.w3.org/WAI/ARIA/apg/patterns/table/examples/sortable-table/"
+      }
+    },
+    {
+      "item_id": "ACT-158",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.1"
+      ],
+      "action_sha256": "16baac5d076fcb1bb9fc120657981fd7eb077ec2d96bb95a747ae63fc0cf2bfe",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-159",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.1"
+      ],
+      "action_sha256": "5a215172e81e22b693e55476efb47c32473e7ec314c893df6050d095b8b43039",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-160",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.2"
+      ],
+      "action_sha256": "8d8b970ec8365883aa4e82ccca6b97a527f17935668a8b2e5bc7da4856e38302",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-prerecorded"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-161",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.3"
+      ],
+      "action_sha256": "4712aa0a6376f24c3adb469b94856971c2528f56687480f626599bc106299ce6",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-description-or-media-alternative-prerecorded"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-162",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.4"
+      ],
+      "action_sha256": "70d68a5b4ea8a5178037a91375f557ccf3fa07cf5f280c65f6cda7c255b03f14",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-live"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-163",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.2.5"
+      ],
+      "action_sha256": "db734d7f3ec85f447c4f6ac27c2a77e0d4382278060c2defd0cb06e282f71b3d",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.2.5",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-description-prerecorded"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-164",
+      "basis": "R",
+      "wcag_criteria": [
+        "1.4.2"
+      ],
+      "action_sha256": "4ae4a00fc810eaceea9aa6fb386e8e2c9c0a5bdeb1b25ba0865caf3224ea7498",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "1.4.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-control"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-165",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.2.1"
+      ],
+      "action_sha256": "e18cd0824eb9c717050f12d04c991e5a0a34f8387ccbad2e8ec1553cdd5b7b27",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#timing-adjustable"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-166",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "action_sha256": "1ff53f7b59335fb3cb2687ec8ae7b39feca2b451a1db675d1aa27690f460e677",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pause-stop-hide"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-167",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "action_sha256": "eda394f25423ee4c96455ee2a40fc468a4867666118d873dd1ed0e1aff8bdb22",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pause-stop-hide"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-168",
+      "basis": "R",
+      "wcag_criteria": [
+        "2.3.1"
+      ],
+      "action_sha256": "f0e9af15389522fd290271df22ac8649ccc700d8191d2422d4c1d79cc15b3c39",
+      "technical_edit_from_0_1_0": true,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "first_pass_against_wcag",
+      "criterion_links": [
+        {
+          "id": "2.3.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#three-flashes-or-below-threshold"
+        }
+      ],
+      "guidance_reference": null
+    },
+    {
+      "item_id": "ACT-169",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "action_sha256": "21c48100dbe3ab3d0f69c799b19cacff07fc3295773c7955df7c673d5b9293d5",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.1.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard"
+        },
+        {
+          "id": "4.1.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C accessible audio and video guide",
+        "url": "https://www.w3.org/WAI/media/av/"
+      }
+    },
+    {
+      "item_id": "ACT-170",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.2.2",
+        "1.2.4"
+      ],
+      "action_sha256": "3e4a20159b57b5d25c8fcce8e16c8e97d90b732f4e96231b0b95fb25a893ce8f",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.2.2",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-prerecorded"
+        },
+        {
+          "id": "1.2.4",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-live"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C accessible audio and video guide",
+        "url": "https://www.w3.org/WAI/media/av/"
+      }
+    },
+    {
+      "item_id": "ACT-171",
+      "basis": "G",
+      "wcag_criteria": [
+        "1.2.1",
+        "1.2.3"
+      ],
+      "action_sha256": "7deae994c6e5cff172b98c7a838d08e6dd818a239e6f09629a615e785c3554b6",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "1.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded"
+        },
+        {
+          "id": "1.2.3",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-description-or-media-alternative-prerecorded"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C accessible audio and video guide",
+        "url": "https://www.w3.org/WAI/media/av/"
+      }
+    },
+    {
+      "item_id": "ACT-172",
+      "basis": "G",
+      "wcag_criteria": [
+        "2.2.1"
+      ],
+      "action_sha256": "8cd5f4df9ecf8cf23cc1e38ce32925c3492931cb2bf2348647ad08b7a7b3a689",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [
+        {
+          "id": "2.2.1",
+          "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#timing-adjustable"
+        }
+      ],
+      "guidance_reference": {
+        "name": "W3C cognitive accessibility guidance",
+        "url": "https://www.w3.org/TR/coga-usable/"
+      }
+    },
+    {
+      "item_id": "ACT-173",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "5a5b54c9ea165e6812f02088ecfe6264b6f0bfba52bdc9879803bfd3797734c9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-174",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "7165eeccbd374fd526195af55758248423db07874e7ca5b5b1310063a9f1504c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-175",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "0aa454cb00b6095822da65f8491216bcbf36050cd65336ae794d6afb155e5c0c",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-176",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "d4da9a3f955f8476598b800ca89254f47e290f04d8f6be912a6f567a04511eb3",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-177",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "0d0ac515f73df68c2c7e44247788bb88428581b2ad6282087b8128d512d0c64a",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-178",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "516ac8cbb1ed57882155c37d3333cb117a123a5cfe5aa1cef6f40ca486462741",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-179",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "6461028e995661958a2837288f0ee52a77f364dfb019cdae1e1a97cb7d0c2c08",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-180",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "8992fa86cd651f9f3f5d63f6132e4d6ebc3509adccc02cbd293498d5efbecd0b",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-181",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "1836045c5a0592fe4cf975aa367876d9450f32a5bc610a57b56d2cb825bde8fa",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-182",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "312aa161ac78bd23796861ec08b80df58b3d4971b60ca9cd9d2e4819bc518f09",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-183",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "4ed0794f1fe9df285ef6d374c8e5072ea6ed71224049d2f72795a2daa6a07412",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-184",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "a217bbe060351a86a9049e6930922f434c3d5cc3f944f1dee5384f38628469e9",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-185",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "19f76cf6c4955978117991882d8fb94bf0820fe8bc2acaf05130848d04e6b57a",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-186",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "3f1fe9d89be54a6e987a1f8fb5cac975afa8ea7d4dd706209190b52e7d544e14",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-187",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "50e086f6ff25d08dd973402aefd61ba836d48c0624749ccf6c0d9d4b06f931a6",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    },
+    {
+      "item_id": "ACT-188",
+      "basis": "P",
+      "wcag_criteria": [],
+      "action_sha256": "794e02b20a26923132477b3dcd5e20370c990b3f3ba9f8470a0bb53eb4ec3569",
+      "technical_edit_from_0_1_0": false,
+      "expert_review": "pending",
+      "reviewer": null,
+      "review_evidence": null,
+      "notes": null,
+      "technical_screen": "pending",
+      "criterion_links": [],
+      "guidance_reference": {
+        "name": "W3C evaluation overview",
+        "url": "https://www.w3.org/WAI/test-evaluate/"
+      }
+    }
+  ]
+}

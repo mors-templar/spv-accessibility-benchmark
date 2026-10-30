@@ -1,0 +1,17 @@
+Use the accessibility checklist below while you complete the request above.
+Keep all required features from the original request.
+Apply each item only when it is relevant to the requested site.
+R items summarize conditional WCAG outcomes and have exceptions.
+G items describe guidance or possible techniques; their underlying outcomes may still be required.
+P items describe research activities rather than mandatory site features.
+Do not claim a check passed unless you have observed supporting evidence.
+Do not call a missing requested feature not applicable.
+Mark any item you cannot assess as unassessed.
+Create an accessibility self-report for every checklist item ID.
+For each R or G item, record pass, fail, not applicable, or unassessed.
+A G-item pass means the guidance was applied; it does not prove WCAG conformance.
+A G-item fail means the guidance was not applied; it is not automatically a WCAG failure.
+For each P item, record research activity and do not call it a site defect.
+Give a short reason and evidence for each status.
+If you cannot create a file, include the report in your response.
+The independent study team will review the finished site separately.

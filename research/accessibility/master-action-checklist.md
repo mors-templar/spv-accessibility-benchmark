@@ -1,6 +1,6 @@
 # Master accessibility action checklist for web projects
 
-**Version:** 0.1.0, 2026-10-29. **Status:** research draft for expert review.
+**Version:** 0.2.0, 2026-10-30. **Status:** research draft for expert review.
 
 This checklist translates WCAG 2.2 into practical actions for building and reviewing websites. It is a study resource, not a validated intervention, test suite, or conformance claim.
 
@@ -13,7 +13,7 @@ The source is the [12 December 2024 WCAG 2.2 Recommendation](https://www.w3.org/
 ### Item labels
 
 - **R: WCAG-derived outcome.** A plain-language summary of a requirement, subject to the linked criterion and exceptions. It is not the normative text.
-- **G: Guidance.** A possible technique or interaction pattern. It is not mandatory merely because W3C recommends or illustrates it.
+- **G: Guidance.** A possible technique or interaction pattern. Its underlying outcome can still be required by WCAG.
 - **P: Research process.** A proposed study or review practice, not a WCAG success criterion.
 
 **Review methods** are possible approaches: manual, keyboard, visual, assistive technology, and automated. They are not complete procedures, and automated checks cannot determine conformance alone. A checklist item may need several tests, states, devices, or reviewers.
@@ -57,7 +57,7 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [1.3.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships). Possible checks: manual, assistive-technology.
 - [ ] <a id="act-015"></a> **ACT-015 [R]** Write headings and labels that describe their topic or purpose.<br>
   Sources: [2.4.6](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#headings-and-labels). Possible checks: manual.
-- [ ] <a id="act-016"></a> **ACT-016 [R]** Preserve a meaningful programmatic sequence when the order affects meaning.<br>
+- [ ] <a id="act-016"></a> **ACT-016 [R]** Make a correct reading sequence programmatically determinable when the presentation order affects meaning.<br>
   Sources: [1.3.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#meaningful-sequence). Possible checks: manual, assistive-technology.
 - [ ] <a id="act-017"></a> **ACT-017 [R]** Expose meaningful list relationships programmatically or in text.<br>
   Sources: [1.3.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships). Possible checks: manual, assistive-technology.
@@ -90,15 +90,15 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [1.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content). Possible checks: manual, assistive-technology.
 - [ ] <a id="act-030"></a> **ACT-030 [R]** Supply equivalent information for informative charts, diagrams, and complex images.<br>
   Sources: [1.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content). Possible checks: manual, assistive-technology.
-- [ ] <a id="act-031"></a> **ACT-031 [R]** Give non-text CAPTCHA alternatives that accommodate different sensory abilities when CAPTCHA is used.<br>
+- [ ] <a id="act-031"></a> **ACT-031 [R]** Give non-text CAPTCHA a text alternative that identifies and describes its purpose. Provide alternatives for different sensory abilities.<br>
   Sources: [1.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content). Possible checks: manual.
-- [ ] <a id="act-032"></a> **ACT-032 [R]** Make link purpose understandable from link text or its programmatically determined context.<br>
+- [ ] <a id="act-032"></a> **ACT-032 [R]** Make each link purpose clear from its text or programmatically determined context, subject to the criterion exception.<br>
   Sources: [2.4.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#link-purpose-in-context). Possible checks: manual, assistive-technology.
 - [ ] <a id="act-033"></a> **ACT-033 [R]** Avoid instructions that rely solely on sensory characteristics such as position, shape, or sound.<br>
   Sources: [1.3.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#sensory-characteristics). Possible checks: manual.
-- [ ] <a id="act-034"></a> **ACT-034 [R]** Convey information without relying on color alone.<br>
+- [ ] <a id="act-034"></a> **ACT-034 [R]** Do not use color as the only visual means to convey information, actions, response prompts, or distinctions.<br>
   Sources: [1.4.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#use-of-color). Possible checks: manual.
-- [ ] <a id="act-035"></a> **ACT-035 [R]** Use text instead of images of text where the criterion applies and no exception applies.<br>
+- [ ] <a id="act-035"></a> **ACT-035 [R]** Use text rather than images of text when technology permits the presentation, subject to the criterion exceptions.<br>
   Sources: [1.4.5](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#images-of-text). Possible checks: manual.
 - [ ] <a id="act-036"></a> **ACT-036 [R]** Include the visible text of a control in its accessible name when the criterion applies.<br>
   Sources: [2.5.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#label-in-name). Possible checks: manual, assistive-technology.
@@ -115,25 +115,25 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
 
 ## Color, contrast, layout, and display adaptation
 
-- [ ] <a id="act-042"></a> **ACT-042 [R]** Check normal text and its background for at least 4.5:1 contrast, subject to the criterion exceptions.<br>
+- [ ] <a id="act-042"></a> **ACT-042 [R]** Check normal-size text and images of normal-size text for at least 4.5:1 contrast, subject to exceptions.<br>
   Sources: [1.4.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum). Possible checks: visual, automated.
-- [ ] <a id="act-043"></a> **ACT-043 [R]** Check large text and its background for at least 3:1 contrast, subject to the criterion exceptions.<br>
+- [ ] <a id="act-043"></a> **ACT-043 [R]** Check large text and images of large text for at least 3:1 contrast, subject to the criterion exceptions.<br>
   Sources: [1.4.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#contrast-minimum). Possible checks: visual, automated.
-- [ ] <a id="act-044"></a> **ACT-044 [R]** Check applicable control boundaries and state indicators for at least 3:1 contrast against adjacent colors.<br>
+- [ ] <a id="act-044"></a> **ACT-044 [R]** Ensure visual information needed to identify controls and states has 3:1 contrast against adjacent colors. Apply the criterion exceptions.<br>
   Sources: [1.4.11](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast). Possible checks: visual, manual.
 - [ ] <a id="act-045"></a> **ACT-045 [R]** Check visual parts of graphics required for understanding for at least 3:1 contrast, subject to exceptions.<br>
   Sources: [1.4.11](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-contrast). Possible checks: visual, manual.
-- [ ] <a id="act-046"></a> **ACT-046 [R]** Allow text to resize to 200% without loss of content or functionality, subject to exceptions.<br>
+- [ ] <a id="act-046"></a> **ACT-046 [R]** Allow text to resize to 200% without assistive technology. Prevent content or function loss, subject to exceptions.<br>
   Sources: [1.4.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#resize-text). Possible checks: visual, manual.
-- [ ] <a id="act-047"></a> **ACT-047 [R]** Support reflow at 320 CSS pixels wide for vertically scrolling content, subject to exceptions.<br>
+- [ ] <a id="act-047"></a> **ACT-047 [R]** For vertically scrolling content, avoid two-dimensional scrolling at 320 CSS pixels wide. Prevent loss of content or function, subject to exceptions.<br>
   Sources: [1.4.10](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#reflow). Possible checks: visual, manual.
-- [ ] <a id="act-048"></a> **ACT-048 [R]** Support reflow at 256 CSS pixels high for horizontally scrolling content, subject to exceptions.<br>
+- [ ] <a id="act-048"></a> **ACT-048 [R]** For horizontally scrolling content, avoid two-dimensional scrolling at 256 CSS pixels high. Prevent loss of content or function, subject to exceptions.<br>
   Sources: [1.4.10](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#reflow). Possible checks: visual, manual.
 - [ ] <a id="act-049"></a> **ACT-049 [R]** Preserve content and functionality when users apply the text-spacing overrides in the criterion.<br>
   Sources: [1.4.12](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#text-spacing). Possible checks: visual, manual.
 - [ ] <a id="act-050"></a> **ACT-050 [R]** Support portrait and landscape orientation unless a particular orientation is essential.<br>
   Sources: [1.3.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#orientation). Possible checks: visual, manual.
-- [ ] <a id="act-051"></a> **ACT-051 [R]** Make extra content shown on hover or focus dismissible when the criterion requires it.<br>
+- [ ] <a id="act-051"></a> **ACT-051 [R]** When required, let users dismiss hover or focus content without moving pointer hover or keyboard focus.<br>
   Sources: [1.4.13](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#content-on-hover-or-focus). Possible checks: keyboard, visual.
 - [ ] <a id="act-052"></a> **ACT-052 [R]** Let users move the pointer over applicable hover-triggered content without it disappearing.<br>
   Sources: [1.4.13](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#content-on-hover-or-focus). Possible checks: manual, visual.
@@ -158,23 +158,23 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [2.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard). Possible checks: keyboard.
 - [ ] <a id="act-061"></a> **ACT-061 [R]** Do not require specific timings for individual keystrokes, subject to the keyboard criterion exception.<br>
   Sources: [2.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard). Possible checks: keyboard.
-- [ ] <a id="act-062"></a> **ACT-062 [R]** Let users move keyboard focus away from each component.<br>
+- [ ] <a id="act-062"></a> **ACT-062 [R]** Allow keyboard focus to leave any component reached by keyboard using only a keyboard interface.<br>
   Sources: [2.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap). Possible checks: keyboard.
-- [ ] <a id="act-063"></a> **ACT-063 [R]** Explain any nonstandard way to move focus out of a component.<br>
+- [ ] <a id="act-063"></a> **ACT-063 [R]** Tell users the exit method when unmodified arrow, Tab, or another standard exit method is insufficient.<br>
   Sources: [2.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#no-keyboard-trap). Possible checks: keyboard, manual.
 - [ ] <a id="act-064"></a> **ACT-064 [R]** Preserve meaning and operability in focus order when sequence affects them.<br>
   Sources: [2.4.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-order). Possible checks: keyboard, manual.
-- [ ] <a id="act-065"></a> **ACT-065 [R]** Show a visible focus indicator for keyboard-operable interfaces.<br>
+- [ ] <a id="act-065"></a> **ACT-065 [R]** Provide a mode where the keyboard focus indicator is visible on keyboard-operable user interfaces.<br>
   Sources: [2.4.7](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-visible). Possible checks: keyboard, visual.
-- [ ] <a id="act-066"></a> **ACT-066 [R]** Prevent author-created content from entirely obscuring the focused component.<br>
+- [ ] <a id="act-066"></a> **ACT-066 [R]** When a component receives keyboard focus, do not let author-created content entirely obscure it. Apply the criterion notes.<br>
   Sources: [2.4.11](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#focus-not-obscured-minimum). Possible checks: keyboard, visual.
-- [ ] <a id="act-067"></a> **ACT-067 [R]** Permit applicable character-only shortcuts to be disabled, remapped, or active only on focus.<br>
+- [ ] <a id="act-067"></a> **ACT-067 [R]** Allow character-only shortcuts to be disabled, remapped to include a non-printable key, or active only on focus.<br>
   Sources: [2.1.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#character-key-shortcuts). Possible checks: keyboard, manual.
-- [ ] <a id="act-068"></a> **ACT-068 [R]** Provide a single-pointer alternative for applicable multipoint or path-based gestures.<br>
+- [ ] <a id="act-068"></a> **ACT-068 [R]** For multipoint or path-based gestures, provide a single-pointer alternative without a path-based gesture, subject to exceptions.<br>
   Sources: [2.5.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pointer-gestures). Possible checks: manual.
 - [ ] <a id="act-069"></a> **ACT-069 [R]** Provide a single-pointer alternative to dragging when the dragging criterion applies.<br>
   Sources: [2.5.7](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#dragging-movements). Possible checks: manual.
-- [ ] <a id="act-070"></a> **ACT-070 [R]** Support pointer cancellation using an allowed condition or applicable exception.<br>
+- [ ] <a id="act-070"></a> **ACT-070 [R]** For single-pointer functions, meet one allowed condition. Options include no execution on down-event, up-event with abort or undo, up reversal, or an essential down-event.<br>
   Sources: [2.5.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pointer-cancellation). Possible checks: manual.
 - [ ] <a id="act-071"></a> **ACT-071 [R]** Provide an interface alternative to motion actuation when the criterion applies.<br>
   Sources: [2.5.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#motion-actuation). Possible checks: manual.
@@ -184,7 +184,7 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [2.5.8](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#target-size-minimum). Possible checks: manual, visual.
 - [ ] <a id="act-074"></a> **ACT-074 [R]** Do not trigger a change of context merely when a component receives focus.<br>
   Sources: [3.2.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#on-focus). Possible checks: keyboard, manual.
-- [ ] <a id="act-075"></a> **ACT-075 [R]** Do not unexpectedly change context when a setting changes; provide prior notice where allowed.<br>
+- [ ] <a id="act-075"></a> **ACT-075 [R]** Do not automatically change context when a component's setting changes unless users receive advance notice.<br>
   Sources: [3.2.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#on-input). Possible checks: keyboard, manual.
 - [ ] <a id="act-076"></a> **ACT-076 [G]** Use native links for navigation and native buttons for actions where appropriate.<br>
   Sources: [2.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard), [4.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value), [W3C ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/). Possible checks: keyboard, assistive-technology.
@@ -207,13 +207,13 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [1.3.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#info-and-relationships). Possible checks: manual, assistive-technology.
 - [ ] <a id="act-084"></a> **ACT-084 [R]** Identify applicable input purposes programmatically for fields collecting information about the user.<br>
   Sources: [1.3.5](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#identify-input-purpose). Possible checks: manual, automated.
-- [ ] <a id="act-085"></a> **ACT-085 [R]** Identify detected input errors and describe them in text.<br>
+- [ ] <a id="act-085"></a> **ACT-085 [R]** Identify the input item with an automatically detected error and describe the error in text.<br>
   Sources: [3.3.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-identification). Possible checks: manual, keyboard.
 - [ ] <a id="act-086"></a> **ACT-086 [R]** Suggest known corrections for detected input errors unless security or purpose would be compromised.<br>
   Sources: [3.3.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-suggestion). Possible checks: manual.
-- [ ] <a id="act-087"></a> **ACT-087 [R]** Give an allowed error-prevention mechanism for the transactions covered by the criterion.<br>
+- [ ] <a id="act-087"></a> **ACT-087 [R]** For covered legal or financial actions, data changes, or test responses, offer reversal, error correction, or confirmation as allowed.<br>
   Sources: [3.3.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#error-prevention-legal-financial-data). Possible checks: manual.
-- [ ] <a id="act-088"></a> **ACT-088 [R]** Reuse information entered earlier in the same process or make it selectable, subject to exceptions.<br>
+- [ ] <a id="act-088"></a> **ACT-088 [R]** Within one process, auto-populate or let users select information needed again. Include information entered by or provided to the user and apply exceptions.<br>
   Sources: [3.3.7](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#redundant-entry). Possible checks: manual.
 - [ ] <a id="act-089"></a> **ACT-089 [R]** Provide an allowed alternative or assistance mechanism for authentication cognitive tests, subject to exceptions.<br>
   Sources: [3.3.8](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#accessible-authentication-minimum). Possible checks: manual.
@@ -267,7 +267,7 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
   Sources: [4.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value). Possible checks: assistive-technology, automated.
 - [ ] <a id="act-111"></a> **ACT-111 [R]** Make user-settable component states, properties, and values programmatically settable.<br>
   Sources: [4.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value). Possible checks: assistive-technology, manual.
-- [ ] <a id="act-112"></a> **ACT-112 [R]** Notify user agents, including assistive technologies, of changes to names, roles, states, properties, and values.<br>
+- [ ] <a id="act-112"></a> **ACT-112 [R]** Make notifications of name, role, state, property, and value changes available to user agents and assistive technologies.<br>
   Sources: [4.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value). Possible checks: assistive-technology, manual.
 - [ ] <a id="act-113"></a> **ACT-113 [R]** Expose applicable status messages so assistive technology can present them without focus.<br>
   Sources: [4.1.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages). Possible checks: assistive-technology, manual.
@@ -374,27 +374,27 @@ Numeric context: large text is at least 18 pt or 14 pt bold under WCAG's definit
 
 ## Audio, video, animation, and time limits, when present
 
-- [ ] <a id="act-158"></a> **ACT-158 [R]** Provide the required alternative for prerecorded audio-only content, subject to exceptions.<br>
+- [ ] <a id="act-158"></a> **ACT-158 [R]** Provide an equivalent time-based media alternative for prerecorded audio-only content, subject to the criterion exception.<br>
   Sources: [1.2.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded). Possible checks: manual.
-- [ ] <a id="act-159"></a> **ACT-159 [R]** Provide the required alternative for prerecorded video-only content, subject to exceptions.<br>
+- [ ] <a id="act-159"></a> **ACT-159 [R]** Provide an equivalent time-based media alternative or audio track for prerecorded video-only content, subject to the criterion exception.<br>
   Sources: [1.2.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded). Possible checks: manual.
 - [ ] <a id="act-160"></a> **ACT-160 [R]** Provide captions for prerecorded synchronized audio, subject to the stated exception.<br>
   Sources: [1.2.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-prerecorded). Possible checks: manual.
-- [ ] <a id="act-161"></a> **ACT-161 [R]** Provide an audio description or media alternative for applicable prerecorded synchronized media.<br>
+- [ ] <a id="act-161"></a> **ACT-161 [R]** Provide a time-based media alternative or audio description for prerecorded video in synchronized media, subject to the criterion exception.<br>
   Sources: [1.2.3](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-description-or-media-alternative-prerecorded). Possible checks: manual.
 - [ ] <a id="act-162"></a> **ACT-162 [R]** Provide captions for live audio in synchronized media.<br>
   Sources: [1.2.4](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-live). Possible checks: manual.
 - [ ] <a id="act-163"></a> **ACT-163 [R]** Provide audio description for applicable prerecorded synchronized video.<br>
   Sources: [1.2.5](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-description-prerecorded). Possible checks: manual.
-- [ ] <a id="act-164"></a> **ACT-164 [R]** Provide an allowed audio control if automatic audio plays for more than three seconds.<br>
+- [ ] <a id="act-164"></a> **ACT-164 [R]** For automatic audio over three seconds, provide pause, stop, or volume control independent of the system volume.<br>
   Sources: [1.4.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-control). Possible checks: keyboard, manual.
-- [ ] <a id="act-165"></a> **ACT-165 [R]** Provide an allowed way to turn off, adjust, or extend applicable time limits.<br>
+- [ ] <a id="act-165"></a> **ACT-165 [R]** Provide an allowed way to turn off, adjust, or extend time limits, subject to the criterion exceptions.<br>
   Sources: [2.2.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#timing-adjustable). Possible checks: manual, keyboard.
 - [ ] <a id="act-166"></a> **ACT-166 [R]** Provide pause, stop, or hide controls for applicable automatic moving, blinking, or scrolling content.<br>
   Sources: [2.2.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pause-stop-hide). Possible checks: keyboard, manual.
 - [ ] <a id="act-167"></a> **ACT-167 [R]** Provide a way to pause, stop, hide, or control the frequency of applicable auto-updating information.<br>
   Sources: [2.2.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#pause-stop-hide). Possible checks: keyboard, manual.
-- [ ] <a id="act-168"></a> **ACT-168 [R]** Keep flashes within the frequency or general and red flash thresholds in the criterion.<br>
+- [ ] <a id="act-168"></a> **ACT-168 [R]** Avoid more than three flashes in one second, unless flashes remain below the general and red flash thresholds.<br>
   Sources: [2.3.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#three-flashes-or-below-threshold). Possible checks: visual, manual.
 - [ ] <a id="act-169"></a> **ACT-169 [G]** Provide keyboard-operable and named controls for any custom media player.<br>
   Sources: [2.1.1](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#keyboard), [4.1.2](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#name-role-value), [W3C accessible audio and video guide](https://www.w3.org/WAI/media/av/). Possible checks: keyboard, assistive-technology.
@@ -464,6 +464,7 @@ For study results, the unit of analysis, applicable denominator, state sampling,
 ## WCAG 2.2 A/AA crosswalk
 
 Each link below points to at least one WCAG-derived action that refers to the criterion. The mapping is not a complete set of test cases or a claim of correct interpretation.
+
 - [1.1.1 Non-text Content (A)](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#non-text-content): [ACT-027](#act-027), [ACT-028](#act-028), [ACT-029](#act-029), [ACT-030](#act-030), [ACT-031](#act-031), [ACT-040](#act-040), [ACT-149](#act-149).
 - [1.2.1 Audio-only and Video-only (Prerecorded) (A)](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#audio-only-and-video-only-prerecorded): [ACT-158](#act-158), [ACT-159](#act-159).
 - [1.2.2 Captions (Prerecorded) (A)](https://www.w3.org/TR/2024/REC-WCAG22-20241212/#captions-prerecorded): [ACT-160](#act-160).

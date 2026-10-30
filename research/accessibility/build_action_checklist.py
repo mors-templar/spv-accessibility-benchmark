@@ -13,7 +13,8 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-VERSION = "0.1.0"
+VERSION = "0.2.0"
+VERSION_DATE = "2026-10-30"
 STANDARD = "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#"
 SOURCES = {
     "apg": ("W3C ARIA Authoring Practices Guide", "https://www.w3.org/WAI/ARIA/apg/"),
@@ -58,7 +59,7 @@ ACT-012 | R | Expose the default human language of each page programmatically. |
 ACT-013 | R | Identify changes in human language programmatically when the criterion applies. | 3.1.2 | manual,assistive-technology | -
 ACT-014 | R | Expose meaningful headings and the relationships they convey programmatically or in text. | 1.3.1 | manual,assistive-technology | -
 ACT-015 | R | Write headings and labels that describe their topic or purpose. | 2.4.6 | manual | -
-ACT-016 | R | Preserve a meaningful programmatic sequence when the order affects meaning. | 1.3.2 | manual,assistive-technology | -
+ACT-016 | R | Make a correct reading sequence programmatically determinable when the presentation order affects meaning. | 1.3.2 | manual,assistive-technology | -
 ACT-017 | R | Expose meaningful list relationships programmatically or in text. | 1.3.1 | manual,assistive-technology | -
 ACT-018 | R | Expose meaningful group and section relationships programmatically or in text. | 1.3.1 | manual,assistive-technology | -
 ACT-019 | R | Provide a way to bypass repeated blocks when they appear on multiple pages. | 2.4.1 | manual,keyboard | -
@@ -75,11 +76,11 @@ ACT-027 | R | Give meaningful images an equivalent text alternative, accounting 
 ACT-028 | R | Give image-based controls a text alternative that communicates their purpose. | 1.1.1,4.1.2 | manual,assistive-technology | -
 ACT-029 | R | Allow decorative non-text content to be ignored by assistive technology when appropriate. | 1.1.1 | manual,assistive-technology | -
 ACT-030 | R | Supply equivalent information for informative charts, diagrams, and complex images. | 1.1.1 | manual,assistive-technology | -
-ACT-031 | R | Give non-text CAPTCHA alternatives that accommodate different sensory abilities when CAPTCHA is used. | 1.1.1 | manual | -
-ACT-032 | R | Make link purpose understandable from link text or its programmatically determined context. | 2.4.4 | manual,assistive-technology | -
+ACT-031 | R | Give non-text CAPTCHA a text alternative that identifies and describes its purpose. Provide alternatives for different sensory abilities. | 1.1.1 | manual | -
+ACT-032 | R | Make each link purpose clear from its text or programmatically determined context, subject to the criterion exception. | 2.4.4 | manual,assistive-technology | -
 ACT-033 | R | Avoid instructions that rely solely on sensory characteristics such as position, shape, or sound. | 1.3.3 | manual | -
-ACT-034 | R | Convey information without relying on color alone. | 1.4.1 | manual | -
-ACT-035 | R | Use text instead of images of text where the criterion applies and no exception applies. | 1.4.5 | manual | -
+ACT-034 | R | Do not use color as the only visual means to convey information, actions, response prompts, or distinctions. | 1.4.1 | manual | -
+ACT-035 | R | Use text rather than images of text when technology permits the presentation, subject to the criterion exceptions. | 1.4.5 | manual | -
 ACT-036 | R | Include the visible text of a control in its accessible name when the criterion applies. | 2.5.3 | manual,assistive-technology | -
 ACT-037 | G | For an icon-only button, provide a meaningful accessible name describing its action. | 1.1.1,4.1.2 | manual,assistive-technology | images
 ACT-038 | G | Describe an informational image according to its purpose in the surrounding content. | 1.1.1 | manual | images
@@ -88,16 +89,16 @@ ACT-040 | R | Provide the required text alternative for other non-text content, 
 ACT-041 | G | Give an image-only link an accessible name that identifies the link purpose. | 1.1.1,2.4.4 | manual,assistive-technology | images
 """),
     ("Color, contrast, layout, and display adaptation", """
-ACT-042 | R | Check normal text and its background for at least 4.5:1 contrast, subject to the criterion exceptions. | 1.4.3 | visual,automated | -
-ACT-043 | R | Check large text and its background for at least 3:1 contrast, subject to the criterion exceptions. | 1.4.3 | visual,automated | -
-ACT-044 | R | Check applicable control boundaries and state indicators for at least 3:1 contrast against adjacent colors. | 1.4.11 | visual,manual | -
+ACT-042 | R | Check normal-size text and images of normal-size text for at least 4.5:1 contrast, subject to exceptions. | 1.4.3 | visual,automated | -
+ACT-043 | R | Check large text and images of large text for at least 3:1 contrast, subject to the criterion exceptions. | 1.4.3 | visual,automated | -
+ACT-044 | R | Ensure visual information needed to identify controls and states has 3:1 contrast against adjacent colors. Apply the criterion exceptions. | 1.4.11 | visual,manual | -
 ACT-045 | R | Check visual parts of graphics required for understanding for at least 3:1 contrast, subject to exceptions. | 1.4.11 | visual,manual | -
-ACT-046 | R | Allow text to resize to 200% without loss of content or functionality, subject to exceptions. | 1.4.4 | visual,manual | -
-ACT-047 | R | Support reflow at 320 CSS pixels wide for vertically scrolling content, subject to exceptions. | 1.4.10 | visual,manual | -
-ACT-048 | R | Support reflow at 256 CSS pixels high for horizontally scrolling content, subject to exceptions. | 1.4.10 | visual,manual | -
+ACT-046 | R | Allow text to resize to 200% without assistive technology. Prevent content or function loss, subject to exceptions. | 1.4.4 | visual,manual | -
+ACT-047 | R | For vertically scrolling content, avoid two-dimensional scrolling at 320 CSS pixels wide. Prevent loss of content or function, subject to exceptions. | 1.4.10 | visual,manual | -
+ACT-048 | R | For horizontally scrolling content, avoid two-dimensional scrolling at 256 CSS pixels high. Prevent loss of content or function, subject to exceptions. | 1.4.10 | visual,manual | -
 ACT-049 | R | Preserve content and functionality when users apply the text-spacing overrides in the criterion. | 1.4.12 | visual,manual | -
 ACT-050 | R | Support portrait and landscape orientation unless a particular orientation is essential. | 1.3.4 | visual,manual | -
-ACT-051 | R | Make extra content shown on hover or focus dismissible when the criterion requires it. | 1.4.13 | keyboard,visual | -
+ACT-051 | R | When required, let users dismiss hover or focus content without moving pointer hover or keyboard focus. | 1.4.13 | keyboard,visual | -
 ACT-052 | R | Let users move the pointer over applicable hover-triggered content without it disappearing. | 1.4.13 | manual,visual | -
 ACT-053 | R | Keep applicable hover- or focus-triggered content visible until a criterion-defined dismissal condition occurs. | 1.4.13 | manual,keyboard | -
 ACT-054 | G | Test text over images and gradients at the least-contrasting visible area. | 1.4.3 | visual,manual | techniques
@@ -110,20 +111,20 @@ ACT-059 | G | Check contrast in each available theme and relevant interactive st
     ("Keyboard, focus, and pointer input", """
 ACT-060 | R | Make functionality operable through a keyboard interface, subject to the path-dependent exception. | 2.1.1 | keyboard | -
 ACT-061 | R | Do not require specific timings for individual keystrokes, subject to the keyboard criterion exception. | 2.1.1 | keyboard | -
-ACT-062 | R | Let users move keyboard focus away from each component. | 2.1.2 | keyboard | -
-ACT-063 | R | Explain any nonstandard way to move focus out of a component. | 2.1.2 | keyboard,manual | -
+ACT-062 | R | Allow keyboard focus to leave any component reached by keyboard using only a keyboard interface. | 2.1.2 | keyboard | -
+ACT-063 | R | Tell users the exit method when unmodified arrow, Tab, or another standard exit method is insufficient. | 2.1.2 | keyboard,manual | -
 ACT-064 | R | Preserve meaning and operability in focus order when sequence affects them. | 2.4.3 | keyboard,manual | -
-ACT-065 | R | Show a visible focus indicator for keyboard-operable interfaces. | 2.4.7 | keyboard,visual | -
-ACT-066 | R | Prevent author-created content from entirely obscuring the focused component. | 2.4.11 | keyboard,visual | -
-ACT-067 | R | Permit applicable character-only shortcuts to be disabled, remapped, or active only on focus. | 2.1.4 | keyboard,manual | -
-ACT-068 | R | Provide a single-pointer alternative for applicable multipoint or path-based gestures. | 2.5.1 | manual | -
+ACT-065 | R | Provide a mode where the keyboard focus indicator is visible on keyboard-operable user interfaces. | 2.4.7 | keyboard,visual | -
+ACT-066 | R | When a component receives keyboard focus, do not let author-created content entirely obscure it. Apply the criterion notes. | 2.4.11 | keyboard,visual | -
+ACT-067 | R | Allow character-only shortcuts to be disabled, remapped to include a non-printable key, or active only on focus. | 2.1.4 | keyboard,manual | -
+ACT-068 | R | For multipoint or path-based gestures, provide a single-pointer alternative without a path-based gesture, subject to exceptions. | 2.5.1 | manual | -
 ACT-069 | R | Provide a single-pointer alternative to dragging when the dragging criterion applies. | 2.5.7 | manual | -
-ACT-070 | R | Support pointer cancellation using an allowed condition or applicable exception. | 2.5.2 | manual | -
+ACT-070 | R | For single-pointer functions, meet one allowed condition. Options include no execution on down-event, up-event with abort or undo, up reversal, or an essential down-event. | 2.5.2 | manual | -
 ACT-071 | R | Provide an interface alternative to motion actuation when the criterion applies. | 2.5.4 | manual | -
 ACT-072 | R | Allow applicable motion actuation to be disabled, subject to the criterion exceptions. | 2.5.4 | manual | -
 ACT-073 | R | Make pointer targets at least 24 by 24 CSS pixels or satisfy an allowed exception. | 2.5.8 | manual,visual | -
 ACT-074 | R | Do not trigger a change of context merely when a component receives focus. | 3.2.1 | keyboard,manual | -
-ACT-075 | R | Do not unexpectedly change context when a setting changes; provide prior notice where allowed. | 3.2.2 | keyboard,manual | -
+ACT-075 | R | Do not automatically change context when a component's setting changes unless users receive advance notice. | 3.2.2 | keyboard,manual | -
 ACT-076 | G | Use native links for navigation and native buttons for actions where appropriate. | 2.1.1,4.1.2 | keyboard,assistive-technology | apg
 ACT-077 | G | Check keyboard operation independently from the non-dragging pointer alternative. | 2.1.1,2.5.7 | keyboard,manual | techniques
 ACT-078 | G | Check focused elements around sticky headers, overlays, and mobile virtual keyboards. | 2.4.11 | keyboard,visual | techniques
@@ -135,10 +136,10 @@ ACT-081 | G | Make keyboard focus visually distinguishable on all interactive co
 ACT-082 | R | Provide labels or instructions when a user must enter data. | 3.3.2 | manual,assistive-technology | -
 ACT-083 | R | Expose the relationship between a label and its input programmatically or in text. | 1.3.1 | manual,assistive-technology | -
 ACT-084 | R | Identify applicable input purposes programmatically for fields collecting information about the user. | 1.3.5 | manual,automated | -
-ACT-085 | R | Identify detected input errors and describe them in text. | 3.3.1 | manual,keyboard | -
+ACT-085 | R | Identify the input item with an automatically detected error and describe the error in text. | 3.3.1 | manual,keyboard | -
 ACT-086 | R | Suggest known corrections for detected input errors unless security or purpose would be compromised. | 3.3.3 | manual | -
-ACT-087 | R | Give an allowed error-prevention mechanism for the transactions covered by the criterion. | 3.3.4 | manual | -
-ACT-088 | R | Reuse information entered earlier in the same process or make it selectable, subject to exceptions. | 3.3.7 | manual | -
+ACT-087 | R | For covered legal or financial actions, data changes, or test responses, offer reversal, error correction, or confirmation as allowed. | 3.3.4 | manual | -
+ACT-088 | R | Within one process, auto-populate or let users select information needed again. Include information entered by or provided to the user and apply exceptions. | 3.3.7 | manual | -
 ACT-089 | R | Provide an allowed alternative or assistance mechanism for authentication cognitive tests, subject to exceptions. | 3.3.8 | manual | -
 ACT-090 | R | Make form-control names and roles programmatically determinable. | 4.1.2 | assistive-technology,automated | -
 ACT-091 | R | Expose applicable form status messages so assistive technology can present them without focus. | 4.1.3 | assistive-technology,manual | -
@@ -166,7 +167,7 @@ ACT-109 | G | Avoid making controls or content move unexpectedly. | - | manual,v
     ("Dynamic content and assistive-technology semantics", """
 ACT-110 | R | Expose each user-interface component's name and role programmatically. | 4.1.2 | assistive-technology,automated | -
 ACT-111 | R | Make user-settable component states, properties, and values programmatically settable. | 4.1.2 | assistive-technology,manual | -
-ACT-112 | R | Notify user agents, including assistive technologies, of changes to names, roles, states, properties, and values. | 4.1.2 | assistive-technology,manual | -
+ACT-112 | R | Make notifications of name, role, state, property, and value changes available to user agents and assistive technologies. | 4.1.2 | assistive-technology,manual | -
 ACT-113 | R | Expose applicable status messages so assistive technology can present them without focus. | 4.1.3 | assistive-technology,manual | -
 ACT-114 | R | Preserve meaningful information and relationships conveyed through presentation in code or text. | 1.3.1 | assistive-technology,manual | -
 ACT-115 | G | Prefer native HTML semantics where they already provide the correct accessible behavior. | 4.1.2 | assistive-technology,keyboard | apg
@@ -222,17 +223,17 @@ ACT-156 | G | Test scrollable data regions for usable focus and reading order at
 ACT-157 | G | Test data updates, sorting, and filtering with assistive technology in each relevant state. | 4.1.2,4.1.3 | assistive-technology,keyboard | sortable
 """),
     ("Audio, video, animation, and time limits, when present", """
-ACT-158 | R | Provide the required alternative for prerecorded audio-only content, subject to exceptions. | 1.2.1 | manual | -
-ACT-159 | R | Provide the required alternative for prerecorded video-only content, subject to exceptions. | 1.2.1 | manual | -
+ACT-158 | R | Provide an equivalent time-based media alternative for prerecorded audio-only content, subject to the criterion exception. | 1.2.1 | manual | -
+ACT-159 | R | Provide an equivalent time-based media alternative or audio track for prerecorded video-only content, subject to the criterion exception. | 1.2.1 | manual | -
 ACT-160 | R | Provide captions for prerecorded synchronized audio, subject to the stated exception. | 1.2.2 | manual | -
-ACT-161 | R | Provide an audio description or media alternative for applicable prerecorded synchronized media. | 1.2.3 | manual | -
+ACT-161 | R | Provide a time-based media alternative or audio description for prerecorded video in synchronized media, subject to the criterion exception. | 1.2.3 | manual | -
 ACT-162 | R | Provide captions for live audio in synchronized media. | 1.2.4 | manual | -
 ACT-163 | R | Provide audio description for applicable prerecorded synchronized video. | 1.2.5 | manual | -
-ACT-164 | R | Provide an allowed audio control if automatic audio plays for more than three seconds. | 1.4.2 | keyboard,manual | -
-ACT-165 | R | Provide an allowed way to turn off, adjust, or extend applicable time limits. | 2.2.1 | manual,keyboard | -
+ACT-164 | R | For automatic audio over three seconds, provide pause, stop, or volume control independent of the system volume. | 1.4.2 | keyboard,manual | -
+ACT-165 | R | Provide an allowed way to turn off, adjust, or extend time limits, subject to the criterion exceptions. | 2.2.1 | manual,keyboard | -
 ACT-166 | R | Provide pause, stop, or hide controls for applicable automatic moving, blinking, or scrolling content. | 2.2.2 | keyboard,manual | -
 ACT-167 | R | Provide a way to pause, stop, hide, or control the frequency of applicable auto-updating information. | 2.2.2 | keyboard,manual | -
-ACT-168 | R | Keep flashes within the frequency or general and red flash thresholds in the criterion. | 2.3.1 | visual,manual | -
+ACT-168 | R | Avoid more than three flashes in one second, unless flashes remain below the general and red flash thresholds. | 2.3.1 | visual,manual | -
 ACT-169 | G | Provide keyboard-operable and named controls for any custom media player. | 2.1.1,4.1.2 | keyboard,assistive-technology | media
 ACT-170 | G | Review captions for accuracy, speaker information, and synchronization. | 1.2.2,1.2.4 | manual | media
 ACT-171 | G | Use a transcript as an additional way to access audio or video content where feasible. | 1.2.1,1.2.3 | manual | media
@@ -316,7 +317,7 @@ def render(items, criteria):
     lines = [
         "# Master accessibility action checklist for web projects",
         "",
-        f"**Version:** {VERSION}, 2026-10-29. **Status:** research draft for expert review.",
+        f"**Version:** {VERSION}, {VERSION_DATE}. **Status:** research draft for expert review.",
         "",
         "This checklist translates WCAG 2.2 into practical actions for building and reviewing websites. It is a study resource, not a validated intervention, test suite, or conformance claim.",
         "",
@@ -329,7 +330,7 @@ def render(items, criteria):
         "### Item labels",
         "",
         "- **R: WCAG-derived outcome.** A plain-language summary of a requirement, subject to the linked criterion and exceptions. It is not the normative text.",
-        "- **G: Guidance.** A possible technique or interaction pattern. It is not mandatory merely because W3C recommends or illustrates it.",
+        "- **G: Guidance.** A possible technique or interaction pattern. Its underlying outcome can still be required by WCAG.",
         "- **P: Research process.** A proposed study or review practice, not a WCAG success criterion.",
         "",
         "**Review methods** are possible approaches: manual, keyboard, visual, assistive technology, and automated. They are not complete procedures, and automated checks cannot determine conformance alone. A checklist item may need several tests, states, devices, or reviewers.",
@@ -374,6 +375,7 @@ def render(items, criteria):
         "For study results, the unit of analysis, applicable denominator, state sampling, issue deduplication, reviewer calibration, and scoring need to be set in a separate protocol before runs begin.",
         "", "## WCAG 2.2 A/AA crosswalk", "",
         "Each link below points to at least one WCAG-derived action that refers to the criterion. The mapping is not a complete set of test cases or a claim of correct interpretation.",
+        "",
     ]
     for number, criterion in criteria.items():
         if criterion["level"] not in ("A", "AA"):
@@ -395,7 +397,7 @@ def main():
         "version": VERSION,
         "status": "research_draft_not_validated",
         "criteria_source": index["normative_standard"],
-        "labels": {"R": "WCAG-derived outcome", "G": "Non-mandatory guidance", "P": "Proposed research process"},
+        "labels": {"R": "WCAG-derived outcome", "G": "Guidance or possible technique; underlying outcomes can be required", "P": "Proposed research process"},
         "sources": {key: {"name": name, "url": url} for key, (name, url) in SOURCES.items()},
         "items": items,
     }

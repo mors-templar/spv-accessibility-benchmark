@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "status": "draft_not_frozen",
+  "checklist_version": "0.2.0",
+  "source_task_text_included": false,
+  "files": [
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/checklist-instruction.txt",
+      "sha256": "7108a3138f92f1e6f763438632f6812435ff788870b86e6fd291536fe20d04db",
+      "bytes": 1179
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/prompt-guidance.txt",
+      "sha256": "07476d707cb2c1a53db570714e502cfb13168660553da8eb4fd36dc2b41e788d",
+      "bytes": 807
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/SKILL.md",
+      "sha256": "62c8ba5885ae113fcbef4bb40a3badcc81e982263eef51681cdbfc8a6e8bf78e",
+      "bytes": 1080
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/verify-plan-request.schema.json",
+      "sha256": "40ef0ebbe1b583a325a706716e8448262e0c1799d9430e24d4d40ed17a2354fe",
+      "bytes": 791
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/verify-plan-response.schema.json",
+      "sha256": "44cd4dfa9802755a1174553d54ebf1a28071bfc386793ee5b0b29da887268b28",
+      "bytes": 1053
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/plan.schema.json",
+      "sha256": "1ada79af03e346bd14662d75f1309106810713215861494d047d49816a3d62b3",
+      "bytes": 1007
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/decision.schema.json",
+      "sha256": "e8d869bb7c2e3ea34fe80d5ffcd371639b6ec0e0624397bfdf58878706ae8445",
+      "bytes": 1007
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/plan-phase.txt",
+      "sha256": "fddc6ff8bce1415f6478629475b7ff19eb3ab3ae87c039cb8e68076e5e48ef5b",
+      "bytes": 462
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/reviewer-instruction.txt",
+      "sha256": "9ee17c026c0b1114e21d473087dc15ef2141bffb511924fc691b0f5ed0fe31f0",
+      "bytes": 901
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/approval-continuation.txt",
+      "sha256": "da944bde94523a07ed6fe56726f530bf839dc8078e7863c5de317478091d7b2e",
+      "bytes": 225
+    },
+    {
+      "path_from_repo_root": "research/accessibility/master-action-checklist.md",
+      "sha256": "2a73ea4045012d195d0286c21867af009c955303bd969842a8e1d1cd92510575",
+      "bytes": 68406
+    },
+    {
+      "path_from_repo_root": "research/accessibility/action-checklist.json",
+      "sha256": "e388befdc7d8d884499d720a4efe2c2e59cf6560ba8f3c9fabb5cb47d4dd01a5",
+      "bytes": 73505
+    }
+  ]
+}

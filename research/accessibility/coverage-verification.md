@@ -42,3 +42,8 @@ python research/accessibility/build_action_checklist.py --check
 The check verifies IDs, labels, methods, source keys, known criterion references, and at least one WCAG-derived action for each of the 55 A and AA criteria. It also verifies that both generated files match the source catalog. The crosswalk provides traceability only. It does not prove that an action covers every condition of its criterion or that the suggested review methods are complete. A subject-matter expert still needs to review the content before the list is used as a research instrument.
 
 On 2026-10-29, version 0.1.0 contained 188 actions: 81 WCAG-derived outcomes, 81 guidance items, and 26 research-process items. Its references covered all 55 target criterion IDs. Negative checks rejected a duplicate action ID, an unknown criterion, an omitted target criterion, an invalid method, and a missing guidance source. These checks validate structure, not the substantive accuracy of the checklist.
+
+Version 0.2.0 retains the same IDs, counts, and target criterion coverage.
+It revises selected summaries after a focused comparison with WCAG 2.2.
+The [Phase 2 review](../phased-study/phase-02/checklist-review.md) records those edits and the remaining expert review.
+Version 0.1.0 is preserved under `versions/0.1.0/`.

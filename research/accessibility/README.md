@@ -9,4 +9,8 @@
 - `action-checklist.json`: the machine-readable version of the action checklist. It is a research draft, not a validated intervention.
 - `build_action_checklist.py`: the editable action catalog and generator. Run `python research/accessibility/build_action_checklist.py --check` from the study-site root to check the generated outputs.
 
+The current action checklist is version 0.2.0. The earlier [0.1.0 snapshot](versions/0.1.0/master-action-checklist.md) remains available.
+The snapshot preserves the original bytes. Some historical relative links may not resolve from its archive folder.
+See the [Phase 2 review](../phased-study/phase-02/checklist-review.md) for the changes and outstanding work.
+
 These are drafts for review. A complete criterion index and mapped action list are not complete test procedures or conformance claims. Task-specific applicability and tests remain to be defined before the study. Keep the baseline prompt unchanged and separate from the evaluation materials.

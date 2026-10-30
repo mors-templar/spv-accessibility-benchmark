@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "APPROVE",
+        "REVISE",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "feature": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "plan_evidence": {
+            "type": "string"
+          },
+          "checklist_item_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "feature",
+          "question",
+          "reason",
+          "plan_evidence",
+          "checklist_item_ids"
+        ]
+      }
+    }
+  },
+  "required": [
+    "decision",
+    "findings"
+  ]
+}

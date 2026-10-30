@@ -1,0 +1,8 @@
+This phase prepares a website plan for independent review.
+Do not create or modify website files in this phase.
+Do not provide implementation code in this phase.
+Return the requested plan as a JSON object.
+List required features, accessibility risks, questions, and proposed answers.
+Identify unknown inputs and service dependencies.
+For each applicable risk, cite the relevant checklist item IDs.
+Describe planned behavior, not claims about a finished website.

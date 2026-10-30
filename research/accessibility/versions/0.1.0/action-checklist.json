@@ -1,0 +1,2599 @@
+{
+  "version": "0.1.0",
+  "status": "research_draft_not_validated",
+  "criteria_source": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+  "labels": {
+    "R": "WCAG-derived outcome",
+    "G": "Non-mandatory guidance",
+    "P": "Proposed research process"
+  },
+  "sources": {
+    "apg": {
+      "name": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    "dialog": {
+      "name": "W3C modal dialog pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+    },
+    "combobox": {
+      "name": "W3C combobox pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
+    },
+    "tabs": {
+      "name": "W3C tabs pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/"
+    },
+    "accordion": {
+      "name": "W3C accordion pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/"
+    },
+    "slider": {
+      "name": "W3C slider pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/"
+    },
+    "menu": {
+      "name": "W3C menu and menubar pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/"
+    },
+    "carousel": {
+      "name": "W3C carousel pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/"
+    },
+    "forms": {
+      "name": "W3C forms tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    },
+    "images": {
+      "name": "W3C images tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/images/"
+    },
+    "tables": {
+      "name": "W3C tables tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/tables/"
+    },
+    "sortable": {
+      "name": "W3C sortable table example",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/table/examples/sortable-table/"
+    },
+    "media": {
+      "name": "W3C accessible audio and video guide",
+      "url": "https://www.w3.org/WAI/media/av/"
+    },
+    "coga": {
+      "name": "W3C cognitive accessibility guidance",
+      "url": "https://www.w3.org/TR/coga-usable/"
+    },
+    "reduced_motion": {
+      "name": "W3C reduced-motion technique",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/css/C39"
+    },
+    "evaluation": {
+      "name": "W3C evaluation overview",
+      "url": "https://www.w3.org/WAI/test-evaluate/"
+    },
+    "techniques": {
+      "name": "W3C WCAG techniques",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/"
+    }
+  },
+  "items": [
+    {
+      "id": "ACT-001",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Inventory pages, routes, dialog states, and complete user journeys before review.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-002",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Record the requested features and identify missing or nonfunctional features separately.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-003",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Determine which checklist items apply to each implemented page, state, and process.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-004",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Record the browser, viewport, operating system, and assistive technologies used for testing.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-005",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Test each relevant loading, empty, success, error, and disabled state that exists.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-006",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Do not treat an untested item, missing feature, or tool error as a pass.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-007",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Consult the linked criterion and its exceptions before reporting a WCAG failure.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-008",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Involve people with disabilities and assistive-technology expertise where feasible.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-009",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Include embedded and third-party content in scope when it forms part of the experience.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-010",
+      "section": "Scope and preparation",
+      "basis": "P",
+      "action": "Preserve original generated artifacts and record any changes made for testing.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-011",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Provide a descriptive page title for every page.",
+      "wcag_criteria": [
+        "2.4.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-012",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Expose the default human language of each page programmatically.",
+      "wcag_criteria": [
+        "3.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-013",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Identify changes in human language programmatically when the criterion applies.",
+      "wcag_criteria": [
+        "3.1.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-014",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Expose meaningful headings and the relationships they convey programmatically or in text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-015",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Write headings and labels that describe their topic or purpose.",
+      "wcag_criteria": [
+        "2.4.6"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-016",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Preserve a meaningful programmatic sequence when the order affects meaning.",
+      "wcag_criteria": [
+        "1.3.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-017",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Expose meaningful list relationships programmatically or in text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-018",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Expose meaningful group and section relationships programmatically or in text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-019",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Provide a way to bypass repeated blocks when they appear on multiple pages.",
+      "wcag_criteria": [
+        "2.4.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-020",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Offer multiple ways to locate pages in a set, subject to the process exception.",
+      "wcag_criteria": [
+        "2.4.5"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-021",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Keep repeated navigation in consistent relative order unless the user changes it.",
+      "wcag_criteria": [
+        "3.2.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-022",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Identify components with the same functionality consistently across a set of pages.",
+      "wcag_criteria": [
+        "3.2.4"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-023",
+      "section": "Page structure, reading order, and language",
+      "basis": "R",
+      "action": "Keep repeated help mechanisms in consistent relative order when the criterion applies.",
+      "wcag_criteria": [
+        "3.2.6"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-024",
+      "section": "Page structure, reading order, and language",
+      "basis": "G",
+      "action": "Use native headings, lists, landmarks, and other HTML elements when they convey the intended structure.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-025",
+      "section": "Page structure, reading order, and language",
+      "basis": "G",
+      "action": "Consider a skip link that reaches the main content when repeated navigation is present.",
+      "wcag_criteria": [
+        "2.4.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-026",
+      "section": "Page structure, reading order, and language",
+      "basis": "G",
+      "action": "Avoid positive tabindex values that can make focus order difficult to maintain.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-027",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Give meaningful images an equivalent text alternative, accounting for applicable exceptions.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-028",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Give image-based controls a text alternative that communicates their purpose.",
+      "wcag_criteria": [
+        "1.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-029",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Allow decorative non-text content to be ignored by assistive technology when appropriate.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-030",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Supply equivalent information for informative charts, diagrams, and complex images.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-031",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Give non-text CAPTCHA alternatives that accommodate different sensory abilities when CAPTCHA is used.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-032",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Make link purpose understandable from link text or its programmatically determined context.",
+      "wcag_criteria": [
+        "2.4.4"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-033",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Avoid instructions that rely solely on sensory characteristics such as position, shape, or sound.",
+      "wcag_criteria": [
+        "1.3.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-034",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Convey information without relying on color alone.",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-035",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Use text instead of images of text where the criterion applies and no exception applies.",
+      "wcag_criteria": [
+        "1.4.5"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-036",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Include the visible text of a control in its accessible name when the criterion applies.",
+      "wcag_criteria": [
+        "2.5.3"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-037",
+      "section": "Images, icons, links, and instructions",
+      "basis": "G",
+      "action": "For an icon-only button, provide a meaningful accessible name describing its action.",
+      "wcag_criteria": [
+        "1.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": "images"
+    },
+    {
+      "id": "ACT-038",
+      "section": "Images, icons, links, and instructions",
+      "basis": "G",
+      "action": "Describe an informational image according to its purpose in the surrounding content.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "images"
+    },
+    {
+      "id": "ACT-039",
+      "section": "Images, icons, links, and instructions",
+      "basis": "G",
+      "action": "Provide chart data in an accessible table or text summary when that gives an equivalent alternative.",
+      "wcag_criteria": [
+        "1.1.1",
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": "images"
+    },
+    {
+      "id": "ACT-040",
+      "section": "Images, icons, links, and instructions",
+      "basis": "R",
+      "action": "Provide the required text alternative for other non-text content, accounting for the criterion exceptions.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-041",
+      "section": "Images, icons, links, and instructions",
+      "basis": "G",
+      "action": "Give an image-only link an accessible name that identifies the link purpose.",
+      "wcag_criteria": [
+        "1.1.1",
+        "2.4.4"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": "images"
+    },
+    {
+      "id": "ACT-042",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Check normal text and its background for at least 4.5:1 contrast, subject to the criterion exceptions.",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "candidate_methods": [
+        "visual",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-043",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Check large text and its background for at least 3:1 contrast, subject to the criterion exceptions.",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "candidate_methods": [
+        "visual",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-044",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Check applicable control boundaries and state indicators for at least 3:1 contrast against adjacent colors.",
+      "wcag_criteria": [
+        "1.4.11"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-045",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Check visual parts of graphics required for understanding for at least 3:1 contrast, subject to exceptions.",
+      "wcag_criteria": [
+        "1.4.11"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-046",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Allow text to resize to 200% without loss of content or functionality, subject to exceptions.",
+      "wcag_criteria": [
+        "1.4.4"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-047",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Support reflow at 320 CSS pixels wide for vertically scrolling content, subject to exceptions.",
+      "wcag_criteria": [
+        "1.4.10"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-048",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Support reflow at 256 CSS pixels high for horizontally scrolling content, subject to exceptions.",
+      "wcag_criteria": [
+        "1.4.10"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-049",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Preserve content and functionality when users apply the text-spacing overrides in the criterion.",
+      "wcag_criteria": [
+        "1.4.12"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-050",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Support portrait and landscape orientation unless a particular orientation is essential.",
+      "wcag_criteria": [
+        "1.3.4"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-051",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Make extra content shown on hover or focus dismissible when the criterion requires it.",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-052",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Let users move the pointer over applicable hover-triggered content without it disappearing.",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "candidate_methods": [
+        "manual",
+        "visual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-053",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "R",
+      "action": "Keep applicable hover- or focus-triggered content visible until a criterion-defined dismissal condition occurs.",
+      "wcag_criteria": [
+        "1.4.13"
+      ],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-054",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Test text over images and gradients at the least-contrasting visible area.",
+      "wcag_criteria": [
+        "1.4.3"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-055",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Use an additional shape, text, or icon to distinguish states that also use color.",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-056",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Respect the user's reduced-motion preference where motion can be reduced.",
+      "wcag_criteria": [
+        "2.3.3"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": "reduced_motion"
+    },
+    {
+      "id": "ACT-057",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Test the interface with browser zoom and increased text spacing.",
+      "wcag_criteria": [
+        "1.4.4",
+        "1.4.10",
+        "1.4.12"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-058",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Check focus indicators and controls in forced-colors or high-contrast display modes.",
+      "wcag_criteria": [
+        "2.4.7",
+        "1.4.11"
+      ],
+      "candidate_methods": [
+        "visual",
+        "keyboard"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-059",
+      "section": "Color, contrast, layout, and display adaptation",
+      "basis": "G",
+      "action": "Check contrast in each available theme and relevant interactive state.",
+      "wcag_criteria": [
+        "1.4.3",
+        "1.4.11"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-060",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Make functionality operable through a keyboard interface, subject to the path-dependent exception.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-061",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Do not require specific timings for individual keystrokes, subject to the keyboard criterion exception.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-062",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Let users move keyboard focus away from each component.",
+      "wcag_criteria": [
+        "2.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-063",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Explain any nonstandard way to move focus out of a component.",
+      "wcag_criteria": [
+        "2.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-064",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Preserve meaning and operability in focus order when sequence affects them.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-065",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Show a visible focus indicator for keyboard-operable interfaces.",
+      "wcag_criteria": [
+        "2.4.7"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-066",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Prevent author-created content from entirely obscuring the focused component.",
+      "wcag_criteria": [
+        "2.4.11"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-067",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Permit applicable character-only shortcuts to be disabled, remapped, or active only on focus.",
+      "wcag_criteria": [
+        "2.1.4"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-068",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Provide a single-pointer alternative for applicable multipoint or path-based gestures.",
+      "wcag_criteria": [
+        "2.5.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-069",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Provide a single-pointer alternative to dragging when the dragging criterion applies.",
+      "wcag_criteria": [
+        "2.5.7"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-070",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Support pointer cancellation using an allowed condition or applicable exception.",
+      "wcag_criteria": [
+        "2.5.2"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-071",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Provide an interface alternative to motion actuation when the criterion applies.",
+      "wcag_criteria": [
+        "2.5.4"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-072",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Allow applicable motion actuation to be disabled, subject to the criterion exceptions.",
+      "wcag_criteria": [
+        "2.5.4"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-073",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Make pointer targets at least 24 by 24 CSS pixels or satisfy an allowed exception.",
+      "wcag_criteria": [
+        "2.5.8"
+      ],
+      "candidate_methods": [
+        "manual",
+        "visual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-074",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Do not trigger a change of context merely when a component receives focus.",
+      "wcag_criteria": [
+        "3.2.1"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-075",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "R",
+      "action": "Do not unexpectedly change context when a setting changes; provide prior notice where allowed.",
+      "wcag_criteria": [
+        "3.2.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-076",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Use native links for navigation and native buttons for actions where appropriate.",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-077",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Check keyboard operation independently from the non-dragging pointer alternative.",
+      "wcag_criteria": [
+        "2.1.1",
+        "2.5.7"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-078",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Check focused elements around sticky headers, overlays, and mobile virtual keyboards.",
+      "wcag_criteria": [
+        "2.4.11"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-079",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Provide an accessible, visible close control for dismissible overlays.",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-080",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Check that tab order reaches visible controls without reaching hidden controls unexpectedly.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-081",
+      "section": "Keyboard, focus, and pointer input",
+      "basis": "G",
+      "action": "Make keyboard focus visually distinguishable on all interactive controls.",
+      "wcag_criteria": [
+        "2.4.7"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-082",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Provide labels or instructions when a user must enter data.",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-083",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Expose the relationship between a label and its input programmatically or in text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-084",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Identify applicable input purposes programmatically for fields collecting information about the user.",
+      "wcag_criteria": [
+        "1.3.5"
+      ],
+      "candidate_methods": [
+        "manual",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-085",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Identify detected input errors and describe them in text.",
+      "wcag_criteria": [
+        "3.3.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-086",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Suggest known corrections for detected input errors unless security or purpose would be compromised.",
+      "wcag_criteria": [
+        "3.3.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-087",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Give an allowed error-prevention mechanism for the transactions covered by the criterion.",
+      "wcag_criteria": [
+        "3.3.4"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-088",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Reuse information entered earlier in the same process or make it selectable, subject to exceptions.",
+      "wcag_criteria": [
+        "3.3.7"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-089",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Provide an allowed alternative or assistance mechanism for authentication cognitive tests, subject to exceptions.",
+      "wcag_criteria": [
+        "3.3.8"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-090",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Make form-control names and roles programmatically determinable.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-091",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "R",
+      "action": "Expose applicable form status messages so assistive technology can present them without focus.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-092",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Keep visible labels available after users start typing.",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-093",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Indicate required fields and input format before users submit the form.",
+      "wcag_criteria": [
+        "3.3.2"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-094",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Associate field-specific error text with the affected input.",
+      "wcag_criteria": [
+        "1.3.1",
+        "3.3.1"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-095",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Provide an error summary linked to affected fields when a long form has several errors.",
+      "wcag_criteria": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-096",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Allow password managers and pasting for authentication where feasible.",
+      "wcag_criteria": [
+        "3.3.8"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-097",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Avoid clearing correctly entered form data after a failed submission.",
+      "wcag_criteria": [
+        "3.3.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-098",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Make review and correction available before a significant transaction is submitted.",
+      "wcag_criteria": [
+        "3.3.4"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-099",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Expose expanded or selected states when multi-step navigation uses interactive controls.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-100",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Use appropriate autocomplete tokens for applicable personal-information fields.",
+      "wcag_criteria": [
+        "1.3.5"
+      ],
+      "candidate_methods": [
+        "manual",
+        "automated"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-101",
+      "section": "Forms, errors, authentication, and transactions",
+      "basis": "G",
+      "action": "Check form validation and correction with both keyboard and assistive technology.",
+      "wcag_criteria": [
+        "3.3.1",
+        "3.3.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "forms"
+    },
+    {
+      "id": "ACT-102",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Use clear, familiar words and explain unfamiliar terms when needed.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-103",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Make the purpose of each page and its important actions easy to identify.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-104",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Break complex instructions into clear steps.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-105",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Reduce the need to remember information across multiple steps where feasible.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-106",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Allow users to go back and correct mistakes without losing their work where feasible.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-107",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Make help or feedback options easy to find when they are provided.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-108",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Tell users about relevant costs and required information before they begin a process.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-109",
+      "section": "Cognitive accessibility and clear content",
+      "basis": "G",
+      "action": "Avoid making controls or content move unexpectedly.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual",
+        "visual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-110",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "R",
+      "action": "Expose each user-interface component's name and role programmatically.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "automated"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-111",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "R",
+      "action": "Make user-settable component states, properties, and values programmatically settable.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-112",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "R",
+      "action": "Notify user agents, including assistive technologies, of changes to names, roles, states, properties, and values.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-113",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "R",
+      "action": "Expose applicable status messages so assistive technology can present them without focus.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-114",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "R",
+      "action": "Preserve meaningful information and relationships conveyed through presentation in code or text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-115",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Prefer native HTML semantics where they already provide the correct accessible behavior.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-116",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Use live regions or suitable native status semantics for applicable asynchronous status messages.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-117",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Check that live messages announce once, at an appropriate priority, with useful content.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-118",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Update accessible expanded, selected, checked, and pressed states when their controls change.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-119",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Avoid adding ARIA roles or attributes that conflict with native semantics.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-120",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Check that hidden or inactive content does not leave unexpected focusable controls available.",
+      "wcag_criteria": [
+        "2.4.3",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-121",
+      "section": "Dynamic content and assistive-technology semantics",
+      "basis": "G",
+      "action": "Check that an accessible status is understandable without surrounding visual context.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-122",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Give each dialog an accessible name that identifies its purpose.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-123",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Move focus to an appropriate location inside a modal dialog when it opens.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-124",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Keep background content inert while a true modal dialog is open.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-125",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Keep Tab and Shift+Tab within an open modal dialog.",
+      "wcag_criteria": [
+        "2.1.2",
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-126",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Let users close a modal dialog with Escape when the pattern permits it.",
+      "wcag_criteria": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-127",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Return focus to the invoking control after closing a dialog when it remains the logical destination.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-128",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Choose a logical focus destination if the invoking control no longer exists.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-129",
+      "section": "Dialogs and overlays, when present",
+      "basis": "G",
+      "action": "Check nested dialogs and overlays in each open and close sequence.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "dialog"
+    },
+    {
+      "id": "ACT-130",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "Distinguish ordinary site navigation from an application-style menu before choosing roles.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": "menu"
+    },
+    {
+      "id": "ACT-131",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For application-style menus, implement the keyboard interactions for the chosen pattern.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "menu"
+    },
+    {
+      "id": "ACT-132",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For tabs, expose the selected tab and its associated panel.",
+      "wcag_criteria": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "tabs"
+    },
+    {
+      "id": "ACT-133",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For tabs, implement the keyboard navigation of the selected tabs pattern.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "tabs"
+    },
+    {
+      "id": "ACT-134",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For accordions, expose whether each controlled panel is expanded or collapsed.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "accordion"
+    },
+    {
+      "id": "ACT-135",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For accordions, make each panel trigger keyboard operable.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "accordion"
+    },
+    {
+      "id": "ACT-136",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For carousels, provide accessible controls to move between items.",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "carousel"
+    },
+    {
+      "id": "ACT-137",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "For automatically rotating carousels, provide an applicable pause or stop mechanism.",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": "carousel"
+    },
+    {
+      "id": "ACT-138",
+      "section": "Menus, tabs, accordions, and carousels, when present",
+      "basis": "G",
+      "action": "Check that closed menus and inactive panels do not expose inappropriate focus targets.",
+      "wcag_criteria": [
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "apg"
+    },
+    {
+      "id": "ACT-139",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Give a combobox an accessible name and expose its expanded or collapsed state.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "combobox"
+    },
+    {
+      "id": "ACT-140",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Connect a combobox to its popup using the semantics required by the selected pattern.",
+      "wcag_criteria": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "combobox"
+    },
+    {
+      "id": "ACT-141",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Support the selected combobox pattern's keyboard interactions, including navigation and selection.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "combobox"
+    },
+    {
+      "id": "ACT-142",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Keep the active option available to assistive technology when focus remains on the combobox.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "combobox"
+    },
+    {
+      "id": "ACT-143",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Preserve normal text-editing keys in an editable combobox.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "combobox"
+    },
+    {
+      "id": "ACT-144",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Expose a custom slider's name, current value, and allowed range.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "slider"
+    },
+    {
+      "id": "ACT-145",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Support the keyboard interactions of the selected slider pattern.",
+      "wcag_criteria": [
+        "2.1.1"
+      ],
+      "candidate_methods": [
+        "keyboard"
+      ],
+      "guidance_source": "slider"
+    },
+    {
+      "id": "ACT-146",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Offer a non-dragging single-pointer way to change a slider when the criterion applies.",
+      "wcag_criteria": [
+        "2.5.7"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "slider"
+    },
+    {
+      "id": "ACT-147",
+      "section": "Comboboxes, listboxes, and sliders, when present",
+      "basis": "G",
+      "action": "Verify custom widgets with actual assistive technologies, including touch where relevant.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "slider"
+    },
+    {
+      "id": "ACT-148",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "R",
+      "action": "Make data-table headers and cell relationships programmatically determinable or available in text.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-149",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "R",
+      "action": "Ensure the information conveyed by a chart has an equivalent text alternative.",
+      "wcag_criteria": [
+        "1.1.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "assistive-technology"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-150",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "R",
+      "action": "Do not use color alone to distinguish chart data or status.",
+      "wcag_criteria": [
+        "1.4.1"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-151",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Use appropriate native table elements for tabular data.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "tables"
+    },
+    {
+      "id": "ACT-152",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Associate complex table cells with the correct headers.",
+      "wcag_criteria": [
+        "1.3.1"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "tables"
+    },
+    {
+      "id": "ACT-153",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Expose the current sort state on the relevant header when a table is sortable.",
+      "wcag_criteria": [
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "sortable"
+    },
+    {
+      "id": "ACT-154",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Make sort and row-expansion controls keyboard operable and clearly named.",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "tables"
+    },
+    {
+      "id": "ACT-155",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Announce result counts or updated data when the update is an applicable status message.",
+      "wcag_criteria": [
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "techniques"
+    },
+    {
+      "id": "ACT-156",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Test scrollable data regions for usable focus and reading order at narrow widths.",
+      "wcag_criteria": [
+        "1.3.2",
+        "2.4.3"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": "tables"
+    },
+    {
+      "id": "ACT-157",
+      "section": "Tables, dashboards, and data displays, when present",
+      "basis": "G",
+      "action": "Test data updates, sorting, and filtering with assistive technology in each relevant state.",
+      "wcag_criteria": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "candidate_methods": [
+        "assistive-technology",
+        "keyboard"
+      ],
+      "guidance_source": "sortable"
+    },
+    {
+      "id": "ACT-158",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide the required alternative for prerecorded audio-only content, subject to exceptions.",
+      "wcag_criteria": [
+        "1.2.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-159",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide the required alternative for prerecorded video-only content, subject to exceptions.",
+      "wcag_criteria": [
+        "1.2.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-160",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide captions for prerecorded synchronized audio, subject to the stated exception.",
+      "wcag_criteria": [
+        "1.2.2"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-161",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide an audio description or media alternative for applicable prerecorded synchronized media.",
+      "wcag_criteria": [
+        "1.2.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-162",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide captions for live audio in synchronized media.",
+      "wcag_criteria": [
+        "1.2.4"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-163",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide audio description for applicable prerecorded synchronized video.",
+      "wcag_criteria": [
+        "1.2.5"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-164",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide an allowed audio control if automatic audio plays for more than three seconds.",
+      "wcag_criteria": [
+        "1.4.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-165",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide an allowed way to turn off, adjust, or extend applicable time limits.",
+      "wcag_criteria": [
+        "2.2.1"
+      ],
+      "candidate_methods": [
+        "manual",
+        "keyboard"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-166",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide pause, stop, or hide controls for applicable automatic moving, blinking, or scrolling content.",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-167",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Provide a way to pause, stop, hide, or control the frequency of applicable auto-updating information.",
+      "wcag_criteria": [
+        "2.2.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-168",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "R",
+      "action": "Keep flashes within the frequency or general and red flash thresholds in the criterion.",
+      "wcag_criteria": [
+        "2.3.1"
+      ],
+      "candidate_methods": [
+        "visual",
+        "manual"
+      ],
+      "guidance_source": null
+    },
+    {
+      "id": "ACT-169",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "G",
+      "action": "Provide keyboard-operable and named controls for any custom media player.",
+      "wcag_criteria": [
+        "2.1.1",
+        "4.1.2"
+      ],
+      "candidate_methods": [
+        "keyboard",
+        "assistive-technology"
+      ],
+      "guidance_source": "media"
+    },
+    {
+      "id": "ACT-170",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "G",
+      "action": "Review captions for accuracy, speaker information, and synchronization.",
+      "wcag_criteria": [
+        "1.2.2",
+        "1.2.4"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "media"
+    },
+    {
+      "id": "ACT-171",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "G",
+      "action": "Use a transcript as an additional way to access audio or video content where feasible.",
+      "wcag_criteria": [
+        "1.2.1",
+        "1.2.3"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "media"
+    },
+    {
+      "id": "ACT-172",
+      "section": "Audio, video, animation, and time limits, when present",
+      "basis": "G",
+      "action": "Warn users before a timeout and preserve their entered data where feasible.",
+      "wcag_criteria": [
+        "2.2.1"
+      ],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "coga"
+    },
+    {
+      "id": "ACT-173",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Run automated accessibility checks across the selected pages and interactive states.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "automated"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-174",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Review automated findings, incomplete results, and tool errors individually.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "automated",
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-175",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Traverse the full flow with a keyboard and inspect visible focus.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "keyboard",
+        "visual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-176",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Review semantics and announcements with suitable assistive technologies.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "assistive-technology",
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-177",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Inspect text alternatives, instructions, captions, and error messages for meaning.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-178",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Exercise relevant pointer, touch, motion, zoom, and display conditions.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual",
+        "visual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-179",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Save reproducible steps, the affected page state, expected behavior, and observed behavior.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-180",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Link each issue to evidence and the applicable criterion or guidance.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-181",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Record pass, fail, not applicable, unassessable, or not tested with reasons.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-182",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Report missing required features separately from accessibility results.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-183",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Record tool versions and rules, reviewer experience, and test limitations.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-184",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Do not present a clean automated scan as proof of WCAG conformance.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-185",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Keep the evaluation checklist and scoring instructions out of the unchanged baseline input.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-186",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Record whether each reviewed issue comes from the generated site or an external dependency.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-187",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Keep reviewer evidence and final decisions separate from assumptions made before testing.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    },
+    {
+      "id": "ACT-188",
+      "section": "Verification and evidence",
+      "basis": "P",
+      "action": "Keep study guidance out of the baseline runtime, including automatically loaded workspace instructions.",
+      "wcag_criteria": [],
+      "candidate_methods": [
+        "manual"
+      ],
+      "guidance_source": "evaluation"
+    }
+  ]
+}

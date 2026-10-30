@@ -4,6 +4,9 @@
 > [the experiment protocol package](experiment-protocol-2026-10-30/README.md).
 > Both plans remain proposals until the research team approves a final protocol.
 
+> The [phased study roadmap](phased-study/README.md) tracks the current Phase 2 work.
+> The earlier protocol and PDF describe checklist version 0.1.0.
+
 Date: 2026-10-29. Status: draft for discussion. The five task inputs are selected. The experimental conditions, run budget, test plan, and analysis have not been finalized or registered. No study result is claimed here.
 
 ## The objective
