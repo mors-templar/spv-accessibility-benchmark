@@ -57,6 +57,7 @@ The input checker does not start a run or install an intervention.
 The separate development runner can submit one attempt to the Codex CLI.
 See the [development run record](development-run-plan.md).
 The [initial observations](initial-development-results.md) cover one task and one automated page state.
+[Exploratory progress](exploratory-progress.md) records the full batch, gaps, and remaining work.
 The [task contracts](task-contracts-draft.md) and [manual review form](manual-review-template.md) are drafts for independent review.
 The [supplemental retry plan](supplemental-retry-plan.md) keeps an interrupted dashboard baseline separate from any fresh attempt.
 `audit_exploratory_batch.py` can scan preserved static entry points after the batch stops.

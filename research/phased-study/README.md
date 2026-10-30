@@ -6,13 +6,13 @@ They do not change the selected task texts.
 
 | Phase | Purpose | Status and exit condition |
 | --- | --- | --- |
-| 1 | Establish the five selected requests and the study plan. | The requests are selected. Baseline outputs do not yet exist. |
-| 2 | Review the checklist and draft the exact intervention wording. | Checklist 0.2.0 approved by researcher. Intervention wording is under review. |
-| 3 | Produce baseline and prompt-guidance development runs. | Exploratory Codex attempts have started. Independent evaluation remains pending. |
-| 4 | Build and assess the skill package. | Compare S with B and D; record actual skill and tool activation. |
-| 5 | Build and assess the reviewer agent and host gate. | Compare A with B and D; record decisions, retries, and blocks. |
-| 6 | Combine prompt guidance, skill, and reviewer. | Compare X with B and D; preserve the exact package and its extra work. |
-| 7 | Freeze the protocol and run the full comparison. | Evaluate every scheduled attempt and report limitations. |
+| 1 | Establish the five selected requests and the study plan. | All five requests are selected. The full study plan remains a draft. |
+| 2 | Review the checklist and draft the exact intervention wording. | Checklist 0.2.0 is approved by the researcher. Specialist review and intervention wording remain open. |
+| 3 | Produce baseline and prompt-guidance development runs. | Fourteen scheduled turns completed, one failed, and one supplemental turn completed. Nine initial static scans are available. |
+| 4 | Build and assess the skill package. | Draft instructions exist. Diagnostic implementation, integration, and S comparison remain open. |
+| 5 | Build and assess the reviewer agent and host gate. | Draft instructions and schemas exist. The study gate, integration, and A comparison remain open. |
+| 6 | Combine prompt guidance, skill, and reviewer. | Proposed design only. The combined package and X comparison remain open. |
+| 7 | Freeze the protocol and run the full comparison. | Final protocol, independent review, full multi-runner batch, and analysis remain open. |
 
 The user named Phase 3 twice.
 The table assigns one number to each distinct phase.
