@@ -9,6 +9,7 @@ This repository contains a static research index and five task pages. The site i
 - `docs/methodology.html`: the proposed evaluation approach.
 - `research/study-working-decisions.md`: detailed research decisions and questions for further discussion. This is outside the public Pages source.
 - `research/execution-plan.md`: the proposed phases, run procedure, evaluation, and reporting plan. This is outside the public Pages source.
+- `research/intervention-literature-review-2026-10-30.md`: research on instruction, skill, agent, and plan-review precedents. This is outside the public Pages source.
 - `research/accessibility/`: the draft WCAG 2.2 checklist, source review, and criterion coverage verification. These files are outside the public Pages source.
 - `data/tasks.json`: public-safe task summaries and current status labels.
 - `tools/build_site.py`: regenerates the static pages from the summaries.
