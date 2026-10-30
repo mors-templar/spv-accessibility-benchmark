@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "checklist_version": "0.2.0",
+  "decision": "approved_by_researcher",
+  "decision_source": "The researcher approved checklist version 0.2 in the project conversation.",
+  "recorded_at_utc": "2026-10-30T07:16:44Z",
+  "files": [
+    {
+      "path_from_repo_root": "research/accessibility/master-action-checklist.md",
+      "sha256": "2a73ea4045012d195d0286c21867af009c955303bd969842a8e1d1cd92510575",
+      "bytes": 68406
+    },
+    {
+      "path_from_repo_root": "research/accessibility/action-checklist.json",
+      "sha256": "e388befdc7d8d884499d720a4efe2c2e59cf6560ba8f3c9fabb5cb47d4dd01a5",
+      "bytes": 73505
+    }
+  ],
+  "scope": "Approval selects checklist version 0.2.0. It does not approve the intervention drafts or establish independent expert validation.",
+  "independent_expert_review": "pending",
+  "study_conditions": "not_frozen",
+  "benchmark_status": "not_run"
+}

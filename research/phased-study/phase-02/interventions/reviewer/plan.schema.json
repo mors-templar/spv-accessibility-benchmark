@@ -17,6 +17,9 @@
           "feature": {
             "type": "string"
           },
+          "risk": {
+            "type": "string"
+          },
           "question": {
             "type": "string"
           },
@@ -32,6 +35,7 @@
         },
         "required": [
           "feature",
+          "risk",
           "question",
           "planned_answer",
           "checklist_item_ids"

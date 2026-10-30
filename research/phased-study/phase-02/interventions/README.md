@@ -2,6 +2,9 @@
 
 **Status:** Phase 2 working drafts. They are not approved, installed, or validated interventions.
 The exact bytes can change until the study team freezes them.
+The researcher approved checklist version 0.2.0 separately.
+That approval does not approve these instructions.
+See the [intervention design review](../intervention-design-review.md) for the comparisons and rationale.
 
 | File | Proposed role |
 | --- | --- |
@@ -37,8 +40,12 @@ Do not send the source tasks to a hosted model until the rights question is reso
 
 All five checklist-based arms receive the same D user message.
 P, S, A, and X add their respective runner or host components.
-The full checklist includes process text and the illustrative task-type section.
-The final choice of checklist contents remains subject to review.
+The candidate uses the full approved checklist in D, P, S, A, and X.
+The checklist includes process text and the illustrative task-type section.
+Record that extra information when interpreting comparisons with B.
+The model self-report is a claim and is not the independent evaluation.
+For G items, an unselected technique is not automatically a WCAG failure.
+For P items, a model may report only its observed work or research-team responsibility.
 
 ## P: prompt guidance
 
@@ -47,6 +54,9 @@ Record the actual delivery channel and native runner context.
 Do not call a project instruction a system-role message unless the runner uses that role.
 An API system-role variant is a distinct delivery variant.
 No host gate is part of P.
+The draft requests an observable `spv-plan.md` when file writing is available.
+For a chat-only runner, it requests the plan in the response before code.
+If the plan or execution order is not observable, record it as unknown.
 
 ## S: skill
 
@@ -55,6 +65,9 @@ The skill requests a `verify_plan` diagnostic when one is available.
 The Phase 2 package does not implement that tool or its provider adapters.
 The host does not block implementation in S.
 Record activation, tool calls, unavailable capabilities, and unknowns.
+The model supplies only plan text and questions to the proposed diagnostic.
+The host attaches the run ID, task ID, and checklist version from the study schedule.
+The model must not guess those identifiers.
 
 ## A: reviewer and gate
 
@@ -65,7 +78,8 @@ Only a valid `APPROVE` permits a writable implementation phase.
 The proposed maximum is two revised plans after the first review.
 The host records `BLOCKED` after the limit without approval.
 The host must reject malformed decisions and missing required findings.
-The host must reject plans with no required features or blank plan answers.
+The host must reject plans with no required features or blank material-risk fields.
+The JSON schema does not enforce every host rule.
 An explicit `unknown` answer is allowed and must be reviewed.
 The host can prevent pre-approval file writes and acceptance of implementation.
 It cannot prevent a model from emitting code as text.

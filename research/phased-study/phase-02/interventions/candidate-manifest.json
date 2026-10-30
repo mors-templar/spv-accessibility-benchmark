@@ -6,23 +6,23 @@
   "files": [
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/checklist-instruction.txt",
-      "sha256": "7108a3138f92f1e6f763438632f6812435ff788870b86e6fd291536fe20d04db",
-      "bytes": 1179
+      "sha256": "ebb68f3aacdde24ef01301e238b042d32dfc54b8a7ae793a1e0540020dfe1c86",
+      "bytes": 1447
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/prompt-guidance.txt",
-      "sha256": "07476d707cb2c1a53db570714e502cfb13168660553da8eb4fd36dc2b41e788d",
-      "bytes": 807
+      "sha256": "d4eac93d452d7c5f5197130e40d4eff1a89fd3f96146909bbe520a9983c97c9a",
+      "bytes": 969
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/SKILL.md",
-      "sha256": "62c8ba5885ae113fcbef4bb40a3badcc81e982263eef51681cdbfc8a6e8bf78e",
-      "bytes": 1080
+      "sha256": "a9c5836afe69b62bf4da3226498d12cbd9951cce376805c59bbb1fed764adfd1",
+      "bytes": 1245
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/verify-plan-request.schema.json",
-      "sha256": "40ef0ebbe1b583a325a706716e8448262e0c1799d9430e24d4d40ed17a2354fe",
-      "bytes": 791
+      "sha256": "db0e27a3b052d44a190dd8e259aea0b10a70bbe6aad62b17906b07901b3ca4c9",
+      "bytes": 603
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/spv-accessibility/verify-plan-response.schema.json",
@@ -31,8 +31,8 @@
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/plan.schema.json",
-      "sha256": "1ada79af03e346bd14662d75f1309106810713215861494d047d49816a3d62b3",
-      "bytes": 1007
+      "sha256": "71777324a48f46d29486f371ba9712e916aecffbe72dc386f3d64205fe998005",
+      "bytes": 1087
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/decision.schema.json",
@@ -46,8 +46,8 @@
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/reviewer-instruction.txt",
-      "sha256": "9ee17c026c0b1114e21d473087dc15ef2141bffb511924fc691b0f5ed0fe31f0",
-      "bytes": 901
+      "sha256": "7c5dcb70db80298c42ad6b837e7e7667d5fe65ee3dc96477c26352ca85c41d4b",
+      "bytes": 981
     },
     {
       "path_from_repo_root": "research/phased-study/phase-02/interventions/reviewer/approval-continuation.txt",
@@ -64,5 +64,7 @@
       "sha256": "e388befdc7d8d884499d720a4efe2c2e59cf6560ba8f3c9fabb5cb47d4dd01a5",
       "bytes": 73505
     }
-  ]
+  ],
+  "candidate_revision": "2026-10-30-r2",
+  "approved_checklist_record": "research/phased-study/phase-02/checklist-approval.json"
 }

@@ -2,14 +2,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "task_id": {
-      "type": "string",
-      "minLength": 1
-    },
-    "checklist_version": {
-      "type": "string",
-      "minLength": 1
-    },
     "plan_text": {
       "type": "string",
       "minLength": 1
@@ -35,8 +27,6 @@
     }
   },
   "required": [
-    "task_id",
-    "checklist_version",
     "plan_text",
     "questions_and_answers"
   ]

@@ -1,7 +1,11 @@
 # Phase 2: checklist review
 
-**Status:** Draft 0.2.0. Researcher and accessibility-specialist review remain open.
+**Status:** Checklist 0.2.0 was approved by the researcher on 30 October 2026.
+Independent accessibility-specialist review remains open.
 No website, model, or human participant was evaluated in this phase.
+
+The [approval record](checklist-approval.json) identifies the approved files by SHA-256.
+Researcher approval does not establish expert validation or WCAG conformance.
 
 ## What is in the checklist
 

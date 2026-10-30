@@ -5,6 +5,7 @@
 This package and the existing PDF describe checklist version 0.1.0.
 The [Phase 2 review](../phased-study/phase-02/checklist-review.md) introduces version 0.2.0.
 The original 0.1.0 checklist remains in `../accessibility/versions/0.1.0/`.
+The current candidate intervention files and schemas are in the [Phase 2 package](../phased-study/phase-02/interventions/README.md).
 
 Open [index.html](index.html) for the complete illustrated plan.
 The page combines the five source documents below.
