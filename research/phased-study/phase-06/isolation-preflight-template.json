@@ -1,0 +1,12 @@
+{
+  "status": "NOT_RUN",
+  "codex_version": "RECORD THE ACTUAL VERSION",
+  "planning_write_denied": false,
+  "review_write_denied": false,
+  "output_workspace_write_denied": false,
+  "alternate_write_tools_checked": false,
+  "fresh_sessions_checked": false,
+  "research_files_read_denied_in_all_phases": false,
+  "instruction_sources_checked": false,
+  "evidence": "Record the private path to observations and commands."
+}

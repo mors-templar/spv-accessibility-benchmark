@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task_id": "ARENA_01_SERVICES",
+      "task_sha256": "243bef8e5a5784ff570c9f30a13182350b4196e214fe037e70b15bae5624e5dc",
+      "b_message_sha256": "243bef8e5a5784ff570c9f30a13182350b4196e214fe037e70b15bae5624e5dc",
+      "shared_message_sha256": "a065a76706c5d56d67ecdee848c2fd83caf6018647bbb00f32ffb57bf34bbcd5",
+      "conditions_checked": [
+        "B",
+        "D",
+        "P",
+        "S",
+        "A",
+        "X"
+      ],
+      "sent_to_model": false
+    },
+    {
+      "task_id": "ARENA_02_CONSULTING",
+      "task_sha256": "4ea1cce4d13074cb5e63f506433f806910412351795ce743fd99e8b420462926",
+      "b_message_sha256": "4ea1cce4d13074cb5e63f506433f806910412351795ce743fd99e8b420462926",
+      "shared_message_sha256": "6fa94e04c0466720e663d504cbee831cb4d5c4a3efa86755308569944c83f5ce",
+      "conditions_checked": [
+        "B",
+        "D",
+        "P",
+        "S",
+        "A",
+        "X"
+      ],
+      "sent_to_model": false
+    },
+    {
+      "task_id": "ARENA_03_CINEMA",
+      "task_sha256": "766eb8bbc4aec77affadd6c7169a4cec46f71a001b53dad56907c6efa9876661",
+      "b_message_sha256": "766eb8bbc4aec77affadd6c7169a4cec46f71a001b53dad56907c6efa9876661",
+      "shared_message_sha256": "51eddf2cabbdd0d209175d945753b1122d7740be34777782791c4bd597b608eb",
+      "conditions_checked": [
+        "B",
+        "D",
+        "P",
+        "S",
+        "A",
+        "X"
+      ],
+      "sent_to_model": false
+    },
+    {
+      "task_id": "ARENA_04_DASHBOARD",
+      "task_sha256": "f2f46dd47ff21771f1466a2b209a19d27817ec10fc95c0152f9391f2191c48f5",
+      "b_message_sha256": "f2f46dd47ff21771f1466a2b209a19d27817ec10fc95c0152f9391f2191c48f5",
+      "shared_message_sha256": "b539d09f80302fe89f7223c3d9416ce650c15a09245fd3ef64aa14076388bc8f",
+      "conditions_checked": [
+        "B",
+        "D",
+        "P",
+        "S",
+        "A",
+        "X"
+      ],
+      "sent_to_model": false
+    },
+    {
+      "task_id": "ARENA_05_PORTFOLIO",
+      "task_sha256": "c45af5e4f8efbd0e42bc8f3ecf2cb2457f4aca1311a3ee817b37d1105c4f1624",
+      "b_message_sha256": "c45af5e4f8efbd0e42bc8f3ecf2cb2457f4aca1311a3ee817b37d1105c4f1624",
+      "shared_message_sha256": "8bfa6d7f6b6460babe8449f8cd8856a20416d44225ca3c062a4db82cbf150e97",
+      "conditions_checked": [
+        "B",
+        "D",
+        "P",
+        "S",
+        "A",
+        "X"
+      ],
+      "sent_to_model": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "diagnostic_status": {"type": "string", "enum": ["WARN", "NO_WARNING"]},
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "warning_id": {"type": "string"},
+          "reason": {"type": "string"},
+          "plan_evidence": {"type": "string"},
+          "checklist_item_ids": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["warning_id", "reason", "plan_evidence", "checklist_item_ids"],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["diagnostic_status", "warnings", "limitations"],
+  "additionalProperties": false
+}

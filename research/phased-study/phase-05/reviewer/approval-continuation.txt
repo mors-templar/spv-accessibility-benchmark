@@ -1,0 +1,6 @@
+The host approved the plan for implementation.
+Build the requested website using the original request and the approved plan.
+Keep all required features.
+Complete the shared accessibility self-report.
+Mark checks that were not performed as unassessed.
+Approval of a plan does not establish WCAG conformance.

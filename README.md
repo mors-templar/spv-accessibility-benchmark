@@ -28,6 +28,6 @@ The intended GitHub Pages source is the `docs` directory. Pages from a private r
 
 ## Source and study status
 
-The task descriptions are short summaries. The original WebDev Arena messages are not in this repository. The dataset has a custom agreement; clarify rights before submitting its prompts to hosted services or publishing prompt copies. The task provenance manifest and local copies are maintained separately in the research workspace.
+The task descriptions are short summaries. The original WebDev Arena messages are not in this repository. The dataset agreement's application to hosted inference is unclear. The researcher chose to use the selected prompts. Rights to publish prompt copies remain unconfirmed. The task provenance manifest and local copies are maintained separately in the research workspace.
 
 The intervention conditions and evaluation plan are proposals. Review and freeze the protocol before comparative data collection. Status fields must reflect actual evidence; do not publish a result until it has been run and checked.

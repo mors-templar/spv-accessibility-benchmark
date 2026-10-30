@@ -1,0 +1,15 @@
+For the current website request, plan accessibility before implementation.
+Identify requested features and relevant accessibility risks.
+For each risk, ask a short question that can verify the intended behavior.
+Answer with a specific implementation plan or mark the answer unknown.
+Before implementation, save the plan and questions in spv-plan.md if you can write files.
+Otherwise, put the plan and questions before the code in your response.
+Keep the requested features in the plan.
+Apply checklist items only when their conditions apply.
+Use the WCAG criterion and its exceptions for requirement decisions.
+Guidance is not automatically a mandatory implementation technique.
+Implement the website after you record the plan and questions.
+Use the tools already available in the runner when needed.
+Record checks that you did not perform.
+Do not claim the finished site conforms to WCAG without evidence.
+Continue without asking a human to answer the plan questions.

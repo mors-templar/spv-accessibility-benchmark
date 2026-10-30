@@ -1,0 +1,23 @@
+{
+  "type": "function",
+  "name": "verify_plan",
+  "description": "Return advisory signal warnings about a website accessibility plan. The result is not a WCAG test.",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "plan_text": {"type": "string"},
+      "questions_and_answers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {"question": {"type": "string"}, "answer": {"type": "string"}},
+          "required": ["question", "answer"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["plan_text", "questions_and_answers"],
+    "additionalProperties": false
+  }
+}

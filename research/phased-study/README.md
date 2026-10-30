@@ -1,6 +1,6 @@
 # Phased experiment roadmap
 
-**Status:** Working plan, 30 October 2026. Exploratory runs have started; the final benchmark has not run.
+**Status:** Working plan, 30 October 2026. Phase 4 to 6 development packages exist; the final benchmark has not run.
 The numbered phases below clarify the requested sequence.
 They do not change the selected task texts.
 
@@ -8,10 +8,10 @@ They do not change the selected task texts.
 | --- | --- | --- |
 | 1 | Establish the five selected requests and the study plan. | All five requests are selected. The full study plan remains a draft. |
 | 2 | Review the checklist and draft the exact intervention wording. | Checklist 0.2.0 is approved by the researcher. Specialist review and intervention wording remain open. |
-| 3 | Produce baseline and prompt-guidance development runs. | Fourteen scheduled turns completed, one failed, and one supplemental turn completed. Nine initial static scans are available. |
-| 4 | Build and assess the skill package. | Draft instructions exist. Diagnostic implementation, integration, and S comparison remain open. |
-| 5 | Build and assess the reviewer agent and host gate. | Draft instructions and schemas exist. The study gate, integration, and A comparison remain open. |
-| 6 | Combine prompt guidance, skill, and reviewer. | Proposed design only. The combined package and X comparison remain open. |
+| 3 | Produce baseline and prompt-guidance development runs. | The researcher elected to proceed. Fourteen scheduled turns completed, one failed, and one supplemental turn completed. Nine initial static scans are available. |
+| 4 | Build and assess the skill package. | A development skill, prompt, and advisory diagnostic have offline tests. Runner integration and S comparison remain open. |
+| 5 | Build and assess the reviewer agent and host gate. | A development reviewer and host API have offline tests. Live adapters, verified isolation, and A comparison remain open. |
+| 6 | Combine prompt guidance, skill, and reviewer. | A combined development package and input checker exist. Runner integration and X comparison remain open. |
 | 7 | Freeze the protocol and run the full comparison. | Final protocol, independent review, full multi-runner batch, and analysis remain open. |
 
 The user named Phase 3 twice.
@@ -70,3 +70,12 @@ The researcher chose to proceed with the selected prompts despite that uncertain
 See the [dataset-use note](phase-03/arena-dataset-use.md).
 
 [Phase 3 preparation](phase-03/README.md) describes the B, D, and P comparison and its offline input checker.
+
+The Phase 4 to 6 development package is documented in:
+
+- [Prompt and skill](phase-04/README.md).
+- [Reviewer and host gate](phase-05/README.md).
+- [Combined package and condition assembly](phase-06/README.md).
+
+These packages are not frozen final-study interventions.
+Offline fixture tests do not show that the interventions improve website accessibility.

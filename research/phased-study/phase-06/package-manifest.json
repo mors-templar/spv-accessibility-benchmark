@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0-development",
+  "status": "development_not_frozen",
+  "checklist_version": "0.2.0",
+  "files": [
+    {
+      "path_from_repo_root": "research/accessibility/action-checklist.json",
+      "bytes": 73505,
+      "sha256": "e388befdc7d8d884499d720a4efe2c2e59cf6560ba8f3c9fabb5cb47d4dd01a5"
+    },
+    {
+      "path_from_repo_root": "research/accessibility/master-action-checklist.md",
+      "bytes": 68406,
+      "sha256": "2a73ea4045012d195d0286c21867af009c955303bd969842a8e1d1cd92510575"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/checklist-approval.json",
+      "bytes": 915,
+      "sha256": "43ad29e182ca962d14426b83746a230c115fbcaf5cc8393b7ffed6a400078883"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/candidate-manifest.json",
+      "bytes": 2934,
+      "sha256": "6634ad1bacfb7a61e1996f8c6df6d203fc74cfd4c671be0ba4965cf448567019"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/checklist-instruction.txt",
+      "bytes": 1447,
+      "sha256": "ebb68f3aacdde24ef01301e238b042d32dfc54b8a7ae793a1e0540020dfe1c86"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-02/interventions/prompt-guidance.txt",
+      "bytes": 969,
+      "sha256": "d4eac93d452d7c5f5197130e40d4eff1a89fd3f96146909bbe520a9983c97c9a"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-03/prepare_trial.py",
+      "bytes": 6539,
+      "sha256": "5fe130277b5df61d0f82579dd822e0dc1f2b326c69042a0dfa5fef121a78d556"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/prompt-guidance.txt",
+      "bytes": 969,
+      "sha256": "d4eac93d452d7c5f5197130e40d4eff1a89fd3f96146909bbe520a9983c97c9a"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/spv-accessibility/SKILL.md",
+      "bytes": 1455,
+      "sha256": "d22c7d5c9a72ee47e0afca4fe085e86318d019a24c4c8e45b6daf823b9e45a1e"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/spv-accessibility/references/openai-responses-function.json",
+      "bytes": 685,
+      "sha256": "7b5d6e6adcf20a3a92a56cc3fec2c992d6f3e4387d3998ab90419a7972b4784c"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/spv-accessibility/references/verify-plan-request.schema.json",
+      "bytes": 479,
+      "sha256": "c7c6b3a3d60ceacb551733130ea4afa923575858b1cbb0911e12bb35b6f16819"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/spv-accessibility/references/verify-plan-response.schema.json",
+      "bytes": 753,
+      "sha256": "459a34ce7abab10a08bb8f59c82eefc9d0da44b98b389a77f45f48defa0eee68"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/spv-accessibility/scripts/verify_plan.py",
+      "bytes": 5487,
+      "sha256": "6cc97b2201a6bf15563c2866fea3d273b411748ab2b55af11dd1b10ad5b55528"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-04/tool_adapter.py",
+      "bytes": 1962,
+      "sha256": "49ff34fc79a52af16a123c2b683df60359c1bc8556ea9f8f9ec7ba98bb814513"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/gate.py",
+      "bytes": 12155,
+      "sha256": "b48681462fa89181d092e39ca256471e6dfdfbb7c3d7e43c2695f5a78c2ca604"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/reviewer/approval-continuation.txt",
+      "bytes": 307,
+      "sha256": "8daa4433912504f0f7dc57d4725eb6306ea64b00565d24fa1e62e3a1f0d596b1"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/reviewer/decision.schema.json",
+      "bytes": 725,
+      "sha256": "5f52cd498aaba8c6b34c30c569a26860374aac7367cb8564e5cb7a941712d10d"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/reviewer/plan-instruction.txt",
+      "bytes": 896,
+      "sha256": "ae8f300f232d970367235078352dc1e499bc4002d68aba56980ed9a97fc641a5"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/reviewer/plan.schema.json",
+      "bytes": 783,
+      "sha256": "6b1677233b083173aa9fc8d502b85265f54f2c024b11e8e8c3a96ab17b2a3284"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-05/reviewer/reviewer-instruction.txt",
+      "bytes": 1254,
+      "sha256": "13878a3be62764da9cdabe26b769c39a928b55ff53305ef925afaf4648a8a7e4"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-06/isolation-preflight-template.json",
+      "bytes": 423,
+      "sha256": "0462a52a758a323c8b14d68322256c98a19cb4938524a601e8e0d789ca9f54d1"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-06/prepare_condition.py",
+      "bytes": 5708,
+      "sha256": "f6aa83aed27a3adb353bc4078d15f3cafdf465c67b758b04da6b00c0aea32755"
+    },
+    {
+      "path_from_repo_root": "research/phased-study/phase-06/run_codex_review.py",
+      "bytes": 15605,
+      "sha256": "c80087ca004e1c0b89cfdefc21da9563a3623427e048335e1fd11c2800d5369b"
+    }
+  ]
+}
