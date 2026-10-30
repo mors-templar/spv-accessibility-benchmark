@@ -59,9 +59,17 @@ class ReviewCopyTests(unittest.TestCase):
                          "status": "turn_completed_unassessed",
                          "final_workspace": development.artifact_manifest(second_workspace)}
         (runs / "run2/record.json").write_text(json.dumps(second_record), encoding="utf-8")
+        third_workspace = runs / "run3/workspace"
+        third_workspace.mkdir(parents=True)
+        (third_workspace / "index.html").write_text('<script type="module" src="/src/main.jsx"></script>', encoding="utf-8")
+        third_record = {"run_id": "run3", "task_id": "TASK3", "condition": "D",
+                        "status": "turn_completed_unassessed",
+                        "final_workspace": development.artifact_manifest(third_workspace)}
+        (runs / "run3/record.json").write_text(json.dumps(third_record), encoding="utf-8")
         entries = [
             {"run_id": "run1", "task_id": "TASK1", "condition": "B", "status": "turn_completed_unassessed"},
             {"run_id": "run2", "task_id": "TASK2", "condition": "P", "status": "turn_completed_unassessed"},
+            {"run_id": "run3", "task_id": "TASK3", "condition": "D", "status": "turn_completed_unassessed"},
         ]
         generation = self.root / "ledger.json"
         generation.write_text(json.dumps({"status": "all_turns_completed_unassessed", "schedule_sha256": "hash",
@@ -73,7 +81,8 @@ class ReviewCopyTests(unittest.TestCase):
              contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(review.main(), 0)
         mapping = json.loads((target / "private-mapping.json").read_text(encoding="utf-8"))
-        self.assertEqual({case["status"] for case in mapping["cases"]}, {"ready_static_copy", "no_static_index"})
+        self.assertEqual({case["status"] for case in mapping["cases"]},
+                         {"ready_static_copy", "no_static_index", "source_requires_build"})
         self.assertEqual(mapping["status"], "prepared_with_gaps")
 
 
