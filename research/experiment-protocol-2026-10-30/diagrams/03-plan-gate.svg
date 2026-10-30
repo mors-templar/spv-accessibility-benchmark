@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="907.2pt" height="513.36pt" viewBox="0 0 907.2 513.36" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 513.36
+L 907.2 513.36
+L 907.2 -0
+L 0 -0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 46.4832 225.74448
+L 262.5408 225.74448
+Q 273.2544 225.74448 273.2544 219.75696
+L 273.2544 133.93584
+Q 273.2544 127.94832 262.5408 127.94832
+L 46.4832 127.94832
+Q 35.7696 127.94832 35.7696 133.93584
+L 35.7696 219.75696
+Q 35.7696 225.74448 46.4832 225.74448
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #e8f1f8; stroke: #b8ccd2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 336.6432 225.74448
+L 552.7008 225.74448
+Q 563.4144 225.74448 563.4144 219.75696
+L 563.4144 133.93584
+Q 563.4144 127.94832 552.7008 127.94832
+L 336.6432 127.94832
+Q 325.9296 127.94832 325.9296 133.93584
+L 325.9296 219.75696
+Q 325.9296 225.74448 336.6432 225.74448
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #fff0d4; stroke: #b8ccd2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 626.8032 225.74448
+L 851.7888 225.74448
+Q 862.5024 225.74448 862.5024 219.75696
+L 862.5024 133.93584
+Q 862.5024 127.94832 851.7888 127.94832
+L 626.8032 127.94832
+Q 616.0896 127.94832 616.0896 133.93584
+L 616.0896 219.75696
+Q 616.0896 225.74448 626.8032 225.74448
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #d9f1ed; stroke: #b8ccd2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 268.110501 176.8464
+Q 299.590104 176.8464 329.560362 176.8464
+" clip-path="url(#p5dfb9cfd0d)" style="fill: none; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 324.360362 174.2464
+L 329.560362 176.8464
+L 324.360362 179.4464
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #9aaeb7; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 558.270501 176.8464
+Q 589.750104 176.8464 619.720362 176.8464
+" clip-path="url(#p5dfb9cfd0d)" style="fill: none; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 614.520362 174.2464
+L 619.720362 176.8464
+L 614.520362 179.4464
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #9aaeb7; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 305.3952 385.41168
+L 583.9488 385.41168
+Q 594.6624 385.41168 594.6624 379.42416
+L 594.6624 303.58224
+Q 594.6624 297.59472 583.9488 297.59472
+L 305.3952 297.59472
+Q 294.6816 297.59472 294.6816 303.58224
+L 294.6816 379.42416
+Q 294.6816 385.41168 305.3952 385.41168
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #fbe9e2; stroke: #b8ccd2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 444.672 223.755462
+Q 444.672 261.670967 444.672 298.077126
+" clip-path="url(#p5dfb9cfd0d)" style="fill: none; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 447.272 292.877126
+L 444.672 298.077126
+L 442.072 292.877126
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #9aaeb7; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 299.872419 341.061259
+Q 198.790743 317.766911 155.975515 224.943845
+" clip-path="url(#p5dfb9cfd0d)" style="fill: none; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 155.792571 230.754742
+L 155.975515 224.943845
+L 160.514467 228.576738
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #9aaeb7; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 653.5872 385.41168
+L 842.8608 385.41168
+Q 853.5744 385.41168 853.5744 379.42416
+L 853.5744 303.58224
+Q 853.5744 297.59472 842.8608 297.59472
+L 653.5872 297.59472
+Q 642.8736 297.59472 642.8736 303.58224
+L 642.8736 379.42416
+Q 642.8736 385.41168 653.5872 385.41168
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #f5f8f8; stroke: #b8ccd2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 589.522588 341.5032
+Q 618.770547 341.5032 646.50916 341.5032
+" clip-path="url(#p5dfb9cfd0d)" style="fill: none; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 641.30916 338.9032
+L 646.50916 341.5032
+L 641.30916 344.1032
+z
+" clip-path="url(#p5dfb9cfd0d)" style="fill: #9aaeb7; stroke: #9aaeb7; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="42.912" y="45.39465" transform="rotate(-0 42.912 45.39465)">Proposed reviewer gate</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #35566c" x="42.912" y="61.604447" transform="rotate(-0 42.912 61.604447)">A and X use one user submission and may make extra internal calls.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="55.4112" y="150.799249" transform="rotate(-0 55.4112 150.799249)">1  PLAN PHASE</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(55.4112 167.741081)">Generator writes a plan.</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(55.4112 180.894503)">Host denies output writes.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="345.5712" y="150.799249" transform="rotate(-0 345.5712 150.799249)">2  REVIEW PLAN</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(345.5712 167.741081)">Separate reviewer checks</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(345.5712 180.894503)">questions and planned behavior.</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="635.7312" y="150.799249" transform="rotate(-0 635.7312 150.799249)">3  APPROVED BUILD</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(635.7312 167.741081)">Host permits a writable phase.</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(635.7312 180.894503)">Generator builds the site.</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #35566c" x="578.592" y="156.888" transform="rotate(-0 578.592 156.888)">approve</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="314.3232" y="319.685805" transform="rotate(-0 314.3232 319.685805)">REVISE OR INSUFFICIENT EVIDENCE</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(314.3232 337.007559)">Return findings to the generator.</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(314.3232 349.563098)">At most two revised plans are proposed.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="662.5152" y="319.685805" transform="rotate(-0 662.5152 319.685805)">BLOCKED</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(662.5152 337.007559)">Stop after the retry limit.</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #35566c" transform="translate(662.5152 349.563098)">Keep the failure record.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #112d42" x="42.912" y="456.264" transform="rotate(-0 42.912 456.264)">Plan approval is not a WCAG pass. Finished sites receive separate evaluation.</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #35566c" x="42.912" y="478.7172" transform="rotate(-0 42.912 478.7172)">A read-only phase can block file writes; it cannot stop a model emitting code as text.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5dfb9cfd0d">
+   <rect x="7.2" y="7.2" width="892.8" height="498.96"/>
+  </clipPath>
+ </defs>
+</svg>

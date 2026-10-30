@@ -1,0 +1,1532 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPV accessibility study: draft experiment plan</title><style>
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #112d42; background: #eef3f4; }
+* { box-sizing: border-box; } body { margin: 0; line-height: 1.65; }
+header { background: #112d42; color: white; padding: 1.8rem max(1rem, calc((100vw - 1450px) / 2)); }
+header h1 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.35rem); } header p { margin: .5rem 0 0; color: #d4e8ea; }
+.wrap { max-width: 1450px; margin: auto; display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 1.5rem; padding: 1.5rem; }
+aside { align-self: start; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; background: white; border-radius: .7rem; padding: 1rem; }
+aside strong { font-size: 1.05rem; } aside ul { padding-left: 1.2rem; } aside li { margin: .25rem 0; } aside ul ul { font-size: .86rem; }
+main { min-width: 0; background: white; padding: clamp(1rem, 3vw, 3rem); border-radius: .7rem; }
+h1, h2, h3 { line-height: 1.25; color: #112d42; scroll-margin-top: 1rem; } h1:not(:first-child) { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 2px solid #c7d9df; }
+h2 { margin-top: 2.2rem; } a { color: #075f78; text-underline-offset: .16em; }
+img { max-width: 100%; height: auto; border: 1px solid #d9e4e7; border-radius: .5rem; }
+table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.25rem 0; }
+th, td { border: 1px solid #cddce0; padding: .65rem; text-align: left; vertical-align: top; } th { background: #e4eff2; }
+pre { overflow-x: auto; background: #102d3b; color: #eef8f8; padding: 1rem; border-radius: .4rem; line-height: 1.5; }
+code { font-family: ui-monospace, Consolas, monospace; } p code, td code, li code { background: #edf3f4; padding: .1em .2em; }
+@media (max-width: 900px) { .wrap { display: block; padding: .75rem; } aside { position: static; max-height: 18rem; margin-bottom: 1rem; } main { padding: 1rem; } }
+@media print { body { background: white; } header { color: #112d42; background: white; } header p { color: #35566c; } .wrap { display: block; } aside { display: none; } main { padding: 0; } pre { white-space: pre-wrap; background: white; color: black; border: 1px solid #aaa; } }
+</style></head><body><header><h1>SPV accessibility study: draft experiment plan</h1><p>Research draft | No benchmark results | Private review copy</p></header>
+<div class="wrap"><aside aria-label="Document navigation"><strong>Contents</strong><div class="toc">
+<ul>
+<li><a href="#experiment-plan-ai-generated-website-accessibility">Experiment plan: AI-generated website accessibility</a><ul>
+<li><a href="#1-purpose-and-boundaries">1. Purpose and boundaries</a></li>
+<li><a href="#2-research-questions">2. Research questions</a></li>
+<li><a href="#3-tasks">3. Tasks</a></li>
+<li><a href="#4-the-six-proposed-conditions">4. The six proposed conditions</a></li>
+<li><a href="#5-study-size-and-independence">5. Study size and independence</a></li>
+<li><a href="#6-spv-question-policy">6. SPV question policy</a></li>
+<li><a href="#7-proposed-schedule">7. Proposed schedule</a></li>
+<li><a href="#8-decisions-still-required">8. Decisions still required</a></li>
+</ul>
+</li>
+<li><a href="#candidate-intervention-prompt-pack">Candidate intervention prompt pack</a><ul>
+<li><a href="#1-input-assembly-rules">1. Input assembly rules</a></li>
+<li><a href="#2-p-prompt-level-guidance">2. P: prompt-level guidance</a></li>
+<li><a href="#3-s-skill-instructions">3. S: skill instructions</a><ul>
+<li><a href="#proposed-tool-contract">Proposed tool contract</a></li>
+</ul>
+</li>
+<li><a href="#4-a-reviewer-agent-and-host-gate">4. A: reviewer agent and host gate</a><ul>
+<li><a href="#plan-phase-instruction">Plan-phase instruction</a></li>
+<li><a href="#reviewer-instruction">Reviewer instruction</a></li>
+<li><a href="#reviewer-decision-contract">Reviewer decision contract</a></li>
+<li><a href="#host-continuation-after-approval">Host continuation after approval</a></li>
+</ul>
+</li>
+<li><a href="#5-x-combined-package">5. X: combined package</a></li>
+<li><a href="#6-common-examples-of-useful-questions">6. Common examples of useful questions</a></li>
+</ul>
+</li>
+<li><a href="#evaluation-and-analysis-plan">Evaluation and analysis plan</a><ul>
+<li><a href="#1-evaluation-model">1. Evaluation model</a></li>
+<li><a href="#2-define-the-test-unit">2. Define the test unit</a></li>
+<li><a href="#3-task-function">3. Task function</a><ul>
+<li><a href="#candidate-task-specific-concerns">Candidate task-specific concerns</a></li>
+</ul>
+</li>
+<li><a href="#4-common-accessibility-checks">4. Common accessibility checks</a><ul>
+<li><a href="#draft-test-cards">Draft test cards</a></li>
+<li><a href="#security-privacy-and-ethics-scope">Security, privacy, and ethics scope</a></li>
+</ul>
+</li>
+<li><a href="#5-playwright-and-axe-core">5. Playwright and axe-core</a></li>
+<li><a href="#6-human-review">6. Human review</a></li>
+<li><a href="#7-proposed-primary-outcome">7. Proposed primary outcome</a></li>
+<li><a href="#8-secondary-measures">8. Secondary measures</a></li>
+<li><a href="#9-analysis-and-interpretation">9. Analysis and interpretation</a></li>
+<li><a href="#10-reporting-table-template">10. Reporting table template</a></li>
+</ul>
+</li>
+<li><a href="#build-and-execution-plan">Build and execution plan</a><ul>
+<li><a href="#1-planned-components">1. Planned components</a></li>
+<li><a href="#2-proposed-directory-layout">2. Proposed directory layout</a></li>
+<li><a href="#3-build-the-task-contracts">3. Build the task contracts</a></li>
+<li><a href="#4-build-and-check-the-interventions">4. Build and check the interventions</a></li>
+<li><a href="#5-build-the-independent-evaluator">5. Build the independent evaluator</a></li>
+<li><a href="#6-runner-compatibility-and-fairness">6. Runner compatibility and fairness</a></li>
+<li><a href="#7-freeze-and-schedule">7. Freeze and schedule</a></li>
+<li><a href="#8-procedure-for-one-scheduled-attempt">8. Procedure for one scheduled attempt</a></li>
+<li><a href="#9-minimal-run-record">9. Minimal run record</a></li>
+<li><a href="#10-release-and-audit">10. Release and audit</a></li>
+</ul>
+</li>
+<li><a href="#evidence-and-claim-limits">Evidence and claim limits</a><ul>
+<li><a href="#peer-reviewed-research">Peer-reviewed research</a></li>
+<li><a href="#standards-specifications-and-tool-documentation">Standards, specifications, and tool documentation</a></li>
+<li><a href="#what-the-evidence-can-and-cannot-establish">What the evidence can and cannot establish</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</aside><main><!-- Source: 01-study-design.md -->
+
+<h1 id="experiment-plan-ai-generated-website-accessibility">Experiment plan: AI-generated website accessibility</h1>
+<p><strong>Version:</strong> Draft 0.1, 30 October 2026.
+<strong>Status:</strong> Proposal for discussion. No benchmark or participant study has run.
+<strong>Language:</strong> ASD-STE100-oriented technical English. Formal conformance is not verified.</p>
+<p>The original Arena tasks and full checklist retain their existing wording.
+Their wording has not been checked against the ASD-STE100 dictionary.</p>
+<h2 id="1-purpose-and-boundaries">1. Purpose and boundaries</h2>
+<p>This study asks whether specific interventions change accessibility in AI-generated websites.
+It also measures website function, review behavior, and resource costs.
+The five chosen requests remain the study tasks.
+The task text must stay unchanged in every condition.
+The study adds material in some conditions, so the full model inputs differ.</p>
+<p>This is an exploratory study of five selected tasks.
+It cannot prove that one method is best for all websites or AI systems.
+The review may find no improvement or a worse result.
+The team must report those outcomes as well.</p>
+<p><strong>Important:</strong> The Arena dataset terms require clarification before hosted-model submission or public release of prompt text.
+See the <a href="https://huggingface.co/datasets/lmarena-ai/webdev-arena-preference-10k">dataset agreement</a>.
+No original task text is reproduced in this protocol.</p>
+<p><img alt="Study architecture. Five fixed website requests enter six conditions. Each output receives the same independent evaluation." src="diagrams/01-study-architecture.png" /></p>
+<h2 id="2-research-questions">2. Research questions</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Proposed question</th>
+<th>Main comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RQ1</td>
+<td>How do the packages affect the selected accessibility and task checks?</td>
+<td>Each condition versus baseline B.</td>
+</tr>
+<tr>
+<td>RQ2</td>
+<td>Does a package add value beyond the full checklist alone?</td>
+<td>P, S, A, and X versus D.</td>
+</tr>
+<tr>
+<td>RQ3</td>
+<td>What costs, failures, and process behaviors accompany each package?</td>
+<td>All six conditions.</td>
+</tr>
+<tr>
+<td>RQ4</td>
+<td>Do model checklist claims agree with independent observations?</td>
+<td>D, P, S, A, and X only.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proposed directional hypothesis:</strong> X improves the task-and-accessibility success rate compared with D.
+The opposite or no change remains possible.
+All other comparisons are exploratory in this five-task design.
+The team must accept the final outcome and analysis plan before study runs.</p>
+<p>This experiment does not measure human automation bias.
+No participant answers questions in the proposed autonomous version.
+A human-overreliance claim requires a separate participant study.</p>
+<h2 id="3-tasks">3. Tasks</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th style="text-align: right;">Selected shortlist item</th>
+<th>Public description</th>
+<th>Design concern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T01</td>
+<td style="text-align: right;">7</td>
+<td>Services landing page</td>
+<td>The request refers to an order form that was not supplied.</td>
+</tr>
+<tr>
+<td>T02</td>
+<td style="text-align: right;">8</td>
+<td>Consulting landing page</td>
+<td>The request already asks for contrast and semantic HTML.</td>
+</tr>
+<tr>
+<td>T03</td>
+<td style="text-align: right;">18</td>
+<td>Cinema listings and ticket selection</td>
+<td>Film data and delivery services are not supplied.</td>
+</tr>
+<tr>
+<td>T04</td>
+<td style="text-align: right;">19</td>
+<td>Task dashboard with charts and drag-and-drop</td>
+<td>The request needs several interactive functions.</td>
+</tr>
+<tr>
+<td>T05</td>
+<td style="text-align: right;">1</td>
+<td>Personal portfolio</td>
+<td>The request is short and leaves features open.</td>
+</tr>
+</tbody>
+</table>
+<p>The selection was purposive.
+It is not a random sample of website requests.
+The original first user message is the task input.
+The <a href="../../../benchmarks/selected_arena_baselines/manifest.json">task manifest</a> records identifiers and UTF-8 hashes.
+The exact task input must match its manifest hash at every run.</p>
+<p>Before running, define a task contract for each request.
+Record every required journey, supplied input, external dependency, and allowed fixture.
+Treat an unavailable required input as unresolved until the team chooses a consistent rule.
+Do not edit the source task or quietly invent a service.</p>
+<h2 id="4-the-six-proposed-conditions">4. The six proposed conditions</h2>
+<p>The checklist is the existing 188-item action checklist, version 0.1.0.
+It has 81 WCAG-derived items, 81 guidance items, and 26 research-process items.
+The checklist is a research draft; expert review is still needed.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Generator receives</th>
+<th>Extra study mechanism</th>
+<th>What the comparison can show</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>Original task only</td>
+<td>None.</td>
+<td>Baseline for the selected model and runner.</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Original task plus the full checklist and self-report request.</td>
+<td>Direct user-message guidance.</td>
+<td>Effect of this complete checklist package versus B.</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Same D message.</td>
+<td>Persistent plan and question guidance.</td>
+<td>Effect of this instruction package versus D.</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Same D message.</td>
+<td>Reusable skill and a plan diagnostic.</td>
+<td>Effect of this skill package versus D.</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Same D message.</td>
+<td>Separate reviewer and host-enforced plan gate.</td>
+<td>Effect of this reviewer workflow versus D.</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Same D message.</td>
+<td>P, S, and A together.</td>
+<td>Effect of this specific combined package versus D.</td>
+</tr>
+</tbody>
+</table>
+<p>The packages change several things at once.
+The result cannot isolate the value of packaging, extra time, or an individual instruction.
+The six-arm design also cannot estimate all interactions between P, S, and A.
+For that question, use all eight P/S/A combinations plus B: nine conditions total.</p>
+<table>
+<thead>
+<tr>
+<th>Checklist-based factor combination</th>
+<th>Present in six-arm proposal?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No P, S, or A: D</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td>P only</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td>S only</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td>A only</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td>P plus S</td>
+<td>No.</td>
+</tr>
+<tr>
+<td>P plus A</td>
+<td>No.</td>
+</tr>
+<tr>
+<td>S plus A</td>
+<td>No.</td>
+</tr>
+<tr>
+<td>P plus S plus A: X</td>
+<td>Yes.</td>
+</tr>
+</tbody>
+</table>
+<p>Even the full factorial design needs enough independently sampled tasks for broader inference.
+Five tasks and three repeats support a limited exploratory comparison.</p>
+<p>P has no study-specific host gate.
+S requests a diagnostic, but the host does not enforce a gate in S.
+A and X use a host gate only when the runner supports the needed controls.
+The runner must record actual activation and gate behavior.
+An instruction file is not automatically a model system-role message.</p>
+<p><img alt="Condition comparison. The original request goes to every arm. D, P, S, A and X also receive the same checklist." src="diagrams/02-condition-matrix.png" /></p>
+<h2 id="5-study-size-and-independence">5. Study size and independence</h2>
+<p>The initial proposal uses two model-and-runner configurations.
+Codex and Antigravity are candidates, subject to availability and capability checks.
+Record the actual model, runner, version, and settings for each run.
+If a model or setting is hidden, record it as unknown.</p>
+<p>The proposed budget is five tasks times two configurations times six conditions times three repeats.
+That is <strong>180 scheduled generation attempts</strong>.
+This number is a planning example, not a power calculation.
+The nine-condition extension would require 270 attempts with the same two configurations and three repeats.</p>
+<p>At the proposed 20-minute cap, 180 attempts could occupy up to 60 hours of sequential generation time.
+That limit excludes setup and review.
+As an illustration, 30 minutes of manual review per artifact would add 90 hours for 180 artifacts.
+Actual review time and the number of runnable artifacts are unknown.
+The team should check its budget before freezing the matrix.</p>
+<p>One run is a fresh generation attempt for one task, configuration, condition, and repeat.
+Repeats measure run variation for the same selected tasks.
+They do not create 180 independent website requests.
+Results must show each task and configuration separately.</p>
+<h2 id="6-spv-question-policy">6. SPV question policy</h2>
+<p>SPV means Socratic Plan Verification in this draft.
+The autonomous version asks an AI to generate and answer plan questions.
+For A and X, a separate reviewer inspects the plan before the host permits implementation.
+This reviewer does not evaluate the finished site for the study outcome.</p>
+<p>One-shot means one initial user submission for each run.
+The agent workflow may make extra internal model calls.
+Record those calls, all plan revisions, and their costs.
+An AI answer is not evidence that a human reviewed the plan.</p>
+<p><img alt="Plan gate. The host requests a plan in a read-only phase. A reviewer asks for revision or approves. The host permits a writable phase only after approval." src="diagrams/03-plan-gate.png" /></p>
+<h2 id="7-proposed-schedule">7. Proposed schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Work</th>
+<th>Exit condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Resolve task rights and researcher decisions.</td>
+<td>Record authorization or replace the task source.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Write task contracts and assessment checks.</td>
+<td>Review and freeze scope, fixture rules, and test specifications.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Build the four intervention packages.</td>
+<td>Version each package and validate on separate development fixtures.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Build runners and independent evaluators.</td>
+<td>Test adapters, gate failures, evidence capture, and reviewer agreement.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Freeze protocol and schedule.</td>
+<td>Store hashes, tool versions, order, and stopping rules.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Execute every scheduled run.</td>
+<td>Preserve every artifact or failure record.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Evaluate under masked labels.</td>
+<td>Record function, accessibility, missing data, and costs.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Analyze and review release rights.</td>
+<td>Publish only permitted material and supported findings.</td>
+</tr>
+</tbody>
+</table>
+<p>Detailed instructions appear in <a href="02-prompt-pack.md">02-prompt-pack.md</a>,
+<a href="03-evaluation.md">03-evaluation.md</a>, and <a href="04-build-and-run.md">04-build-and-run.md</a>.
+The source rationale appears in <a href="05-evidence.md">05-evidence.md</a>.</p>
+<h2 id="8-decisions-still-required">8. Decisions still required</h2>
+<ul>
+<li>Confirm dataset rights and permitted sharing with each service.</li>
+<li>Choose the actual model-and-runner configurations after capability checks.</li>
+<li>Review the full checklist and the task-specific checks with an accessibility specialist.</li>
+<li>Confirm the budget, exact outcome, gate retry limit, and time cap before freezing.</li>
+<li>Decide whether a second independent reviewer and assistive-technology testing are available.</li>
+<li>Decide whether to add the three missing factorial combinations.</li>
+<li>Decide separately whether a human participant study is in scope.</li>
+</ul>
+<p>The diagrams and prompts describe a proposed design.
+They are not evidence of an implemented or validated system.</p>
+<!-- Source: 02-prompt-pack.md -->
+
+<h1 id="candidate-intervention-prompt-pack">Candidate intervention prompt pack</h1>
+<p><strong>Status:</strong> Draft 0.1. These instructions have not been tested or frozen.
+Review them with the team before implementation.</p>
+<h2 id="1-input-assembly-rules">1. Input assembly rules</h2>
+<p>The original task is stored outside this document.
+Never change its words, punctuation, or whitespace for one condition.
+Verify the original UTF-8 bytes against the task manifest before assembly.
+Do not send the protected task to a hosted service before rights are clear.</p>
+<p>For B, send exactly the original task text as the study user message.
+For D, P, S, A, and X, send the original task followed by the same block below.
+The separator and block are added bytes.
+Record both the original task hash and the full assembled-message hash.
+Use the same checklist file bytes and the same assembly rule in every intervention arm.</p>
+<p>The D message is longer than B.
+Its self-report also requires work that B does not request.
+Those changes are part of the D package.
+Do not attribute the full B-to-D difference to the checklist text alone.</p>
+<p>The placeholders below describe how the host assembles messages.
+They are not literal text to send.</p>
+<pre><code class="language-text">&lt;ORIGINAL_TASK_UTF8_BYTES&gt;
+
+--- BEGIN ACCESSIBILITY REQUEST ---
+Use the accessibility checklist below while you complete the request above.
+Keep all required features from the original request.
+Apply each checklist item only when it is relevant to the requested site.
+The R items describe possible WCAG outcomes and include conditions and exceptions.
+The G items describe guidance and possible techniques.
+The P items describe research activities rather than mandatory site features.
+Do not claim a check passed unless you have observed supporting evidence.
+Do not call a missing requested feature not applicable.
+Mark any item you cannot assess as unassessed.
+Create an accessibility self-report for all checklist item IDs.
+For each R or G item, record pass, fail, not applicable, or unassessed.
+For each P item, record research activity and do not call it a site defect.
+Give a short reason and evidence for each status.
+If your environment cannot create a file, include the report in your response.
+The independent study team will review the finished site separately.
+--- BEGIN CHECKLIST ---
+&lt;EXACT_MASTER_ACTION_CHECKLIST_UTF8_BYTES&gt;
+--- END CHECKLIST ---
+--- END ACCESSIBILITY REQUEST ---
+</code></pre>
+<p>The <code>pass</code> status for a G item means the suggested technique was used.
+It is not a WCAG conformance judgment.
+An R-item pass is the model's claim, not an independent result.
+The full checklist text may introduce links and research instructions.
+The team must review and freeze those bytes before any run.</p>
+<h2 id="2-p-prompt-level-guidance">2. P: prompt-level guidance</h2>
+<p>Put this text in the runner's persistent project instruction file.
+Use the runner's supported format and record the actual delivery channel.
+Do not claim a system role when the runner loads a project file as user context.
+The P condition has no study-specific tool gate.</p>
+<p>An actual API system-role message is a different delivery variant.
+Record and analyze it separately from a project-file variant.
+Do not assume those channels have the same instruction priority.</p>
+<pre><code class="language-text">For the current website request, plan accessibility before implementation.
+Identify requested features and relevant accessibility risks.
+For each risk, ask a short question that can verify the intended behavior.
+Answer with a specific implementation plan or mark the answer unknown.
+Keep the requested features in the plan.
+Apply checklist items only when their conditions apply.
+Use the WCAG criterion and its exceptions for requirement decisions.
+Guidance is not automatically a mandatory implementation technique.
+Implement the website after you record the plan and questions.
+Use the tools already available in the runner when needed.
+Record checks that you did not perform.
+Do not claim the finished site conforms to WCAG without evidence.
+Continue without asking a human to answer the plan questions.
+</code></pre>
+<p>The runner may expose the plan in a transcript or a generated report.
+Record missing plans and any code emitted before the plan.
+The prompt does not prove that the model complied.</p>
+<h2 id="3-s-skill-instructions">3. S: skill instructions</h2>
+<p>The future skill directory must be named <code>spv-accessibility</code>.
+Its <code>SKILL.md</code> begins with this candidate text.
+The <a href="https://agentskills.io/specification">Agent Skills specification</a> defines the package format.</p>
+<pre><code class="language-markdown">---
+name: spv-accessibility
+description: Plan and check accessibility for a requested website using the supplied checklist and a plan diagnostic.
+---
+
+# Website accessibility plan
+
+1. Read the original website request and the supplied checklist.
+2. Identify required user journeys and interface features.
+3. Identify relevant R items and optional G guidance for those features.
+4. Write a plan for keyboard use, names, states, visual presentation, and errors when relevant.
+5. Ask a question for each material accessibility risk.
+6. Answer each question with a concrete plan or mark it unknown.
+7. Call `verify_plan` with the plan when that tool is available.
+8. Consider every diagnostic warning before implementation.
+9. Keep the user's required features in the implementation.
+10. Test observable behavior with available tools.
+11. Mark unobserved checklist items as unassessed.
+12. Record the diagnostic result and any unresolved risks.
+</code></pre>
+<p>The host may expose <code>verify_plan</code> through a tool adapter.
+The diagnostic output is advisory in S.
+It must not approve an inaccessible site or enforce a code gate.
+Tool availability and actual invocation are measured separately.
+If the skill is not invoked, keep the run and record non-activation.</p>
+<h3 id="proposed-tool-contract">Proposed tool contract</h3>
+<p>This contract is runner-independent JSON Schema.
+Each adapter must translate it to the provider's required wrapper.
+Do not assume all providers accept one wrapper or support skill files.</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;task_id&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1},
+    &quot;checklist_version&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1},
+    &quot;plan_text&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1},
+    &quot;questions_and_answers&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;additionalProperties&quot;: false,
+        &quot;properties&quot;: {
+          &quot;question&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;answer&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;question&quot;, &quot;answer&quot;]
+      }
+    }
+  },
+  &quot;required&quot;: [&quot;task_id&quot;, &quot;checklist_version&quot;, &quot;plan_text&quot;, &quot;questions_and_answers&quot;]
+}
+</code></pre>
+<p>The proposed response contract is:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;diagnostic_status&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [&quot;WARN&quot;, &quot;NO_WARNING&quot;, &quot;UNASSESSED&quot;]
+    },
+    &quot;warnings&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;additionalProperties&quot;: false,
+        &quot;properties&quot;: {
+          &quot;warning_id&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;reason&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;plan_evidence&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;checklist_item_ids&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}}
+        },
+        &quot;required&quot;: [&quot;warning_id&quot;, &quot;reason&quot;, &quot;plan_evidence&quot;, &quot;checklist_item_ids&quot;]
+      }
+    },
+    &quot;limitations&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}}
+  },
+  &quot;required&quot;: [&quot;diagnostic_status&quot;, &quot;warnings&quot;, &quot;limitations&quot;]
+}
+</code></pre>
+<p><code>NO_WARNING</code> does not mean the plan or site is approved.
+The diagnostic can identify missing keywords or malformed input.
+Those signals do not prove a WCAG failure or a correct implementation.
+The schemas and provider wrappers still need implementation and validation.</p>
+<h2 id="4-a-reviewer-agent-and-host-gate">4. A: reviewer agent and host gate</h2>
+<p>The host creates a fresh generator context and a separate reviewer context.
+The generator's first phase must have no write access to the output project.
+The host asks for a plan, not an implementation.
+The host validates the phase output before the next step.</p>
+<h3 id="plan-phase-instruction">Plan-phase instruction</h3>
+<pre><code class="language-text">This phase prepares a website plan for independent review.
+Do not create or modify website files in this phase.
+Do not provide implementation code in this phase.
+Return the requested plan as a JSON object.
+List required features, accessibility risks, questions, and proposed answers.
+Identify unknown inputs and service dependencies.
+For each applicable risk, cite the relevant checklist item IDs.
+Describe planned behavior, not claims about a finished website.
+</code></pre>
+<p>The following plan schema is a starting contract.
+The host must implement, validate, and version it before the study.</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;required_features&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}},
+    &quot;risks&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;additionalProperties&quot;: false,
+        &quot;properties&quot;: {
+          &quot;feature&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;question&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;planned_answer&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;checklist_item_ids&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}}
+        },
+        &quot;required&quot;: [&quot;feature&quot;, &quot;question&quot;, &quot;planned_answer&quot;, &quot;checklist_item_ids&quot;]
+      }
+    },
+    &quot;unknowns&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}}
+  },
+  &quot;required&quot;: [&quot;required_features&quot;, &quot;risks&quot;, &quot;unknowns&quot;]
+}
+</code></pre>
+<p>The host rejects malformed plan output.
+The host also rejects empty required-feature lists and blank plan answers.
+An explicit <code>unknown</code> answer is allowed and must be reviewed.
+An exposed code block is logged as a plan-phase leak.
+Read-only file access cannot prevent a model from emitting code as text.
+The host must prevent accepting or applying implementation before approval.
+Retain leaked text only in the controlled trace when permitted.</p>
+<h3 id="reviewer-instruction">Reviewer instruction</h3>
+<pre><code class="language-text">You review a proposed website plan before implementation.
+You receive the original request, the checklist, and the generator's plan.
+Do not implement the website.
+Check that the plan covers required user journeys.
+Check whether relevant accessibility risks have concrete planned behaviors.
+Use R items as conditional outcomes and G items as optional techniques.
+Do not require a particular ARIA attribute when an equivalent valid method exists.
+Ask a precise question for each material missing or unclear behavior.
+Refer to evidence in the plan for each finding.
+Use APPROVE when the plan is sufficiently specific for implementation.
+Use REVISE when a material planned behavior is missing or contradictory.
+Use INSUFFICIENT_EVIDENCE when the available plan cannot support a decision.
+Return the decision and findings in the host's required JSON format.
+Do not claim the finished site passes accessibility tests.
+</code></pre>
+<h3 id="reviewer-decision-contract">Reviewer decision contract</h3>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;decision&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [&quot;APPROVE&quot;, &quot;REVISE&quot;, &quot;INSUFFICIENT_EVIDENCE&quot;]
+    },
+    &quot;findings&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;additionalProperties&quot;: false,
+        &quot;properties&quot;: {
+          &quot;feature&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;question&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;reason&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;plan_evidence&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;checklist_item_ids&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}}
+        },
+        &quot;required&quot;: [&quot;feature&quot;, &quot;question&quot;, &quot;reason&quot;, &quot;plan_evidence&quot;, &quot;checklist_item_ids&quot;]
+      }
+    }
+  },
+  &quot;required&quot;: [&quot;decision&quot;, &quot;findings&quot;]
+}
+</code></pre>
+<p><code>APPROVE</code> means approval of a plan for implementation.
+It does not mean that an unbuilt website passes WCAG.
+The reviewer can approve a plan with an empty findings list.
+The host must reject invalid JSON and unsupported decisions.
+For <code>REVISE</code> or <code>INSUFFICIENT_EVIDENCE</code>, require at least one actionable finding.</p>
+<h3 id="host-continuation-after-approval">Host continuation after approval</h3>
+<pre><code class="language-text">The plan review is APPROVE.
+Implement the website using the approved plan and the original request.
+Keep all required features.
+Complete the requested accessibility self-report.
+Record unperformed checks and unknown results.
+</code></pre>
+<p>For <code>REVISE</code> or <code>INSUFFICIENT_EVIDENCE</code>, send the findings back to the generator.
+The proposed limit is two revised plans after the first review.
+If the third review does not approve, record <code>BLOCKED</code> and stop that attempt.
+The generator must not receive a writable build phase when blocked.
+Preserve every review, rejection, retry, and error in the run log.</p>
+<h2 id="5-x-combined-package">5. X: combined package</h2>
+<p>Use the same D user message once.
+Load the P guidance and the S skill.
+Use the A reviewer and host gate for the plan phase.
+Do not add a second gate or duplicate the checklist.
+The host starts the writable build phase only after reviewer approval.
+Record whether the skill and diagnostic actually ran.</p>
+<p>The P instruction to implement after planning is conditional on the host gate in X.
+The host sends the approval continuation only after approval.
+The S diagnostic remains advisory; the A reviewer makes the gate decision.</p>
+<h2 id="6-common-examples-of-useful-questions">6. Common examples of useful questions</h2>
+<p>These are examples, not mandatory answers for every website.</p>
+<table>
+<thead>
+<tr>
+<th>If the feature exists</th>
+<th>Plan question</th>
+<th>Independent check later</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expandable navigation</td>
+<td>How can a keyboard user open and close it?</td>
+<td>Exercise it with keyboard input.</td>
+</tr>
+<tr>
+<td>Modal dialog</td>
+<td>Where does focus go on open and close?</td>
+<td>Test focus movement and return.</td>
+</tr>
+<tr>
+<td>Form validation</td>
+<td>How will a user find and understand an error?</td>
+<td>Submit invalid data and inspect the result.</td>
+</tr>
+<tr>
+<td>Drag interaction</td>
+<td>How can a user complete the same task without dragging?</td>
+<td>Test the intended alternative and its pointer operation.</td>
+</tr>
+<tr>
+<td>Informative chart</td>
+<td>How is the chart's information available in text?</td>
+<td>Inspect its accessible alternative in context.</td>
+</tr>
+</tbody>
+</table>
+<p>These examples are design prompts.
+The task and WCAG criterion determine whether a check applies.
+The test specification must allow valid alternative implementations.</p>
+<!-- Source: 03-evaluation.md -->
+
+<h1 id="evaluation-and-analysis-plan">Evaluation and analysis plan</h1>
+<p><strong>Status:</strong> Draft 0.1. No evaluation has been performed.
+The numbers below define planned measures, not observed results.</p>
+<h2 id="1-evaluation-model">1. Evaluation model</h2>
+<p>Evaluate the saved artifact after generation stops.
+The study reviewer must not use the generator's self-report as the answer key.
+The evaluation has three layers: task function, automated checks, and human review.
+The researcher plans to conduct the human review.
+Record their training and experience without claiming expert status by default.</p>
+<p>Use <a href="https://www.w3.org/TR/2024/REC-WCAG22-20241212/">WCAG 2.2</a> A and AA as the requirement reference.
+Use the <a href="https://www.w3.org/TR/2026/NOTE-wcag-em-2-20260723/">WCAG evaluation methodology</a> to guide scope, sampling, and reporting.
+The methodology is a W3C Group Note.
+This planned study is a scoped evaluation, not a claim of full WCAG conformance.</p>
+<h2 id="2-define-the-test-unit">2. Define the test unit</h2>
+<p>An accessibility test record has these fields:</p>
+<ul>
+<li>Run ID and task ID.</li>
+<li>Requirement or guidance ID and version.</li>
+<li>Page, component, and interaction state.</li>
+<li>Intended behavior, applicability rule, and procedure.</li>
+<li>Result, evidence, reviewer, and test tool version.</li>
+</ul>
+<p>Use five outcome labels: <code>PASS</code>, <code>FAIL</code>, <code>NOT_APPLICABLE</code>, <code>UNASSESSABLE</code>, and <code>NOT_TESTED</code>.
+Explain every label with a short reason.
+Use <code>NOT_APPLICABLE</code> only when the criterion truly does not apply.
+A required feature that is missing is a task failure.
+Record dependent accessibility tests as unassessable where necessary.
+Do not count optional guidance failures as WCAG violations.</p>
+<h2 id="3-task-function">3. Task function</h2>
+<p>Before generation, write a task contract for each original request.
+List the minimum required journeys, states, and expected outcomes.
+Document unresolved dependencies and a consistent fixture policy.
+Review the contracts against the original text and obtain subject review.
+Do not specify a visual style or technology that the request does not require.</p>
+<p>For each scheduled attempt, record:</p>
+<ol>
+<li>Whether an artifact was returned.</li>
+<li>Whether the preserved artifact can be built and started.</li>
+<li>Whether each required journey completes under the contract.</li>
+<li>Whether a failure came from the artifact, provider, environment, or evaluator.</li>
+</ol>
+<p>An approved agent plan without a working artifact is not task completion.
+A blocked agent attempt is a workflow failure for task-completion reporting.
+An external infrastructure or evaluation failure is indeterminate.
+Predefine the classification rules and keep the evidence.</p>
+<h3 id="candidate-task-specific-concerns">Candidate task-specific concerns</h3>
+<p>The following are starting points for expert review.
+They are not the final task contracts or mandatory UI designs.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Candidate core journey</th>
+<th>Candidate accessibility checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T01 services</td>
+<td>Explore services and the requested navigation. Resolve the unavailable order form.</td>
+<td>Keyboard access, names, focus, and expanded-state behavior for controls that exist.</td>
+</tr>
+<tr>
+<td>T02 consulting</td>
+<td>Reach requested page content and any required animation.</td>
+<td>Requested contrast and semantic structure; keyboard focus and motion controls where applicable.</td>
+</tr>
+<tr>
+<td>T03 cinema</td>
+<td>Browse listings and complete the specified ticket flow under the frozen fixture rule.</td>
+<td>Labels, errors, focus, updates, and selection behavior where applicable.</td>
+</tr>
+<tr>
+<td>T04 dashboard</td>
+<td>Exercise the requested task-management and chart functions.</td>
+<td>Keyboard access, a non-dragging pointer alternative, names, and chart information where applicable.</td>
+</tr>
+<tr>
+<td>T05 portfolio</td>
+<td>Navigate the delivered portfolio content.</td>
+<td>Page structure, links, names, focus, contrast, and image alternatives where applicable.</td>
+</tr>
+</tbody>
+</table>
+<p>For T04, distinguish keyboard operation from the single-pointer alternative to dragging.
+WCAG 2.2 criterion 2.5.7 has exceptions that the evaluator must inspect.
+Do not require a feature simply because it appears in this illustrative table.</p>
+<h2 id="4-common-accessibility-checks">4. Common accessibility checks</h2>
+<p>The team must convert these areas into precise, versioned procedures.
+Each procedure must state its WCAG criterion and exceptions.
+Record the routes and interactive states under test.</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Example criterion</th>
+<th>Example method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page title and language</td>
+<td>2.4.2, 3.1.1</td>
+<td>Inspect the browser title and document language.</td>
+</tr>
+<tr>
+<td>Structure and relationships</td>
+<td>1.3.1</td>
+<td>Inspect headings, labels, groups, and information relationships.</td>
+</tr>
+<tr>
+<td>Keyboard and traps</td>
+<td>2.1.1, 2.1.2</td>
+<td>Traverse and operate relevant controls with a keyboard.</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>2.4.7, 2.4.11</td>
+<td>Observe focus in relevant states and layouts.</td>
+</tr>
+<tr>
+<td>Name, role, and value</td>
+<td>4.1.2</td>
+<td>Inspect accessible names and state changes for controls.</td>
+</tr>
+<tr>
+<td>Contrast</td>
+<td>1.4.3</td>
+<td>Check rendered text colors and applicable exceptions.</td>
+</tr>
+<tr>
+<td>Reflow</td>
+<td>1.4.10</td>
+<td>Inspect the specified viewport and applicable exceptions.</td>
+</tr>
+<tr>
+<td>Images and media</td>
+<td>1.1.1 and relevant media criteria</td>
+<td>Review alternatives for the content that exists.</td>
+</tr>
+<tr>
+<td>Form errors</td>
+<td>3.3.1, 3.3.2, 3.3.3</td>
+<td>Submit invalid data and inspect messages and labels.</td>
+</tr>
+<tr>
+<td>Status messages</td>
+<td>4.1.3</td>
+<td>Inspect relevant dynamic messages and programmatic exposure.</td>
+</tr>
+</tbody>
+</table>
+<p>Do not infer screen-reader announcements from an HTML attribute alone.
+Record actual assistive-technology tests when the team can perform them.
+WAI-ARIA Authoring Practices describe patterns; they are not mandatory WCAG text.</p>
+<h3 id="draft-test-cards">Draft test cards</h3>
+<p>These cards illustrate the level of detail needed before the final test suite is frozen.
+They still require accessibility review and task-specific state selection.</p>
+<p><strong>KBD-01: Keyboard access to a required journey</strong></p>
+<ul>
+<li>Reference: WCAG 2.2, criterion 2.1.1, including its exception.</li>
+<li>Preconditions: The task contract defines the journey and the site starts.</li>
+<li>Steps: Start with keyboard focus on the page. Traverse and operate each required control without a pointer.</li>
+<li>Pass: The user completes the journey with a keyboard when the criterion applies.</li>
+<li>Fail: A required function cannot be operated by keyboard and no exception applies.</li>
+<li>Unassessable: The function is missing or another fault prevents the journey.</li>
+<li>Evidence: Record the route, keys, control, and observed result.</li>
+</ul>
+<p><strong>FOCUS-01: Visible keyboard focus</strong></p>
+<ul>
+<li>Reference: WCAG 2.2, criterion 2.4.7.</li>
+<li>Preconditions: A keyboard-operable user interface component exists in a selected state.</li>
+<li>Steps: Move focus to the component with the keyboard. Observe the indicator at the frozen viewport.</li>
+<li>Pass: The keyboard focus indicator is visible for the applicable component.</li>
+<li>Fail: The indicator cannot be seen when it is required.</li>
+<li>Evidence: Record the component, state, browser, and screenshot.</li>
+</ul>
+<p><strong>CONTRAST-01: Rendered text contrast</strong></p>
+<ul>
+<li>Reference: WCAG 2.2, criterion 1.4.3, including its exceptions.</li>
+<li>Preconditions: Text exists in a selected page state and its applicable threshold is known.</li>
+<li>Steps: Measure the rendered text and adjacent background. Inspect images, overlays, and gradients when present.</li>
+<li>Pass: Normal text reaches 4.5:1, or large text reaches 3:1, when the criterion applies.</li>
+<li>Fail: The applicable ratio is below the threshold and no exception applies.</li>
+<li>Unassessable: The evaluator cannot determine the relevant rendered colors reliably.</li>
+<li>Evidence: Record text, state, measured ratio, threshold, and method.</li>
+</ul>
+<p><strong>DRAG-01: Pointer alternative to dragging</strong></p>
+<ul>
+<li>Reference: WCAG 2.2, criterion 2.5.7, including its exceptions.</li>
+<li>Preconditions: A dragging interaction exists in the task dashboard.</li>
+<li>Steps: Attempt the same function with a single pointer without dragging.</li>
+<li>Pass: An applicable equivalent operation can be completed without dragging.</li>
+<li>Fail: No such operation exists and no criterion exception applies.</li>
+<li>Evidence: Record the operation, alternative, input method, and result.</li>
+</ul>
+<p>Do not treat these four examples as the complete primary test set.
+Each task contract must list the full selected criteria and states.
+Report the number of WCAG criteria that the final test set does not assess.</p>
+<h3 id="security-privacy-and-ethics-scope">Security, privacy, and ethics scope</h3>
+<p>The main outcome is accessibility and task function.
+The proposed checks do not measure general website security, privacy, or ethical quality.
+The <a href="https://top10.owasp.org/2025/">OWASP Top 10:2025</a> is a security risk reference.
+It does not supply this study's accessibility criteria.</p>
+<p>Run generated code in an isolated environment with test data and no production credentials.
+Restrict network access according to the frozen task contract.
+Record when that restriction prevents an intended function from being assessed.
+If the team adds security checks, freeze their procedures and report their results separately.
+Do not claim that a site is secure because the accessibility checks passed.</p>
+<h2 id="5-playwright-and-axe-core">5. Playwright and axe-core</h2>
+<p>Use Playwright to start the artifact and exercise the frozen user journeys.
+Use the same interaction policy and states across conditions.
+Use semantic locators when feasible; allow equivalent valid interfaces.
+Capture the exact failing action and relevant evidence.</p>
+<p>Run axe-core on the agreed initial and interactive states.
+Pin the browser, Playwright, axe-core, enabled rules, tags, and configuration.
+The existing local pilot used axe-core 4.10.3 with <code>target-size</code> disabled.
+That historical setting is not a recommendation for the new study.
+Decide rule coverage explicitly before the run.</p>
+<p>Save raw axe <code>violations</code>, <code>passes</code>, <code>incomplete</code>, and <code>inapplicable</code> results.
+Record rule IDs, affected nodes, page state, and axe <code>impact</code>.
+Report axe impact counts as critical, serious, moderate, and minor where present.
+Keep unknown impact values separate.
+Deduplicate repeated observations by a frozen component-and-rule policy.
+Retain links to every state where the observation occurred.</p>
+<p>An axe impact is the tool's classification.
+WCAG does not define those four severity grades.
+If the team adds human severity, define it separately and do not merge the two scales.
+An automated result can need human confirmation.
+Zero automated violations do not prove accessibility or conformance.</p>
+<h2 id="6-human-review">6. Human review</h2>
+<p>The researcher reviews the frozen artifact using the written procedures.
+The review includes keyboard use, focus, rendered contrast, content, and required flows.
+Review the relevant opened, error, success, and other interaction states.
+Record browser, operating system, viewport, zoom, and input method.
+When available, record the screen reader and version for assistive-technology tests.</p>
+<p>Mask condition labels and randomize artifact IDs before review where practical.
+The reviewer must not see the intervention transcript before scoring.
+Some artifacts can reveal their condition; record any suspected unmasking.
+Calibrate procedures on separate development fixtures.
+Do not change the scoring rules after seeing study results.</p>
+<p>An independent accessibility specialist or person with relevant lived experience would strengthen review.
+Record who reviewed each result and which checks they performed.
+If a second reviewer is available, score a predefined overlap independently.
+Report exact agreement and, where appropriate, Cohen's kappa.
+Explain missing labels, low prevalence, and undefined kappa values.
+Resolve disagreements with a documented adjudication record.
+A single review is still useful, but does not measure inter-rater reliability.</p>
+<h2 id="7-proposed-primary-outcome">7. Proposed primary outcome</h2>
+<p><strong>Scoped demonstrated success</strong> is a run with all three conditions:</p>
+<ol>
+<li>A runnable artifact exists.</li>
+<li>Every frozen required task journey passes.</li>
+<li>Every applicable selected primary accessibility check passes independently.</li>
+</ol>
+<p>An unknown or untested required check cannot demonstrate success.
+The primary outcome is not full WCAG conformance.
+It covers only the specified checks, states, and conditions.</p>
+<p>For each condition and configuration, let <code>N</code> be all scheduled attempts.
+Let <code>P</code> be demonstrated successes and <code>U</code> be indeterminate attempts.
+Report <code>P / N</code> and the uncertainty bound <code>(P + U) / N</code>.
+Label <code>P / N</code> as the demonstrated-success rate.
+It is a lower bound, not an estimate that all unknowns failed.
+Report known workflow failures and accessibility failures separately.</p>
+<p>For example, model refusal, gate block, or a broken generated build is not success.
+It is not automatically a WCAG violation.
+An unrelated provider outage or evaluator defect is indeterminate.
+Prespecify the boundary and retain all scheduled attempts in <code>N</code>.</p>
+<p>If a known failure and an unrelated unknown occur in one attempt, classify the run as known non-success.
+Reserve <code>U</code> for attempts that could have met the full outcome if the unknown were resolved.
+When a missing required feature makes a check unassessable, classify task completion as failed.</p>
+<h2 id="8-secondary-measures">8. Secondary measures</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Definition</th>
+<th>Important limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required-journey completion</td>
+<td>Attempts with every required journey passed / scheduled attempts.</td>
+<td>Use bounds for external unknowns.</td>
+</tr>
+<tr>
+<td>Assessed accessibility failure fraction</td>
+<td><code>FAIL / (PASS + FAIL)</code> over selected applicable criterion-state records.</td>
+<td>Show the denominator and coverage; do not treat unknowns as passes.</td>
+</tr>
+<tr>
+<td>Assessment coverage</td>
+<td><code>(PASS + FAIL) / (PASS + FAIL + UNASSESSABLE + NOT_TESTED)</code> for expected applicable records.</td>
+<td>Report <code>NOT_APPLICABLE</code> separately.</td>
+</tr>
+<tr>
+<td>axe findings</td>
+<td>Counts by rule and tool impact after stated deduplication.</td>
+<td>A finding count is not a count of all barriers.</td>
+</tr>
+<tr>
+<td>Model false-pass fraction</td>
+<td>Independent <code>FAIL</code> among model <code>pass</code> claims with comparable assessed results / comparable model <code>pass</code> claims.</td>
+<td>Exclude and report missing, unassessed, or unmatched records separately.</td>
+</tr>
+<tr>
+<td>Model false-fail fraction</td>
+<td>Independent <code>PASS</code> among model <code>fail</code> claims with comparable assessed results / comparable model <code>fail</code> claims.</td>
+<td>This is a claim-based fraction, not a test's false-positive rate.</td>
+</tr>
+<tr>
+<td>Skill activation</td>
+<td>Runs with observed skill invocation / scheduled S or X attempts.</td>
+<td>Unknown activation is not non-activation; show both.</td>
+</tr>
+<tr>
+<td>Gate outcomes</td>
+<td>Counts of approvals, revisions, blocks, invalid responses, and leaks.</td>
+<td>Plan approval does not prove site quality.</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Wall time, model calls, token counts, cost, and retries.</td>
+<td>Report unavailable values; do not infer hidden tokens.</td>
+</tr>
+</tbody>
+</table>
+<p>Checklist item and criterion-state records may not match one-to-one.
+Before analysis, define a reviewed mapping and a compatible aggregation level.
+If there is no valid mapping, do not calculate self-report agreement for that item.</p>
+<h2 id="9-analysis-and-interpretation">9. Analysis and interpretation</h2>
+<p>Compare X with D as the proposed main contrast.
+Also show B versus D and each package versus B and D.
+Use percentage-point differences with actual numerators and denominators.
+Show results by task and model-runner configuration.
+Show all failures and individual repeat outcomes.
+Do not treat repeat number 1 in two conditions as a matched pair by itself.</p>
+<p>Do not treat repeats as independent sampled tasks.
+Do not make a general population claim from five purposively selected requests.
+With this small design, report descriptive results and limits.
+Any later inferential model needs a justified sampling plan and power analysis.
+Do not present an arbitrary composite or a tool score as a universal accessibility percentage.</p>
+<p>The five prompts were public before this study.
+Unknown model training data create a contamination risk.
+Prompt length, tokens, calls, tools, and time differ between packages.
+The package comparisons cannot attribute gains to one component alone.
+Provider updates and hidden settings limit exact reproducibility.</p>
+<h2 id="10-reporting-table-template">10. Reporting table template</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Model and runner</th>
+<th>Condition</th>
+<th style="text-align: right;">Repeats</th>
+<th style="text-align: right;">Demonstrated success</th>
+<th style="text-align: right;">Known non-success</th>
+<th style="text-align: right;">Indeterminate</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>B</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>D</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>P</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>S</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>A</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>T01</td>
+<td>TBD</td>
+<td>X</td>
+<td style="text-align: right;">3 planned</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+<p>Replicate this structure for all tasks and configurations.
+Publish no filled values until the evidence exists and release rights are clear.</p>
+<!-- Source: 04-build-and-run.md -->
+
+<h1 id="build-and-execution-plan">Build and execution plan</h1>
+<p><strong>Status:</strong> Draft 0.1. This document does not authorize or start the study runs.</p>
+<h2 id="1-planned-components">1. Planned components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Responsibility</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Task registry</td>
+<td>Identify each original task without changing its bytes.</td>
+<td>Dataset revision, task ID, source ID, original SHA-256, rights decision.</td>
+</tr>
+<tr>
+<td>Condition registry</td>
+<td>Define B, D, P, S, A, and X.</td>
+<td>Exact instruction files, checklist version, content hashes.</td>
+</tr>
+<tr>
+<td>Runner adapter</td>
+<td>Start a fresh model-and-runner session for one attempt.</td>
+<td>Configuration, visible settings, user-message hash, transcript when permitted.</td>
+</tr>
+<tr>
+<td>Skill adapter</td>
+<td>Load the skill and expose the diagnostic where supported.</td>
+<td>Skill hash, invocation, tool input and output, unsupported capabilities.</td>
+</tr>
+<tr>
+<td>Plan supervisor</td>
+<td>Enforce read-only planning and the approved transition for A and X.</td>
+<td>State transitions, reviewer decisions, revisions, leaks, stop reason.</td>
+</tr>
+<tr>
+<td>Artifact store</td>
+<td>Preserve the final site and generated reports.</td>
+<td>File manifest, hashes, original archive, build logs.</td>
+</tr>
+<tr>
+<td>Evaluation harness</td>
+<td>Run frozen function tests, Playwright, and axe.</td>
+<td>Browser and tool versions, routes, states, raw reports, evidence.</td>
+</tr>
+<tr>
+<td>Human review pack</td>
+<td>Present masked artifacts and assessment forms.</td>
+<td>Reviewer, procedures, observations, disagreements, evidence.</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Compute fixed summaries from completed records.</td>
+<td>Analysis version, denominators, missing-data table, output tables.</td>
+</tr>
+</tbody>
+</table>
+<p>These are planned responsibilities.
+Existing prototype files must be audited before reuse.
+Do not describe them as ready merely because they exist.</p>
+<h2 id="2-proposed-directory-layout">2. Proposed directory layout</h2>
+<pre><code class="language-text">study/
+  protocol/                   Frozen study protocol and registry
+  interventions/
+    prompt-guidance/          P instruction and hash
+    spv-accessibility/        S skill and diagnostic contract
+    reviewer/                 A prompts, schemas, and host rules
+    combined/                 X package manifest
+  fixtures-dev/               Separate development tasks and known outcomes
+  evaluator/
+    task-contracts/           Required journeys and fixture policies
+    checks/                   Accessibility procedures and mappings
+    playwright/               Browser actions and assertions
+    axe/                      Rule settings and result handling
+  adapters/                   Runner-specific invocation code
+  analysis/                   Frozen metric calculations
+  private-runs/               Prompts, transcripts, outputs, and reports
+  public-release/             Only material cleared for release
+</code></pre>
+<p><code>private-runs/</code> must be excluded from version control and the public site.
+The active repository currently publishes <code>docs/</code> through GitHub Pages.
+Do not place protected prompts or unreviewed outputs in <code>docs/</code>.
+Generated sites can contain copied or sensitive source content.
+Inspect each artifact before any public release.</p>
+<h2 id="3-build-the-task-contracts">3. Build the task contracts</h2>
+<ol>
+<li>Read each authorized source task in the controlled local environment.</li>
+<li>List exact task requirements and their acceptance checks.</li>
+<li>Record ambiguous details and unavailable services or source data.</li>
+<li>Define a single fixture or mock policy for each affected task.</li>
+<li>State how the rule is supplied without modifying the original task text.</li>
+<li>Review the contract with an accessibility reviewer.</li>
+<li>Freeze the contract before generation.</li>
+</ol>
+<p>For T01, resolve the missing order-form source.
+For T03, resolve film data and email or QR confirmation.
+A fake email service cannot prove email delivery.
+Do not accept a mock as full delivery unless the frozen task contract says so.
+If a required service cannot be provided consistently, revise the study design before the run.</p>
+<p>The evaluator can use fixed data without leaking expected results to the generator.
+If a generator needs data access, provide the same documented resource to every condition.
+Record differences that a runner cannot control.</p>
+<h2 id="4-build-and-check-the-interventions">4. Build and check the interventions</h2>
+<p>Implement the candidate prompts from <a href="02-prompt-pack.md">02-prompt-pack.md</a>.
+Keep the full checklist unchanged across D, P, S, A, and X.
+Use the same original task in every arm.
+Hash the checklist, prompt files, skill, schemas, and supervisor version.</p>
+<p>For P, log the effective instruction delivery and any code before the plan.
+Do not add a host gate in P.</p>
+<p>For S, validate the skill metadata against the published format.
+Use provider-specific wrappers for the common tool contract.
+Test the actual tool invocation and its unsupported-capability path.
+Test valid plans that use native HTML without unnecessary ARIA.
+Treat diagnostics as prompts for review, not as conformance decisions.</p>
+<p>For A and X, implement the supervisor as a small state machine:</p>
+<pre><code class="language-text">START -&gt; PLAN_READ_ONLY -&gt; REVIEW -&gt; APPROVED -&gt; BUILD_WRITABLE -&gt; COMPLETE
+                              |
+                              +-&gt; REVISE -&gt; PLAN_READ_ONLY
+                              +-&gt; INSUFFICIENT_EVIDENCE -&gt; PLAN_READ_ONLY
+                              +-&gt; INVALID -&gt; STOP OR RETRY UNDER FROZEN POLICY
+                              +-&gt; RETRY_LIMIT -&gt; BLOCKED
+</code></pre>
+<p>The proposed limit is two plan revisions after the initial plan.
+The host checks the review response against the frozen schema.
+Only <code>APPROVE</code> permits the writable phase.
+Do not mount the writable output project in the plan phase.
+Use a temporary read-only environment and prevent pre-approval artifact acceptance.
+If a platform cannot enforce this boundary, mark A and X unsupported there.
+Do not rename an advisory prompt as an enforced gate.</p>
+<p>Develop representative fixtures outside the five study tasks.
+Include missing keyboard operation, contradictory state handling, and valid native controls.
+Label the expected plan outcomes with expert review.
+Test malformed responses, extra fields, retries, timeouts, bypass attempts, and write denial.
+Record confusion counts for reviewer decisions on the labeled fixtures.
+Precision and recall need both positive and negative cases.
+Report undefined values when a denominator is zero.
+Fixture performance does not establish website accessibility.</p>
+<h2 id="5-build-the-independent-evaluator">5. Build the independent evaluator</h2>
+<p>Write a separate evaluation procedure for each primary check.
+Each procedure needs an ID, WCAG source, preconditions, steps, expected outcome, and exceptions.
+Use frozen state-entry steps and expected outcomes.
+Include positive and negative evaluator fixtures where technically feasible.
+Validate that a test does not pass merely because a required feature is absent.
+Review false positives and false negatives with an accessibility specialist.</p>
+<p>Use Playwright for browser actions and task journeys.
+Use axe-core for the frozen automated rule set.
+Keep a manual assessment form for checks that need judgment.
+Add assistive-technology checks if the team has the required skills and tools.
+Record the checks that the available team cannot assess.
+Freeze the evaluator before comparative generation.
+Keep evaluator code and hidden expected outcomes outside generator workspaces.</p>
+<p>The existing checklist is a shared knowledge reference in the intervention arms.
+It is not a replacement for separate test procedures and human observations.</p>
+<h2 id="6-runner-compatibility-and-fairness">6. Runner compatibility and fairness</h2>
+<p>Choose specific accessible configurations before scheduling.
+For each, document model, runner, version, operating system, interface, and execution date.
+Record native tools and whether the runner can load project instructions, skills, and subagents.
+Record hidden defaults as unknown.
+Do not call a runner a model, or assume two runners use the same model.</p>
+<p>Give all conditions the same base workspace and native tool permissions.
+Add only the condition-specific files, tools, and gate.
+Check parent directories and global configuration for loaded project instructions.
+Remove unintended study instructions from the baseline when the runner permits it.
+Keep unavoidable native instructions and record what the runner exposes.
+For A and X, the read-only plan phase is part of the intervention.
+If the native runner changes tools, instructions, or UI defaults, record that difference.
+The interventions use different resources by design.
+Report time, calls, and cost alongside outcome changes.</p>
+<p>The tentative wall-clock limit is 20 minutes per attempt.
+This is a planning value for review, not a validated fairness threshold.
+Apply the approved cap to every condition and retain timeouts.
+Use each provider's supported settings and record them.
+Do not invent a temperature or model seed when the interface hides it.</p>
+<h2 id="7-freeze-and-schedule">7. Freeze and schedule</h2>
+<p>Before any study attempt, approve and version these items:</p>
+<ol>
+<li>Dataset permissions and task hashes.</li>
+<li>Checklist version and complete assembled input for each condition.</li>
+<li>Task contracts, fixtures, routes, states, and assessment procedures.</li>
+<li>Prompt and skill files, reviewer schemas, and host transition rules.</li>
+<li>Runner versions, model identifiers, settings, time caps, and retry limits.</li>
+<li>Primary outcome, secondary measures, unknown handling, and analysis plan.</li>
+<li>Reviewer masking, review allocation, and release policy.</li>
+</ol>
+<p>Use a reproducible schedule randomization seed, proposed <code>314159</code>.
+That seed orders attempts; it does not control model randomness.
+Store the schedule, seed, software version, and timestamp.
+Interleave conditions within task and runner where the environment allows.
+Record outages and provider version changes by date.</p>
+<p>Treat earlier experiments or known project outputs as development information.
+The selected requests are already known to the team and cannot be called a fully blinded holdout.
+Do not tune interventions on comparative outputs and then present those same outputs as untouched evaluation.</p>
+<h2 id="8-procedure-for-one-scheduled-attempt">8. Procedure for one scheduled attempt</h2>
+<ol>
+<li>Assign a unique run ID and the randomized position.</li>
+<li>Start a clean session and a clean workspace.</li>
+<li>Verify the original task bytes and the condition package hashes.</li>
+<li>Assemble the user message according to the selected condition.</li>
+<li>Apply the scheduled runner configuration and record effective settings.</li>
+<li>Submit the task once; record any internal model calls.</li>
+<li>Apply gate decisions and retry limits when the condition requires them.</li>
+<li>Stop at completion, block, refusal, or timeout.</li>
+<li>Preserve the raw response, generated files, logs, and hashes where permitted.</li>
+<li>Do not repair the artifact before the independent evaluation.</li>
+<li>Create a masked evaluation copy and record its relationship to the original.</li>
+</ol>
+<p>If the model provides code in chat, use a frozen extraction rule.
+Do not fix defects during extraction.
+Record any changes needed to start an artifact and their justification.
+If extraction or setup needs a semantic code change, preserve both versions.
+Report the original as unable to run under the unmodified-artifact rule.</p>
+<h2 id="9-minimal-run-record">9. Minimal run record</h2>
+<pre><code class="language-json">{
+  &quot;run_id&quot;: &quot;T01-R1-B-01&quot;,
+  &quot;task_id&quot;: &quot;ARENA_01_SERVICES&quot;,
+  &quot;task_sha256&quot;: &quot;record-from-manifest&quot;,
+  &quot;condition&quot;: &quot;B&quot;,
+  &quot;repeat&quot;: 1,
+  &quot;model_id&quot;: &quot;unknown-until-run&quot;,
+  &quot;runner_id&quot;: &quot;unknown-until-run&quot;,
+  &quot;runner_version&quot;: &quot;unknown-until-run&quot;,
+  &quot;settings&quot;: {&quot;temperature&quot;: &quot;unknown&quot;, &quot;model_seed&quot;: &quot;unknown&quot;},
+  &quot;user_message_sha256&quot;: &quot;not-yet-computed&quot;,
+  &quot;intervention_hashes&quot;: [],
+  &quot;schedule_seed&quot;: 314159,
+  &quot;status&quot;: &quot;planned&quot;,
+  &quot;artifact_sha256&quot;: null,
+  &quot;gate_decisions&quot;: [],
+  &quot;skill_activation&quot;: &quot;not-applicable&quot;,
+  &quot;start_utc&quot;: null,
+  &quot;end_utc&quot;: null,
+  &quot;token_counts&quot;: null,
+  &quot;cost&quot;: null,
+  &quot;missing_data_reason&quot;: null
+}
+</code></pre>
+<p>This is an example schema, not a real attempt.
+Use <code>null</code> or a defined unknown value for unavailable data.
+Add provider, operating system, allowed tools, storage paths, and evaluator versions.
+Validate all records against a versioned schema before analysis.</p>
+<h2 id="10-release-and-audit">10. Release and audit</h2>
+<p>Keep raw source text, transcripts, and artifacts in controlled storage.
+Record rights decisions and a release review for every shared item.
+Publish the protocol and analysis code when permitted.
+Publish allowed artifact hashes, test specifications, and results with clear limits.
+GitHub Pages serves public static content even when its source repository is private.
+Do not assume a generated dynamic site will work unchanged on Pages.
+Archive the exact evaluated artifact and document any separate static export.</p>
+<p>Any planned participant research needs an independent ethics and consent review where applicable.
+The current plan contains no human participants in the intervention loop.</p>
+<!-- Source: 05-evidence.md -->
+
+<h1 id="evidence-and-claim-limits">Evidence and claim limits</h1>
+<p><strong>Status:</strong> Source-linked rationale for draft protocol 0.1.
+This is a targeted review, not a systematic literature review.
+The cited papers do not validate our proposed package.</p>
+<p>The keys below are recorded in the project's canonical bibliography.
+A portable copy is available in <a href="references.bib">references.bib</a>.
+An older entry, <code>mowar2024p052</code>, gives the CodeA11y paper the wrong year.
+Use the verified <code>mowar2025codea11y</code> entry for that 2025 paper.
+The older bibliography needs a separate audit before use in a paper.</p>
+<h2 id="peer-reviewed-research">Peer-reviewed research</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Study relevance</th>
+<th>Limit for this protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://mintviz.usv.ro/publications/2025.W4A.3.pdf"><code>gurita2025w4a</code>: Guriţă and Vatavu, W4A 2025</a></td>
+<td>Compares accessibility-agnostic and accessibility-oriented UI requests. Uses automated checks, expert review, and model self-reflection.</td>
+<td>One banking task and selected criteria cannot establish the effect on our tasks. Expert and automated aggregates moved differently.</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/html/2502.10884"><code>mowar2025codea11y</code>: CodeA11y, CHI 2025</a></td>
+<td>Studies an accessibility-aware coding assistant with a developer evaluation.</td>
+<td>Its package combines features; it does not isolate our prompt, skill, or gate.</td>
+</tr>
+<tr>
+<td><a href="https://ics.uci.edu/~seal/publications/2025_FSE_GenA11y.pdf"><code>he2025gena11y</code>: GenA11y, FSE 2025</a></td>
+<td>Uses extracted page evidence and detailed prompts for issue detection.</td>
+<td>Detection on existing pages differs from generating websites. A reviewer can still be wrong.</td>
+</tr>
+<tr>
+<td><a href="https://aclanthology.org/2026.findings-emnlp.1427/"><code>ding2026skillassessment</code>: Ding et al., Findings of EMNLP 2026</a></td>
+<td>Reviews skill evaluation, routing, and benchmark coverage.</td>
+<td>It does not prove a particular skill improves accessible web generation.</td>
+</tr>
+<tr>
+<td><a href="https://aclanthology.org/2025.findings-acl.1036/"><code>liu2025projecteval</code>: ProjectEval, Findings of ACL 2025</a></td>
+<td>Evaluates generated projects with simulated user interactions.</td>
+<td>Its benchmark is not our WCAG evaluation oracle.</td>
+</tr>
+<tr>
+<td><a href="https://iis.seas.harvard.edu/papers/bucinca21trust.pdf"><code>bucinca2021forcing</code>: Buçinca et al., CSCW 2021</a></td>
+<td>Studies cognitive forcing in human AI-assisted decisions.</td>
+<td>Our autonomous plan review has no human participant and cannot establish reduced human overreliance.</td>
+</tr>
+</tbody>
+</table>
+<p>The prior <a href="../why-these-interventions-2026-10-30.md">intervention evidence review</a> gives additional paper-specific details.
+It also distinguishes peer-reviewed articles, preprints, and vendor reports.
+The six proposed arms are our design choice, not a published validated protocol.</p>
+<h2 id="standards-specifications-and-tool-documentation">Standards, specifications, and tool documentation</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Use in this plan</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3.org/TR/2024/REC-WCAG22-20241212/"><code>w3c2024wcag22</code>: WCAG 2.2</a></td>
+<td>Defines the accessibility criteria and exceptions.</td>
+<td>W3C Recommendation.</td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/2026/NOTE-wcag-em-2-20260723/"><code>w3c2026wcagem2</code>: WCAG-EM 2.0</a></td>
+<td>Guides scope, sample, evaluation, and reporting.</td>
+<td>W3C Group Note; it does not replace WCAG.</td>
+</tr>
+<tr>
+<td><a href="https://playwright.dev/docs/accessibility-testing"><code>playwrightaccessibilitydocs</code>: Playwright accessibility testing</a></td>
+<td>Guides browser-driven accessibility checks.</td>
+<td>Tool documentation; not proof of complete coverage.</td>
+</tr>
+<tr>
+<td><a href="https://www.deque.com/axe/core-documentation/api-documentation/"><code>dequeaxeapi</code>: axe-core API</a></td>
+<td>Defines result fields and tool impact labels.</td>
+<td>Vendor documentation; impact labels are not WCAG severity grades.</td>
+</tr>
+<tr>
+<td><a href="https://agentskills.io/specification"><code>agentskillsspecification</code>: Agent Skills</a></td>
+<td>Defines the portable skill package format.</td>
+<td>Format specification; provider support still needs verification.</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/lmarena-ai/webdev-arena-preference-10k"><code>arena2025webdevdataset</code>: WebDev Arena dataset</a></td>
+<td>Source of the five researcher-selected requests.</td>
+<td>Custom agreement includes transfer restrictions; intended use needs clarification.</td>
+</tr>
+<tr>
+<td><a href="https://top10.owasp.org/2025/"><code>owasp2025top10</code>: OWASP Top 10:2025</a></td>
+<td>Reference for a separately scoped security study.</td>
+<td>An awareness list is not an accessibility standard or a complete security test.</td>
+</tr>
+<tr>
+<td><a href="https://www.asd-ste100.org/STE_downloads.html"><code>asdste100issue9</code>: ASD-STE100 downloads</a></td>
+<td>Official source for the controlled-language specification.</td>
+<td>The full specification and dictionary have not been checked for this draft.</td>
+</tr>
+</tbody>
+</table>
+<p>The official ASD site offers a free copy by request.
+It warns that plausible AI text may still fail the specification.
+This draft uses short, active sentences and defined technical terms.
+It has not passed a formal ASD-STE100 rules and dictionary audit.</p>
+<h2 id="what-the-evidence-can-and-cannot-establish">What the evidence can and cannot establish</h2>
+<p>The papers support investigation of requirements, skills, review, and workflow evaluation.
+They do not establish that every avenue will help.
+They do not establish that combining all avenues will be best.
+Our proposed experiment can assess a bounded package comparison if the protocol is followed.
+Five selected requests cannot prove performance on all web development tasks.
+Further studies would need broader sampling, independent review, and justified statistical power.</p></main></div>
+</body></html>
