@@ -58,8 +58,10 @@ The separate development runner can submit one attempt to the Codex CLI.
 See the [development run record](development-run-plan.md).
 The [initial observations](initial-development-results.md) cover one task and one automated page state.
 The [task contracts](task-contracts-draft.md) and [manual review form](manual-review-template.md) are drafts for independent review.
+The [supplemental retry plan](supplemental-retry-plan.md) keeps an interrupted dashboard baseline separate from any fresh attempt.
 `audit_exploratory_batch.py` can scan preserved static entry points after the batch stops.
 `inspect_self_report_batch.py` describes recognizable model claims without judging their accuracy.
+[Self-report observations](self-report-observations.md) explain the two parser versions and their limits.
 Both keep unassessed attempts in their ledgers.
 `verify_exploratory_batch.py` checks the local inputs, requested configuration, and recorded artifact hashes.
 It cannot observe hidden provider instructions or prove what the service received internally.

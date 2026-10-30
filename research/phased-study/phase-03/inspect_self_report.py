@@ -11,8 +11,9 @@ import prepare_trial as trial
 import run_codex_development as development
 
 
-TABLE = re.compile(r"^\s*\|\s*(ACT-\d{3})\s*\|\s*([^|]+)\|")
-BULLET = re.compile(r"^\s*[-*]\s*(ACT-\d{3})(?:\s*\[[RGP]\])?\s*:\s*(.*)$")
+TABLE = re.compile(r"^\s*\|\s*(ACT-\d{3})\s*\|\s*([^|]+)\|(?:\s*([^|]+)\|)?", re.IGNORECASE)
+BULLET = re.compile(r"^\s*[-*]\s*(?:\*\*|__)?(ACT-\d{3})(?:\s*\[([RGP])\])?\s*(?::|[-—–])\s*(.*)$",
+                    re.IGNORECASE)
 ALLOWED = {
     "R": {"pass", "fail", "not applicable", "unassessed"},
     "G": {"pass", "fail", "not applicable", "unassessed"},
@@ -40,32 +41,47 @@ def parse_claims(report, items):
         raise ValueError("Checklist IDs must be unique.")
     entries = collections.defaultdict(list)
     for line in report.splitlines():
-        match = TABLE.match(line) or BULLET.match(line)
-        if not match:
+        table = TABLE.match(line)
+        bullet = BULLET.match(line) if not table else None
+        if table:
+            item_id, first, second = table.groups()
+            claimed_basis = first.strip().strip("*_").upper()
+            if claimed_basis in ALLOWED and second is not None:
+                value = second
+            else:
+                claimed_basis = None
+                value = first
+        elif bullet:
+            item_id, claimed_basis, value = bullet.groups()
+            claimed_basis = claimed_basis.upper() if claimed_basis else None
+        else:
             continue
-        item_id, value = match.groups()
+        item_id = item_id.upper()
         value = value.strip()
         found = STATUS.match(value)
         normalized = found.group(1).lower().replace("_", " ") if found else None
-        entries[item_id].append(normalized)
+        entries[item_id].append((normalized, claimed_basis))
 
     counts = {basis: collections.Counter() for basis in ALLOWED}
     missing = []
     duplicate = []
     unrecognized = []
     invalid_for_basis = []
+    basis_mismatch = []
     for item_id, basis in expected.items():
         values = entries.get(item_id, [])
         if not values:
             missing.append(item_id)
         elif len(values) != 1:
             duplicate.append(item_id)
-        elif values[0] is None:
+        elif values[0][1] is not None and values[0][1] != basis:
+            basis_mismatch.append(item_id)
+        elif values[0][0] is None:
             unrecognized.append(item_id)
-        elif values[0] not in ALLOWED[basis]:
+        elif values[0][0] not in ALLOWED[basis]:
             invalid_for_basis.append(item_id)
         else:
-            counts[basis][values[0]] += 1
+            counts[basis][values[0][0]] += 1
     return {
         "expected_items": len(expected),
         "recognized_unique_items": sum(sum(values.values()) for values in counts.values()),
@@ -74,6 +90,7 @@ def parse_claims(report, items):
         "duplicate_ids": duplicate,
         "unrecognized_status_ids": unrecognized,
         "invalid_status_for_basis_ids": invalid_for_basis,
+        "basis_mismatch_ids": basis_mismatch,
         "extra_ids": sorted(set(entries) - set(expected)),
     }
 
@@ -91,7 +108,7 @@ def main():
     if development.artifact_manifest(run_dir / "workspace") != record["final_workspace"]:
         raise ValueError("The workspace differs from its recorded artifact manifest.")
     report = run_dir / "workspace/accessibility-self-report.md"
-    output = run_dir / "model-claim-coverage.json"
+    output = run_dir / "model-claim-coverage-v2.json"
     if output.exists():
         raise FileExistsError("The claim coverage record already exists.")
     checklist = approved_checklist(record)
@@ -100,6 +117,7 @@ def main():
         "run_id": args.run_id,
         "condition": record["condition"],
         "purpose": "descriptive_parser_coverage_not_claim_accuracy",
+        "parser_version": "0.2.0",
         "parser_sha256": trial.sha256(Path(__file__).read_bytes()),
         "checklist_json_sha256": trial.sha256(checklist),
         "report_present": report.is_file(),

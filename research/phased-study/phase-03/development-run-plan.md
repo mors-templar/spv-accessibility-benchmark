@@ -41,6 +41,7 @@ Record a missing or failed page as unassessable for this scan.
 For later batch scans, first reject obvious uncompiled JSX or TypeScript entry points.
 A browser preflight also records pages with no visible text as unassessable.
 Visible text does not establish that the complete application works.
+The preflight records a hashed screenshot of the initial viewport for review.
 
 This scan covers only one rendered state.
 It does not assess keyboard journeys, screen readers, task completion, or WCAG conformance.

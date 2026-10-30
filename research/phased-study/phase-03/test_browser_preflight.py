@@ -69,6 +69,7 @@ class BrowserPreflightTests(unittest.TestCase):
         metadata = json.loads((run / "initial-axe-metadata.json").read_text(encoding="utf-8"))
         self.assertEqual(metadata["status"], "not_assessed_blank_initial_state")
         self.assertFalse((run / "initial-axe-report.json").exists())
+        self.assertTrue((run / "initial-viewport.png").read_bytes().startswith(b"\x89PNG\r\n\x1a\n"))
 
     def test_visible_artifact_can_receive_an_axe_report(self):
         runs = self.root / "runs"
@@ -88,6 +89,7 @@ class BrowserPreflightTests(unittest.TestCase):
         metadata = json.loads((run / "initial-axe-metadata.json").read_text(encoding="utf-8"))
         self.assertEqual(metadata["status"], "completed")
         self.assertTrue((run / "initial-axe-report.json").is_file())
+        self.assertEqual(metadata["initial_screenshot_sha256"], audit.sha256_file(run / "initial-viewport.png"))
 
 
 if __name__ == "__main__":

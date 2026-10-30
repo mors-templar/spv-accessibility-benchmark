@@ -28,6 +28,8 @@ Those two rules are tagged as best practice, not automatic WCAG failures.
 All three scans reported `aria-prohibited-attr` and `color-contrast` as incomplete.
 Incomplete findings require further investigation and are not passes.
 The scan reported no minor findings in these initial states.
+The generated pages can contain different content and controls.
+Fewer affected nodes can also result from missing content or features.
 
 P produced a `spv-plan.md` file and a model self-report.
 D produced a model self-report.

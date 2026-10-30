@@ -2,12 +2,13 @@
 'use strict';
 
 const path = require('node:path');
+const fs = require('node:fs/promises');
 const { createRequire } = require('node:module');
 
 async function main() {
-  const [pilotDir, rawUrl] = process.argv.slice(2);
-  if (!pilotDir || !rawUrl || process.argv.length !== 4) {
-    throw new Error('Usage: node browser_preflight.cjs PILOT_DIR LOOPBACK_URL');
+  const [pilotDir, rawUrl, screenshotPath] = process.argv.slice(2);
+  if (!pilotDir || !rawUrl || ![4, 5].includes(process.argv.length)) {
+    throw new Error('Usage: node browser_preflight.cjs PILOT_DIR LOOPBACK_URL [SCREENSHOT_PATH]');
   }
   const target = new URL(rawUrl);
   if (!['http:', 'https:'].includes(target.protocol) ||
@@ -40,6 +41,10 @@ async function main() {
       throw new Error('Navigation failed or moved outside the target origin.');
     }
     const text = (await page.locator('body').innerText()).trim();
+    if (screenshotPath) {
+      const screenshot = await page.screenshot({ fullPage: false });
+      await fs.writeFile(screenshotPath, screenshot, { flag: 'wx' });
+    }
     console.log(JSON.stringify({
       status: text.length ? 'visible_text_observed' : 'blank_initial_state',
       visible_text_characters: text.length,
@@ -47,6 +52,7 @@ async function main() {
       failed_requests: failedRequests,
       blocked_requests: blocked,
       browser_version: browser.version(),
+      screenshot_recorded: Boolean(screenshotPath),
       limitation: 'Visible text does not prove the site rendered completely or that a journey works.'
     }));
   } finally {

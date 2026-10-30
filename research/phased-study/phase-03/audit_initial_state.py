@@ -98,7 +98,8 @@ def main():
         raise ValueError("The static entry references source that needs a build or another runtime.")
     output = run_dir / "initial-axe-report.json"
     metadata_path = run_dir / "initial-axe-metadata.json"
-    if output.exists() or metadata_path.exists():
+    screenshot = run_dir / "initial-viewport.png"
+    if output.exists() or metadata_path.exists() or screenshot.exists():
         raise FileExistsError("An initial audit already exists for this run.")
     node = shutil.which("node")
     if not node or not (PILOT / "node_modules").is_dir() or not BROWSERS.is_dir():
@@ -128,7 +129,7 @@ def main():
     }
     development.write_json(metadata_path, metadata)
     try:
-        probe = subprocess.run([node, str(PREFLIGHT), str(PILOT), url], cwd=PILOT, env=environment,
+        probe = subprocess.run([node, str(PREFLIGHT), str(PILOT), url, str(screenshot)], cwd=PILOT, env=environment,
                                capture_output=True, timeout=90, check=False)
         (run_dir / "initial-render-stdout.log").write_bytes(probe.stdout)
         (run_dir / "initial-render-stderr.log").write_bytes(probe.stderr)
@@ -137,6 +138,8 @@ def main():
         else:
             preflight = json.loads(probe.stdout)
             metadata["render_preflight"] = preflight
+            if screenshot.is_file():
+                metadata["initial_screenshot_sha256"] = sha256_file(screenshot)
             if preflight.get("status") == "blank_initial_state":
                 metadata["status"] = "not_assessed_blank_initial_state"
             elif preflight.get("status") != "visible_text_observed":

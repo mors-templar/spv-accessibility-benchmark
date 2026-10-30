@@ -12,7 +12,7 @@ import run_codex_development as development
 import run_exploratory_schedule as batch
 
 
-LEDGER = development.RUNS / "exploratory-claim-ledger.json"
+LEDGER = development.RUNS / "exploratory-claim-ledger-v2.json"
 
 
 def main():
@@ -53,7 +53,7 @@ def main():
                                          capture_output=True, text=True, timeout=30, check=False)
                 row["status"] = "parser_failed" if process.returncode else "parsed"
                 if process.returncode == 0:
-                    result = json.loads((run_dir / "model-claim-coverage.json").read_text(encoding="utf-8"))
+                    result = json.loads((run_dir / "model-claim-coverage-v2.json").read_text(encoding="utf-8"))
                     if result["report_present"]:
                         row["coverage"] = result["coverage"]
                     else:

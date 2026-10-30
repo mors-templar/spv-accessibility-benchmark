@@ -30,7 +30,7 @@ def summarize_row(generation, audit):
     return row
 
 
-def markdown(rows):
+def markdown(rows, had_interruption=False):
     lines = ["# Exploratory Codex batch: initial-state scan", "",
              "These are development observations, not final benchmark results.",
              "A dash means no comparable initial-state scan; it does not mean zero findings.",
@@ -47,8 +47,12 @@ def markdown(rows):
         lines.append("| " + " | ".join([row["task_id"], row["condition"], row["generation_status"],
                                          row["audit_status"], *values]) + " |")
     lines.extend(["", "Human review, required journeys, keyboard operation, and screen-reader behavior are not scored here.",
-                  "The selected tasks were purposive. The design scheduled one exploratory attempt per condition and task.",
-                  "The interrupted attempt remains recorded and is not replaced by a zero.", ""])
+                  "Fewer reported nodes can result from missing content or features.",
+                  "The selected tasks were purposive. The design scheduled one exploratory attempt per condition and task."])
+    if had_interruption:
+        lines.extend(["An interruption separated some attempts in time; see the generation ledger.",
+                      "Interrupted attempts remain recorded and are not replaced by zeros."])
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -70,12 +74,14 @@ def main():
     rows = [summarize_row(g, a) for g, a in zip(generation["attempts"], audit["attempts"])]
     rows.sort(key=lambda row: (row["task_id"], row["condition"]))
     result = {"purpose": "exploratory_initial_state_not_final_evaluation", "schedule_sha256": schedule_hash,
+              "generation_status": generation["status"], "generation_started_utc": generation.get("started_utc"),
+              "generation_ended_utc": generation.get("ended_utc"), "resumptions": generation.get("resumptions", []),
               "created_utc": development.now_utc(), "rows": rows}
     with JSON_OUTPUT.open("x", encoding="utf-8") as stream:
         json.dump(result, stream, indent=2)
         stream.write("\n")
     with MARKDOWN_OUTPUT.open("x", encoding="utf-8") as stream:
-        stream.write(markdown(rows))
+        stream.write(markdown(rows, bool(generation.get("resumptions"))))
     print(json.dumps({"status": "created", "rows": len(rows), "markdown": str(MARKDOWN_OUTPUT)}, indent=2))
     return 0
 

@@ -46,6 +46,22 @@ class SelfReportParserTests(unittest.TestCase):
         result = claims.parse_claims("| ACT-001 | passionate | text |", self.items)
         self.assertEqual(result["unrecognized_status_ids"], ["ACT-001"])
 
+    def test_parses_type_columns_and_bold_dash_bullets(self):
+        report = "\n".join([
+            "| ACT-001 | R | pass | Synthetic evidence |",
+            "- **ACT-002 [G] — not applicable:** No relevant component.",
+            "- **ACT-003 — observed:** A synthetic action.",
+            "| ACT-004 | R | unassessed | No test |",
+        ])
+        result = claims.parse_claims(report, self.items)
+        self.assertEqual(result["recognized_unique_items"], 4)
+        self.assertEqual(result["basis_mismatch_ids"], [])
+
+    def test_flags_a_mislabeled_basis(self):
+        result = claims.parse_claims("| ACT-001 | G | pass | evidence |", self.items)
+        self.assertEqual(result["basis_mismatch_ids"], ["ACT-001"])
+        self.assertEqual(result["recognized_unique_items"], 0)
+
     def test_rejects_a_different_approval_record(self):
         record = {"condition": "D", "input_metadata": {"approval_record_sha256": "0" * 64}}
         with self.assertRaisesRegex(ValueError, "differs"):
