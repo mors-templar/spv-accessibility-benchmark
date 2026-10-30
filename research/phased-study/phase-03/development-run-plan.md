@@ -64,6 +64,9 @@ It permits writes inside the active workspace and reads from named runtime direc
 It denies general filesystem reads outside those roots.
 Synthetic probes confirmed one outside-file denial, workspace writes, and project guidance loading.
 The probes do not prove that every possible access path is isolated.
+The requested profile inherits the workspace sandbox's network restrictions.
+The exact effective network policy is not verified for every possible transport.
+Missing package downloads or external services can make a task unassessable.
 The runner requests that native subagents be disabled in all three conditions.
 Native model instructions and other host capabilities remain only partly observable.
 

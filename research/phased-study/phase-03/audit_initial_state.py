@@ -33,6 +33,9 @@ def checked_index(run_dir):
     record = json.loads((run_dir / "record.json").read_text(encoding="utf-8"))
     if record["status"] != "turn_completed_unassessed":
         raise ValueError("Generation did not complete; the initial page is unassessable.")
+    workspace = run_dir / "workspace"
+    if development.artifact_manifest(workspace) != record["final_workspace"]:
+        raise ValueError("The generated workspace differs from its recorded artifact manifest.")
     matches = [item for item in record["final_workspace"]["files"] if item["path"] == "index.html"]
     index = run_dir / "workspace/index.html"
     if len(matches) != 1 or not index.is_file() or index.is_symlink():
@@ -84,6 +87,8 @@ def main():
         "condition": record["condition"],
         "task_id": record["task_id"],
         "artifact_index_sha256": sha256_file(index),
+        "artifact_manifest_checked": True,
+        "artifact_manifest_excludes": record["final_workspace"]["excluded_directories"],
         "audit_script_sha256": sha256_file(PILOT / "audit.js"),
         "package_lock_sha256": sha256_file(PILOT / "package-lock.json"),
         "purpose": "exploratory_initial_state_only",

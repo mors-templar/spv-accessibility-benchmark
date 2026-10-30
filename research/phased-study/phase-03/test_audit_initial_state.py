@@ -7,6 +7,7 @@ from pathlib import Path
 
 import audit_initial_state as audit
 import prepare_trial as trial
+import run_codex_development as development
 
 
 class ArtifactSelectionTests(unittest.TestCase):
@@ -21,7 +22,7 @@ class ArtifactSelectionTests(unittest.TestCase):
         self.index.write_text("<html>fixture</html>", encoding="utf-8")
         self.record = {
             "status": "turn_completed_unassessed",
-            "final_workspace": {"files": [{"path": "index.html", "sha256": audit.sha256_file(self.index)}]},
+            "final_workspace": development.artifact_manifest(self.run / "workspace"),
         }
         self.save()
 

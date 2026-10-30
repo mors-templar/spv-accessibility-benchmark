@@ -34,6 +34,12 @@ D produced a model self-report.
 The P event log contains a successful command referencing the plan before a successful command referencing `index.html`.
 That observation is not an assessment of plan quality or site accessibility.
 
+The report parser recognized one status for each of the 188 checklist IDs in both D and P.
+Among R and G items, D marked 94 not applicable and 39 unassessed.
+P marked 99 not applicable and 29 unassessed.
+These are model claims. The parser did not verify the classifications or supporting evidence.
+An independent reviewer must check applicability and the underlying behavior.
+
 ## Interpretation
 
 The reported counts are axe findings, not a general accessibility score.

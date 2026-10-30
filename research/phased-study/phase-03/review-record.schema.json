@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/spv-study/review-record-0.1.0.schema.json",
+  "title": "Draft independent review record",
+  "description": "Stores observations, not a conformance determination.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "review_id", "artifact_id", "artifact_sha256", "artifact_hash_scope", "reviewer", "environment", "masking", "checks", "limitations"],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "review_id": { "type": "string", "minLength": 1 },
+    "artifact_id": { "type": "string", "minLength": 1 },
+    "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "artifact_hash_scope": { "enum": ["archive", "manifest", "single_file"] },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer_id", "relevant_experience"],
+      "properties": {
+        "reviewer_id": { "type": "string", "minLength": 1 },
+        "relevant_experience": { "type": "string" }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operating_system", "browser", "viewport", "zoom_percent", "input_methods", "assistive_technology"],
+      "properties": {
+        "operating_system": { "type": "string", "minLength": 1 },
+        "browser": { "type": "string", "minLength": 1 },
+        "viewport": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": {
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "zoom_percent": { "type": "number", "exclusiveMinimum": 0 },
+        "input_methods": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "assistive_technology": { "type": ["string", "null"] }
+      }
+    },
+    "masking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["condition_hidden", "suspected_unmasking"],
+      "properties": {
+        "condition_hidden": { "type": ["boolean", "null"] },
+        "suspected_unmasking": { "type": ["string", "null"] }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/check" }
+    },
+    "limitations": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  },
+  "$defs": {
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["check_id", "category", "criterion", "state", "procedure", "result", "reason", "evidence"],
+      "properties": {
+        "check_id": { "type": "string", "minLength": 1 },
+        "category": { "enum": ["task", "wcag", "guidance"] },
+        "criterion": { "type": ["string", "null"] },
+        "state": { "type": "string", "minLength": 1 },
+        "procedure": { "type": "string", "minLength": 1 },
+        "result": { "enum": ["PASS", "FAIL", "NOT_APPLICABLE", "UNASSESSABLE", "NOT_TESTED"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "description", "reference"],
+            "properties": {
+              "kind": { "enum": ["manual_observation", "screenshot", "video", "tool_report", "other"] },
+              "description": { "type": "string", "minLength": 1 },
+              "reference": { "type": ["string", "null"] }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "category": { "const": "wcag" } }, "required": ["category"] },
+          "then": { "properties": { "criterion": { "type": "string", "pattern": "^[1-4]\\.[0-9]+\\.[0-9]+$" } } }
+        },
+        {
+          "if": { "properties": { "result": { "enum": ["PASS", "FAIL"] } }, "required": ["result"] },
+          "then": { "properties": { "evidence": { "minItems": 1 } } }
+        }
+      ]
+    }
+  }
+}

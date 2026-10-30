@@ -57,6 +57,27 @@ The input checker does not start a run or install an intervention.
 The separate development runner can submit one attempt to the Codex CLI.
 See the [development run record](development-run-plan.md).
 The [initial observations](initial-development-results.md) cover one task and one automated page state.
+The [task contracts](task-contracts-draft.md) and [manual review form](manual-review-template.md) are drafts for independent review.
+`audit_exploratory_batch.py` can scan preserved static entry points after the batch stops.
+`inspect_self_report_batch.py` describes recognizable model claims without judging their accuracy.
+Both keep unassessed attempts in their ledgers.
+`verify_exploratory_batch.py` checks the local inputs, requested configuration, and recorded artifact hashes.
+It cannot observe hidden provider instructions or prove what the service received internally.
+
+## Local manual review view
+
+After generation stops, `prepare_review_cases.py` creates condition-masked copies of available static pages.
+It verifies copied file hashes and keeps the run-to-case mapping in a separate local file.
+It excludes project instructions, plans, self-reports, `.git`, and `node_modules`.
+If an excluded file is needed by the site, record the affected review as unassessable.
+Pages without an `index.html` need a separate, documented build procedure.
+
+Run `serve_review_cases.py` to open a loopback-only review index.
+Each case uses a separate local origin so root-relative assets can load.
+The index hides condition labels but cannot guarantee blinding.
+Page content or prior knowledge can reveal the condition.
+The manual browser is not subject to the automated audit's network blocking.
+Record the network policy and any external content used during human review.
 
 ## Check the utility
 
